@@ -20,75 +20,66 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="site-list__item site-list__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a> Главная </a>
             </li>
-            <li class="site-list__item">
-              <a href="#"> Фотографии </a>
+            <li class="main-nav__item">
+              <a href="catalog.html"> Фотографии </a>
             </li>
-            <li class="site-list__item">
-              <a href="#"> Конкурс </a>
+            <li class="main-nav__item">
+              <a href="form.html"> Конкурс </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#"> HTML ACADEMY </a>
             </li>
           </ul>
         </div>
       </nav>
+
+      <section class="app">
+        <div class="app__wrapper">
+          <h2 class="visually-hidden">Ссылка на приложение</h2>
+          <p class="app__slogan">Взгляните на жизнь иначе!</p>
+          <a
+            class="button app-button"
+            href="https://www.apple.com/ru/app-store/"
+          >
+            Скачать приложение
+          </a>
+          <a href="https://www.apple.com/ru/app-store/" class="download-app"
+            ><img
+              src="img/app/apple-logo.svg"
+              width="47"
+              height="56"
+              alt="Скачать в AppStore"
+          /></a>
+          <a href="https://play.google.com/store" class="download-app"
+            ><img
+              src="img/app/android-logo.svg"
+              width="43"
+              height="47"
+              alt="Скачать на Android"
+          /></a>
+          <a
+            href="https://www.microsoft.com/ru-RU/store/apps"
+            class="download-app"
+            ><img
+              src="img/app/microsoft-logo.svg"
+              width="44"
+              height="41"
+              alt="Скачать в Microsoft Store"
+          /></a>
+          <p class="app__slogan">
+            Доступно для iPhone, iPad, Android,<br />
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">
         Пинк - приложение для раскрашивания серых будней в розовый цвет
       </h1>
-
-      <section class="app">
-        <div class="app__wrapper">
-          <header class="app__header">
-            <h2 class="visually-hidden">Ссылка на приложение</h2>
-            <p class="app__slogan">
-              Взгляните на жизнь<br />
-              иначе!
-            </p>
-            <img
-              src="img/app/phone-image.jpg"
-              width="320"
-              height="286"
-              alt="Фото телефона"
-            />
-            <img
-              src="img/app/screen.jpg"
-              width="111"
-              height="197"
-              alt="Фото розового экрана"
-            />
-            <button class="button app-button" type="button">
-              Скачать приложение
-            </button>
-            <img
-              src="img/app/apple-logo.svg"
-              width="47"
-              height="56"
-              alt="Скачать в AppStore"
-            />
-            <img
-              src="img/app/android-logo.svg"
-              width="43"
-              height="47"
-              alt="Скачать на Android"
-            />
-            <img
-              src="img/app/microsoft-logo.svg"
-              width="44"
-              height="41"
-              alt="Скачать в Microsoft Store"
-            />
-            <p class="app__slogan">
-              Доступно для iPhone, iPad, Android,<br />
-              Windows Phone, OS X, Windows 8
-            </p>
-          </header>
-        </div>
-      </section>
 
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -116,18 +107,6 @@
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                 заводите новых
               </p>
-              <img
-                src="img/advantages/advantages-image.jpg"
-                width="157"
-                height="320"
-                alt="Фото экрана телефона"
-              />
-              <img
-                src="img/advantages/advantages-screen_1.jpg"
-                width="136"
-                height="245"
-                alt="Фото розового экрана"
-              />
             </li>
           </ul>
         </div>
@@ -135,7 +114,7 @@
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Наши отзывы</h2>
+          <h2 class="visually-hidden">Отзывы пользователей приложения</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
@@ -167,6 +146,7 @@
 
       <section class="price">
         <div class="price-wrapper">
+          <h2 class="visually-hidden">Тарифы и стоимость</h2>
           <table class="price-table">
             <tbody>
               <tr>
@@ -177,81 +157,83 @@
               </tr>
               <tr>
                 <td>Розовый фильтр</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
+                <td><span class="visually-hidden">да</span></td>
+                <td><span class="visually-hidden">да</span></td>
+                <td><span class="visually-hidden">да</span></td>
               </tr>
               <tr>
                 <td>Смайлики</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
+                <td><span class="visually-hidden">нет</span></td>
+                <td><span class="visually-hidden">да</span></td>
+                <td><span class="visually-hidden">да</span></td>
               </tr>
               <tr>
                 <td>Комментарии</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
+                <td><span class="visually-hidden">нет</span></td>
+                <td><span class="visually-hidden">нет</span></td>
+                <td><span class="visually-hidden">да</span></td>
               </tr>
             </tbody>
           </table>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button
-              class="slider__toggle slider__toggle--current"
-              type="button"
-            >
+          <p class="price__toggles">
+            <button class="price__toggle" type="button">1</button>
+            <button class="price__toggle price__toggle--current" type="button">
               2
             </button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="price__toggle" type="button">3</button>
           </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p>Остались вопросы?</p>
+          <p>Свяжитесь с нами!</p>
+          <div class="contacts__content">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <p>Звоните:</p>
+                <a class="contacts__phone" href="tel:+78125556666">
+                  <span class="contacts__phone-mobile">Тел.:</span> +7 (812)
+                  555-66-66
+                </a>
+              </li>
+              <li class="contacts-item">
+                <p>Пишите:</p>
+                <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+                  mail@htmlacademy.ru
+                </a>
+              </li>
+              <li class="contacts-item">
+                <p>Приезжайте в гости:</p>
+                <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img
+            class="contacts__map-image"
+            src="img/footer/map.png"
+            width="320"
+            height="200"
+            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
+          />
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p>Остались вопросы?</p>
-        <p>Свяжитесь с нами!</p>
-        <div class="page-footer__contacts contacts">
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <p>Звоните:</p>
-              <a class="contacts__phone" href="tel:+78125556666">
-                <span class="contacts__phone-mobile">Тел.:</span> +7 (812)
-                555-66-66
-              </a>
-            </li>
-            <li class="contacts-item">
-              <p>Пишите:</p>
-              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </li>
-            <li class="contacts-item">
-              <p>Приезжайте в гости:</p>
-              <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="page-footer__map">
-        <img
-          class="contacts__map-image"
-          src="img/footer/map.png"
-          width="320"
-          height="200"
-          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-        />
-      </div>
-      <div class="page-footer__wrapper">
         <div class="page-footer__social social">
-          <img
-            src="img/footer/copyright-logo.svg"
-            width="145"
-            height="40"
-            alt="Логотип Pink"
-          />
+          <a href="#"
+            ><img
+              src="img/footer/copyright-logo.svg"
+              width="145"
+              height="40"
+              alt="Логотип Pink"
+          /></a>
           <ul class="social__list">
             <li class="social__item">
               <a
@@ -302,8 +284,7 @@
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <img
+            ><img
               src="img/footer/html_academy-logo.svg"
               width="27"
               height="34"
