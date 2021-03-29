@@ -72,7 +72,7 @@
                   прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <button class="panorama__heart" type="button">
-                  <span class="panorama__likes-number">Нравится: 215</span>
+                  Нравится: <span class="panorama__likes-number">215</span>
                 </button>
               </div>
             </blockquote>
@@ -93,8 +93,8 @@
                 <p class="gallery__list-text">
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
-                <button class="gallery__list-button-heart">
-                  <span class="gallery__list-likes-number">Нравится: 356</span>
+                <button class="gallery__list-button-heart" type="button">
+                  Нравится: <span class="gallery__list-likes-number">356</span>
                 </button>
               </div>
             </li>
@@ -110,8 +110,8 @@
                 <p class="gallery__list-author-name">Антон</p>
                 <span class="gallery__list-time">(12 часов назад)</span>
                 <p class="gallery__list-text">Соседи будут рады!</p>
-                <button class="gallery__list-button-heart">
-                  <span class="gallery__list-likes-number">Нравится: 666</span>
+                <button class="gallery__list-button-heart" type="button">
+                  Нравится: <span class="gallery__list-likes-number">666</span>
                 </button>
               </div>
             </li>
@@ -129,8 +129,8 @@
                 <p class="gallery__list-text">
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
-                <button class="gallery__list-button-heart">
-                  <span class="gallery__list-likes-number">Нравится: 215</span>
+                <button class="gallery__list-button-heart" type="button">
+                  Нравится: <span class="gallery__list-likes-number">215</span>
                 </button>
               </div>
             </li>
@@ -146,8 +146,8 @@
                 <p class="gallery__list-author-name">Сергей</p>
                 <span class="gallery__list-time">(25 часов назад)</span>
                 <p class="gallery__list-text">Самая кубанская в мире!</p>
-                <button class="gallery__list-button-heart">
-                  <span class="gallery__list-likes-number">Нравится: 4</span>
+                <button class="gallery__list-button-heart" type="button">
+                  Нравится: <span class="gallery__list-likes-number">4</span>
                 </button>
               </div>
             </li>
@@ -163,8 +163,8 @@
                 <p class="gallery__list-author-name">Максим</p>
                 <span class="gallery__list-time">(40 часов назад)</span>
                 <p class="gallery__list-text">Где снег-то?</p>
-                <button class="gallery__list-button-heart">
-                  <span class="gallery__list-likes-number">Нравится: 150</span>
+                <button class="gallery__list-button-heart" type="button">
+                  Нравится: <span class="gallery__list-likes-number">150</span>
                 </button>
               </div>
             </li>
@@ -180,8 +180,8 @@
                 <p class="gallery__list-author-name">Надежда</p>
                 <span class="gallery__list-time">(45 часов назад)</span>
                 <p class="gallery__list-text">Всем GM и взаимные лайки!</p>
-                <button class="gallery__list-button-heart">
-                  <span class="gallery__list-likes-number">Нравится: 2560</span>
+                <button class="gallery__list-button-heart" type="button">
+                  Нравится: <span class="gallery__list-likes-number">2560</span>
                 </button>
               </div>
             </li>
@@ -192,49 +192,98 @@
         </div>
       </section>
 
-      <section class="newPost">
+      <section class="filter">
         <h2 class="visually-hidden">
           Отредактировать и запостить новую фотографию
         </h2>
-        <div class="newPost__wrapper">
-          <img
-            src="img/catalog/photo-7.jpg"
-            alt="Фото зимней дороги"
-            class="newPost-image"
-            width="280"
-            height="374"
-          />
-          <div class="newPost__tools">
-            <img
-              src="img/catalog/crop.svg"
-              alt="Иконка: вырезать"
-              class="newPost__tools-image"
-              width="44"
-              height="44"
+        <div class="filter__wrapper">
+          <form class="filter__form">
+            <label for="form-file"
+              ><img
+                src="img/catalog/photo-7.jpg"
+                alt="Фото зимней дороги"
+                class="filter-image"
+                width="280"
+                height="374"
+              />:</label
+            >
+            <input
+              class="visually-hidden filter__form-file"
+              type="file"
+              id="form-file"
+              name="form-file"
             />
-            <img
-              src="img/catalog/fill.svg"
-              alt="Иконка: заливка"
-              class="newPost__tools-image"
-              width="48"
-              height="43"
-            />
-            <img
-              src="img/catalog/contrast.svg"
-              alt="Иконка: контраст"
-              class="newPost__tools-image"
-              width="32"
-              height="32"
-            />
-          </div>
-        </div>
+            <div class="filter__tools">
+              <button>
+                <img
+                  src="img/catalog/crop.svg"
+                  alt="Иконка: вырезать"
+                  class="filter__tools-image"
+                  width="44"
+                  height="44"
+                />
+              </button>
 
-        <label for="points"></label>
-        <input type="range" id="points" name="points" min="0" max="10" />
+              <!-- Range -->
+              <fieldset class="filter-item">
+                <div class="range-filter">
+                  <div class="scale">
+                    <div class="bar" style="width: 0%; margin-left: 0%"></div>
+                  </div>
+                  <div class="toggle" tabindex="0" style="left: 0%"></div>
+                </div>
+              </fieldset>
 
-        <div class="newPost__button">
-          <button class="button newPost__button-post">Запостить</button>
-          <button class="button newPost__button-cancel">Отмена</button>
+              <button>
+                <img
+                  src="img/catalog/fill.svg"
+                  alt="Иконка: заливка"
+                  class="filter__tools-image"
+                  width="48"
+                  height="43"
+                />
+              </button>
+
+              <!-- Range -->
+              <fieldset class="visually-hidden filter-item">
+                <div class="range-filter">
+                  <div class="scale">
+                    <div class="bar" style="width: 0%; margin-left: 0%"></div>
+                  </div>
+                  <div class="toggle" tabindex="0" style="left: 0%"></div>
+                </div>
+              </fieldset>
+
+              <button>
+                <img
+                  src="img/catalog/contrast.svg"
+                  alt="Иконка: контраст"
+                  class="filter__tools-image"
+                  width="32"
+                  height="32"
+                />
+              </button>
+
+              <!-- Range -->
+              <fieldset class="visually-hidden filter-item">
+                <div class="range-filter">
+                  <div class="scale">
+                    <div class="bar" style="width: 0%; margin-left: 0%"></div>
+                  </div>
+                  <div class="toggle" tabindex="0" style="left: 0%"></div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="filter__button">
+              <button class="button filter__button-post" type="submit">
+                Запостить
+              </button>
+              <button class="button filter__button-cancel" type="button">
+                Отмена
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
