@@ -1,0 +1,53 @@
+.page-header {
+  background-image: url("../../img/header/back-desktop.jpg");
+  color: $text-header;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-nav__item a {
+  color: $text-header;
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.header-wrap {
+  background: $header-wrap;
+  opacity: 0.3;
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+}
+
+.app__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.app__download {
+  background: $app-download;
+  text-align: center;
+  height: 271px;
+}
+
+.app-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.app__slogan {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}

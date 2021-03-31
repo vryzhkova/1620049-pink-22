@@ -1,0 +1,41 @@
+.advantages__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.advantages__headline,
+.advantages__caption {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $text-base;
+  text-align: center;
+}
+
+.advantages-wrap {
+  background-image: url("../../img/advantages/grey-background.jpg") no-repeat;
+}
+
+.advantages__list {
+  display: flex;
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $text-title;
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-base;
+}
