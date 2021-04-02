@@ -1,0 +1,29 @@
+.app__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.app__download {
+  background: $app-download;
+  text-align: center;
+  height: 271px;
+}
+
+.app-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.app__slogan {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
