@@ -2,29 +2,3 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-
-td {
-  border: 2px solid $table-grid;
-}
-
-.price-table__title {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  background: $table-background;
-  border: 2px solid $table-background;
-  color: $text-table-title;
-}
-
-.table-price {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.price-table__row-title {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: $text-base;
-}
