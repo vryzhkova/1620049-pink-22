@@ -1,0 +1,25 @@
+.price-table__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background: $table-background;
+  border: 2px solid $table-background;
+  color: $text-table-title;
+}
+
+.price-table__value {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price-table__row-title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-base;
+}
+
+.price-table__row {
+  border: 2px solid $table-grid;
+}

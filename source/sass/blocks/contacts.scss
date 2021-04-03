@@ -1,0 +1,21 @@
+.contacts__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contacts__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $text-base;
+  text-align: center;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__adress {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $text-contacts;
+}
