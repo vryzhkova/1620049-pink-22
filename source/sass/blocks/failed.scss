@@ -1,0 +1,31 @@
+.failed {
+  width: 460px;
+  height: 363px;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+}
+
+.failed__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: $text-title;
+}
+
+.failed__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $text-base;
+}
+
+.failed__button {
+  background: $button-green;
+  border: 2px solid $button-green;
+  border-radius: 1px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $button-color;
+}
