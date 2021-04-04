@@ -1,0 +1,36 @@
+.contacts-form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contacts-label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-form;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.contacts-input {
+  // width: 276px;
+  height: 59px;
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-base;
+  border: 2px solid $form-border;
+  border-radius: 1px;
+}
+
+.contacts-legend {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-form;
+}
