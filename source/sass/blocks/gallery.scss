@@ -1,0 +1,64 @@
+.gallery__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $text-base;
+}
+
+.gallery__list {
+  display: grid;
+}
+
+.gallery__list-image {
+  width: 100%;
+}
+
+.gallery__list-item {
+  margin-bottom: 20px;
+}
+
+.gallery__list-authorinfo {
+  background-color: $background-gallery;
+}
+
+.gallery__list-author-name {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-base;
+}
+
+.gallery__list-time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-base;
+}
+
+.gallery__list-text {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-base;
+}
+
+.gallery__list-button-heart {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-form;
+}

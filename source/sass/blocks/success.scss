@@ -36,3 +36,13 @@
   height: 163px;
   border-radius: 0 0 5px 5px;
 }
+
+.success__wrap-button {
+  background: $button-green;
+  border: 2px solid $button-green;
+  border-radius: 1px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
