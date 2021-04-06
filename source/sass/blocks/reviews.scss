@@ -11,6 +11,10 @@
   color: $text-title;
 }
 
+.reviews__work {
+  display: none;
+}
+
 .reviews__text {
   margin: 0;
   padding: 0;
@@ -20,3 +24,23 @@
   text-align: center;
   color: $text-base;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__work {
+    display: block;
+  }
+
+  .reviews__author-block {
+    order: 2;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .reviews__work {
+//     display: block;
+//   }
+
+//   .reviews__author-block {
+//     order: 2;
+//   }
+// }

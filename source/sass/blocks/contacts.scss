@@ -19,3 +19,11 @@
   line-height: 33px;
   color: $text-contacts;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

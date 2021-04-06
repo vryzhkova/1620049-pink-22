@@ -14,9 +14,12 @@
 }
 
 .app-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
 }
 
 .app__slogan {
@@ -27,3 +30,15 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .app__download {
+    display: none;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .app__download {
+//     display: none;
+//   }
+// }

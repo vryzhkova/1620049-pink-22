@@ -7,3 +7,30 @@
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
 }
+
+.page-header__logo-tablet,
+.page-header__logo-desktope {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-tablet {
+    display: block;
+  }
+
+  .page-header__logo-mobile,
+  .page-header__logo-desktope {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-desktope {
+    display: block;
+  }
+
+  .page-header__logo-mobile,
+  .page-header__logo-tablet {
+    display: none;
+  }
+}

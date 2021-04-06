@@ -1,6 +1,21 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/header/back-desktop.jpg");
   color: $text-header;
   margin: 0 auto;
   padding: 0 20px;
+  height: 462px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 729px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 853px;
+  }
 }
