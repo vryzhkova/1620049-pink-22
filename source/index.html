@@ -8,9 +8,39 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrap">
-        <nav class="page-header__main-nav main-nav">
-          <div class="main-nav__wrapper">
+      <!-- <div class="page-header__wrap"> -->
+      <nav class="page-header__main-nav main-nav">
+        <!-- <div class="main-nav__wrapper"> -->
+        <!-- <a class="page-header__logo page-header__logo-mobile">
+          <img
+            src="img/pink-logo.svg"
+            width="74"
+            height="23"
+            alt="Логотип Pink"
+          />
+        </a>
+        <a class="page-header__logo page-header__logo-tablet">
+          <img
+            src="img/header/pink-logo-tablet.svg"
+            width="145"
+            height="40"
+            alt="Логотип Pink"
+          />
+        </a>
+        <a class="page-header__logo page-header__logo-desktope">
+          <img
+            src="img/header/pink-logo-desktop.svg"
+            width="147"
+            height="40"
+            alt="Логотип Pink"
+          />
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a class="page-header__logo page-header__logo-mobile">
               <img
                 src="img/pink-logo.svg"
@@ -27,7 +57,6 @@
                 alt="Логотип Pink"
               />
             </a>
-
             <a class="page-header__logo page-header__logo-desktope">
               <img
                 src="img/header/pink-logo-desktop.svg"
@@ -36,36 +65,31 @@
                 alt="Логотип Pink"
               />
             </a>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-
-            <ul class="main-nav__list main-nav__list--closed">
-              <li class="main-nav__item main-nav__item--active">
-                <a> Главная </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="catalog.html"> Фотографии </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html"> Конкурс </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
-                  HTML ACADEMY
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a> Главная </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html"> Фотографии </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html"> Конкурс </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </nav>
+      <!-- </div> -->
 
       <section class="app">
-
-          <h2 class="visually-hidden">Ссылка на приложение</h2>
-          <p class="app__title">Взгляните на жизнь иначе!</p>
-          <div class="app__download">
-            <div class="app__wrapper container">
+        <h2 class="visually-hidden">Ссылка на приложение</h2>
+        <p class="app__title">Взгляните на жизнь иначе!</p>
+        <div class="app__download">
+          <div class="app__wrapper container">
             <a
               class="button app-button"
               href="https://www.apple.com/ru/app-store/"
@@ -103,7 +127,6 @@
             </p>
           </div>
         </div>
-        </div>
       </section>
     </header>
 
@@ -118,43 +141,41 @@
           <p class="advantages__headline">Устали от серости мегаполиса?</p>
           <p class="advantages__caption">Нам есть, что вам предложить!</p>
         </div>
-          <div class="advantages__wrap">
-            <ul class="advantages__list advantages__wrap">
-              <li class="advantages__item">
-                <h3 class="advantages__title">Поднимает настроение</h3>
-                <p class="advantages__description">
-                  Приложение позволит вам победить осеннюю хандру и депрессию
-                  буквально в несколько кликов!
-                </p>
-              </li>
-              <li class="advantages__item">
-                <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__description">
-                  Сделайте снимок и украсьте его смайликом или текстовой
-                  подписью, чтобы усилить эффект
-                </p>
-              </li>
-              <li class="advantages__item">
-                <h3 class="advantages__title">Заводит новых друзей</h3>
-                <p class="advantages__description">
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
-                  и заводите новых
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="advantages__research">
-            <p class="advantages__research-title">Эффект на 24 часа!</p>
-            <p class="advantages__research-text">
-              Британские ученые провели исследования и доказали, что
-              положительный эффект от использования приложения длится целые
-              сутки!
-            </p>
-            <a href="#" class="advantages__research-link"
-              >Узнать больше об исследовании</a
-            >
-          </div>
-
+        <div class="advantages__wrap">
+          <ul class="advantages__list advantages__wrap">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__research">
+          <p class="advantages__research-title">Эффект на 24 часа!</p>
+          <p class="advantages__research-text">
+            Британские ученые провели исследования и доказали, что положительный
+            эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="advantages__research-link"
+            >Узнать больше об исследовании</a
+          >
+        </div>
       </section>
 
       <section class="reviews">
