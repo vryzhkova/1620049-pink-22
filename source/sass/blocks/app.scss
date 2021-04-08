@@ -1,3 +1,7 @@
+.app {
+  padding-top: 29px;
+}
+
 .app__title {
   margin: 0;
   padding: 0;
@@ -7,10 +11,15 @@
   text-align: center;
 }
 
+.app-list {
+  padding-top: 20px;
+}
+
 .app__download {
   background: $app-download;
   text-align: center;
   height: 271px;
+  padding-top: 30px;
 }
 
 .app-button {
@@ -29,13 +38,15 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  margin-top: 31px;
+  margin-bottom: 38px;
 }
 
-@media (min-width: $tablet-width) {
-  .app__download {
-    display: none;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .app__download {
+//     display: none;
+//   }
+// }
 
 // @media (min-width: $desktop-width) {
 //   .app__download {

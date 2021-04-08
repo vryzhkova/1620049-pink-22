@@ -8,11 +8,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="header-wrap">
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <div class="page-header__wrap">
+        <nav class="page-header__main-nav main-nav">
           <div class="main-nav__wrapper">
             <a class="page-header__logo page-header__logo-mobile">
               <img
@@ -39,6 +36,9 @@
                 alt="Логотип Pink"
               />
             </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
 
             <ul class="main-nav__list main-nav__list--closed">
               <li class="main-nav__item main-nav__item--active">
@@ -61,10 +61,11 @@
       </div>
 
       <section class="app">
-        <div class="app__wrapper">
+
           <h2 class="visually-hidden">Ссылка на приложение</h2>
           <p class="app__title">Взгляните на жизнь иначе!</p>
           <div class="app__download">
+            <div class="app__wrapper container">
             <a
               class="button app-button"
               href="https://www.apple.com/ru/app-store/"
@@ -102,6 +103,7 @@
             </p>
           </div>
         </div>
+        </div>
       </section>
     </header>
 
@@ -115,8 +117,9 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__headline">Устали от серости мегаполиса?</p>
           <p class="advantages__caption">Нам есть, что вам предложить!</p>
-          <div class="advantages-wrap">
-            <ul class="advantages__list">
+        </div>
+          <div class="advantages__wrap">
+            <ul class="advantages__list advantages__wrap">
               <li class="advantages__item">
                 <h3 class="advantages__title">Поднимает настроение</h3>
                 <p class="advantages__description">
@@ -151,7 +154,7 @@
               >Узнать больше об исследовании</a
             >
           </div>
-        </div>
+
       </section>
 
       <section class="reviews">
