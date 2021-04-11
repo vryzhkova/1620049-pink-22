@@ -10,62 +10,33 @@
     <header class="page-header">
       <!-- <div class="page-header__wrap"> -->
       <nav class="page-header__main-nav main-nav">
-        <!-- <div class="main-nav__wrapper"> -->
-        <!-- <a class="page-header__logo page-header__logo-mobile">
-          <img
-            src="img/pink-logo.svg"
-            width="74"
-            height="23"
-            alt="Логотип Pink"
-          />
-        </a>
-        <a class="page-header__logo page-header__logo-tablet">
-          <img
-            src="img/header/pink-logo-tablet.svg"
-            width="145"
-            height="40"
-            alt="Логотип Pink"
-          />
-        </a>
-        <a class="page-header__logo page-header__logo-desktope">
-          <img
-            src="img/header/pink-logo-desktop.svg"
-            width="147"
-            height="40"
-            alt="Логотип Pink"
-          />
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button> -->
+        <div class="main-nav__logo_wrapper">
+          <a class="page-header__logo page-header__logo-mobile">
+            <img
+              src="img/pink-logo.svg"
+              width="74"
+              height="23"
+              alt="Логотип Pink"
+            />
+            <img
+              src="img/header/pink-logo-tablet.svg"
+              width="145"
+              height="40"
+              alt="Логотип Pink"
+            />
+            <img
+              src="img/header/pink-logo-desktop.svg"
+              width="147"
+              height="40"
+              alt="Логотип Pink"
+            />
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="page-header__logo page-header__logo-mobile">
-              <img
-                src="img/pink-logo.svg"
-                width="74"
-                height="23"
-                alt="Логотип Pink"
-              />
-            </a>
-            <a class="page-header__logo page-header__logo-tablet">
-              <img
-                src="img/header/pink-logo-tablet.svg"
-                width="145"
-                height="40"
-                alt="Логотип Pink"
-              />
-            </a>
-            <a class="page-header__logo page-header__logo-desktope">
-              <img
-                src="img/header/pink-logo-desktop.svg"
-                width="147"
-                height="40"
-                alt="Логотип Pink"
-              />
-            </a>
-          </li>
           <li class="main-nav__item main-nav__item--active">
             <a> Главная </a>
           </li>
@@ -87,7 +58,7 @@
 
       <section class="app">
         <h2 class="visually-hidden">Ссылка на приложение</h2>
-        <p class="app__title">Взгляните на жизнь иначе!</p>
+        <p class="app__title container">Взгляните на жизнь иначе!</p>
         <div class="app__download">
           <div class="app__wrapper container">
             <a
@@ -136,13 +107,13 @@
       </h1>
 
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__headline">Устали от серости мегаполиса?</p>
           <p class="advantages__caption">Нам есть, что вам предложить!</p>
         </div>
         <div class="advantages__wrap">
-          <ul class="advantages__list advantages__wrap">
+          <ul class="advantages__list container">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">
@@ -179,7 +150,7 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="container slider">
           <h2 class="visually-hidden">Отзывы пользователей приложения</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
@@ -285,32 +256,34 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
+        <!-- <div class="contacts__wrapper"> -->
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="container">
           <p class="contacts__title">Остались вопросы?</p>
           <p class="contacts__title">Свяжитесь с нами!</p>
-          <div class="contacts__content">
-            <ul class="contacts-list">
-              <li class="contacts-item">
-                <p class="contacts-list__title">Звоните:</p>
-                <a class="contacts__phone" href="tel:+78125556666">
-                  <span class="contacts__phone-mobile">Тел.:</span> +7 (812)
-                  555-66-66
-                </a>
-              </li>
-              <li class="contacts-item">
-                <p class="contacts-list__title">Пишите:</p>
-                <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-                  mail@htmlacademy.ru
-                </a>
-              </li>
-              <li class="contacts-item">
-                <p class="contacts-list__title">Приезжайте в гости:</p>
-                <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
-              </li>
-            </ul>
-          </div>
         </div>
+        <div class="contacts__content container">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <p class="contacts-list__title">Звоните:</p>
+              <a class="contacts__phone" href="tel:+78125556666">
+                <span class="contacts__phone-mobile">Тел.:</span> +7 (812)
+                555-66-66
+              </a>
+            </li>
+            <li class="contacts-item">
+              <p class="contacts-list__title">Пишите:</p>
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+            <li class="contacts-item">
+              <p class="contacts-list__title">Приезжайте в гости:</p>
+              <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
         <div class="contacts__map">
           <img
             class="contacts__map-image"
@@ -324,7 +297,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper social">
+      <div class="container social">
         <div class="page-footer__social">
           <a href="#"
             ><img

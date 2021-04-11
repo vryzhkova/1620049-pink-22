@@ -7,8 +7,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
+  // text-align: center;
   color: $text-title;
+}
+
+.reviews__list,
+.slider__list {
+  text-align: center;
+}
+
+.reviews__toggles {
+  text-align: center;
 }
 
 .reviews__work {
@@ -21,8 +30,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  text-align: center;
+  // text-align: center;
   color: $text-base;
+}
+
+.reviews__author-block {
+  // text-align: center;
 }
 
 @media (min-width: $tablet-width) {
