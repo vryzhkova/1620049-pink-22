@@ -1,22 +1,35 @@
+.app {
+  padding-top: 29px;
+}
+
 .app__title {
-  margin: 0;
+  // margin: 0;
   padding: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+  max-width: 300px;
+}
+
+.app-list {
+  padding-top: 20px;
 }
 
 .app__download {
-  background: $app-download;
+  background-color: $app-download;
   text-align: center;
   height: 271px;
+  padding-top: 30px;
 }
 
 .app-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
 }
 
 .app__slogan {
@@ -26,4 +39,18 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  margin-top: 31px;
+  margin-bottom: 38px;
 }
+
+// @media (min-width: $tablet-width) {
+//   .app__download {
+//     display: none;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .app__download {
+//     display: none;
+//   }
+// }

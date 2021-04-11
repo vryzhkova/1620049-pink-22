@@ -7,8 +7,11 @@ $text-contacts: #d22856;
 $text-form: #d22856;
 
 //Elements
+$background-base: #283645;
+$background-white: #ffffff;
 $button-color: #ffffff;
 $header-wrap: #000000;
+$header-line: rgba(255, 255, 255, 0.15);
 $app-download: #1d2631;
 $table-background: #283645;
 $table-grid: #e5e5e5;
@@ -17,4 +20,11 @@ $button-green: #2aab6d;
 $form-border: #e5e5e5;
 $background-panorama: #d22856;
 $background-gallery: #f2f2f2;
+$background-advantages: #f2f2f2;
 $button-rose: #d22856;
+
+//Viewports
+
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width-only: 759px;

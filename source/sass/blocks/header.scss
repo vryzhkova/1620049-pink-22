@@ -1,6 +1,36 @@
 .page-header {
+  position: relative;
   background-image: url("../img/header/back-desktop.jpg");
   color: $text-header;
   margin: 0 auto;
-  padding: 0 20px;
+  // padding: 0 20px;
+  background-color: $background-base;
 }
+
+.page-header__wrap {
+  background: $header-wrap;
+  opacity: 0.3;
+  height: 66px;
+}
+
+.page-header__main-nav {
+  margin: 0 auto;
+}
+
+// .page-header__logo {
+//   display: block;
+//   width: 74px;
+//   height: 23px;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .page-header {
+//     height: 729px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .page-header {
+//     height: 853px;
+//   }
+// }
