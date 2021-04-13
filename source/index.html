@@ -8,23 +8,25 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <!-- <div class="page-header__wrap"> -->
       <nav class="page-header__main-nav main-nav">
-        <div class="main-nav__logo_wrapper">
-          <a class="page-header__logo page-header__logo-mobile">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
             <img
+              class="page-header__logo-mobile"
               src="img/pink-logo.svg"
               width="74"
               height="23"
               alt="Логотип Pink"
             />
             <img
+              class="page-header__logo-tablet"
               src="img/header/pink-logo-tablet.svg"
               width="145"
               height="40"
               alt="Логотип Pink"
             />
             <img
+              class="page-header__logo-desktop"
               src="img/header/pink-logo-desktop.svg"
               width="147"
               height="40"
@@ -38,23 +40,24 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a> Главная </a>
+            <a class="main-nav__link"> Главная </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html"> Фотографии </a>
+            <a class="main-nav__link" href="catalog.html"> Фотографии </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html"> Конкурс </a>
+            <a class="main-nav__link" href="form.html"> Конкурс </a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
+            <a
+              class="main-nav__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
               HTML Academy
             </a>
           </li>
         </ul>
-        <!-- </div> -->
       </nav>
-      <!-- </div> -->
 
       <section class="app">
         <h2 class="visually-hidden">Ссылка на приложение</h2>
@@ -185,66 +188,154 @@
       </section>
 
       <section class="price">
-        <div class="price-wrapper">
+        <div class="price__slider container">
           <h2 class="visually-hidden">Тарифы и стоимость</h2>
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <th class="price-table__title"></th>
-                <th class="price-table__title">
-                  БАЗА <span class="price-table__value">1,99 USD</span>
-                </th>
-                <th class="price-table__title">
-                  СТАНДАРТ <span class="price-table__value">3,99 USD</span>
-                </th>
-                <th class="price-table__title">
-                  АНЛИМ <span class="price-table__value">9,99 USD</span>
-                </th>
-              </tr>
-              <tr>
-                <td class="price-table__row price-table__row-title">
-                  Розовый фильтр
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">да</span>
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">да</span>
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">да</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__row price-table__row-title">
-                  Смайлики
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">нет</span>
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">да</span>
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">да</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__row price-table__row-title">
-                  Комментарии
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">нет</span>
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">нет</span>
-                </td>
-                <td class="price-table__row">
-                  <span class="visually-hidden">да</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="price__slider content-wrapper">
+            <table class="table-price price__table">
+              <thead>
+                <tr>
+                  <th class="table-price__header"></th>
+                  <th class="table-price__header">
+                    <span class="table-price__license-type">База</span>
+                    <span class="table-price__license-price">1,99 USD</span>
+                  </th>
+                  <th
+                    class="table-price__header table-price__header--hit"
+                    data-hit-text="Хит"
+                  >
+                    <span class="table-price__license-type">Стандарт</span>
+                    <span class="table-price__license-price">3,99 USD</span>
+                  </th>
+                  <th class="table-price__header">
+                    <span class="table-price__license-type">Анлим</span>
+                    <span class="table-price__license-price">9,99 USD</span>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="table-price__cell">Розовый фильтр</td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Розовый фильтр"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--true"
+                      >
+                        <span class="visually-hidden">Да</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Розовый фильтр"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--true"
+                      >
+                        <span class="visually-hidden">Да</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Розовый фильтр"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--true"
+                      >
+                        <span class="visually-hidden">Да</span>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table-price__cell">Смайлики</td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Смайлики"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--false"
+                      >
+                        <span class="visually-hidden">Нет</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Смайлики"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--true"
+                      >
+                        <span class="visually-hidden">Да</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Смайлики"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--true"
+                      >
+                        <span class="visually-hidden">Да</span>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table-price__cell">Комментарии</td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Комментарии"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--false"
+                      >
+                        <span class="visually-hidden">Нет</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Комментарии"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--false"
+                      >
+                        <span class="visually-hidden">Нет</span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="table-price__cell">
+                    <div
+                      class="table-price__feature"
+                      data-feature-name="Комментарии"
+                    >
+                      <span
+                        class="table-price__feature-value table-price__feature-value--true"
+                      >
+                        <span class="visually-hidden">Да</span>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p class="price__toggles">
             <button class="price__toggle" type="button">1</button>
             <button class="price__toggle price__toggle--current" type="button">

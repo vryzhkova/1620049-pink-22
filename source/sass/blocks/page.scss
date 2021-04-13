@@ -22,24 +22,42 @@
 //   height: 69px;
 // }
 
+.page-header__logo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 20px;
+  background-color: $background-base;
+}
+
 @media (min-width: $tablet-width) {
   .page-header__logo-tablet {
     display: block;
   }
 
   .page-header__logo-mobile,
-  .page-header__logo-desktope {
+  .page-header__logo-desktop {
     display: none;
+  }
+
+  .page-header__logo-wrapper {
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo-desktope {
+  .page-header__logo-desktop {
     display: block;
   }
 
   .page-header__logo-mobile,
   .page-header__logo-tablet {
     display: none;
+  }
+
+  .page-header__logo-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
   }
 }

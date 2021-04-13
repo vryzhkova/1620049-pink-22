@@ -8,3 +8,17 @@
   text-align: center;
   height: 171px;
 }
+
+@media (min-width: $tablet-width) {
+  .contest__title {
+    font-size: 50px;
+    line-height: 68px;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__title {
+    width: 747px;
+  }
+}
