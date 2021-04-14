@@ -1,37 +1,26 @@
-.contest-title-win {
+.contest__title {
   margin: 0;
   padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $text-header;
   text-align: center;
-  color: $text-base;
-}
-
-.contest-title-win__form {
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .contest-title-win {
-    font-size: 18px;
-    width: 490px;
-  }
-
-  .contest-title-win__form {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    width: 490px;
-    text-align: center;
-    color: $text-base;
+  .contest__title {
+    font-size: 50px;
+    line-height: 68px;
+    width: 620px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contest__title {
+    width: 747px;
+  }
+
   .contest-title-win {
     width: 747px;
   }

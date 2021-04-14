@@ -9,13 +9,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__social {
-    flex-direction: column;
-    justify-content: space-betweens;
-  }
-
-  .page-footer__wrapper {
+  .social {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }

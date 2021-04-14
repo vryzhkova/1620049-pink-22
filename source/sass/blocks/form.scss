@@ -2,7 +2,12 @@
   text-align: center;
   // width: 320px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+//Form__name
 
 .form__label {
   display: block;
@@ -155,7 +160,7 @@
   color: $text-base;
 }
 
-//button
+//Button
 
 .form__button {
   background: #2aab6d;
@@ -166,9 +171,12 @@
   color: #ffffff;
 }
 
+//Media
+
 @media (min-width: $tablet-width) {
   .form__achievement-wrapper {
     background-color: transparent;
+    order: 4;
   }
 
   .form__achievement {
@@ -188,25 +196,59 @@
   .form__contacts {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    order: 3;
   }
 
   .form__application-wrapper {
     background-color: transparent;
+    order: 2;
   }
 
   .form__application-form {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    // order: 2;
   }
 
   .form__feedback {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    order: 5;
+  }
+
+  .form__name {
+    order: 1;
+  }
+
+  .form__button-wrap {
+    order: 6;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contest-title-win {
     width: 747px;
+  }
+
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__name {
+    width: 430px;
+  }
+
+  .form__contacts {
+    width: 100%;
+  }
+
+  .form__application-wrapper {
+    width: 430px;
+    height: 100%;
+  }
+
+  .form__feedback {
+    width: 100%;
   }
 }
