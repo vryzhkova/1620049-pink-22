@@ -70,56 +70,64 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма заявки на конкурс</h1>
-      <section class="contest container">
+      <section class="contest">
         <div class="contest__wrapper">
-          <p class="contest-title-win">
-            Поделитесь своей историей и получите шанс выиграть ценный приз —
-            1000 миль на вашу бонусную карту!<span
-              class="contest-title-win__form"
-              >Пожалуйста, заполните форму ниже:</span
-            >
-          </p>
+          <div class="container">
+            <p class="contest-title-win">
+              Поделитесь своей историей и получите шанс выиграть ценный приз —
+              1000 миль на вашу бонусную карту!
+              <span class="contest-title-win__form"
+                >Пожалуйста, заполните форму ниже:</span
+              >
+            </p>
+          </div>
 
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <!-- Name -->
 
-            <div class="form__name">
-              <label class="form__label" for="surname">Фамилия:</label>
-              <input
-                class="form__input"
-                type="text"
-                id="surname"
-                name="surname"
-                placeholder="Укажите фамилию *"
-                required
-              />
-              <label class="form__label" for="firstname">Имя:</label>
-              <input
-                class="form__input"
-                type="text"
-                id="firstname"
-                name="name"
-                placeholder="Введите ваше имя *"
-                required
-              />
-              <label class="form__label" for="patronymic">Отчество:</label>
-              <input
-                class="form__input"
-                type="text"
-                id="patronymic"
-                name="patronymic"
-                placeholder="Ну и отчество тоже"
-              />
-            </div>
+            <fieldset class="form__name container">
+              <div class="form__name-wrap">
+                <label class="form__label" for="surname">Фамилия:</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  placeholder="Укажите фамилию *"
+                  required
+                />
+              </div>
+              <div class="form__name-wrap">
+                <label class="form__label" for="firstname">Имя:</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="firstname"
+                  name="name"
+                  placeholder="Введите ваше имя *"
+                  required
+                />
+              </div>
+              <div class="form__name-wrap">
+                <label class="form__label" for="patronymic">Отчество:</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="patronymic"
+                  name="patronymic"
+                  placeholder="Ну и отчество тоже"
+                />
+              </div>
+            </fieldset>
 
             <!-- Checkbox -->
             <div class="form__achievement-wrapper">
-              <fieldset class="form__achievement">
+              <fieldset class="form__achievement container">
                 <legend class="form__achievement-legend">
                   Ваши безбашенные достижения в путешествии
                 </legend>
                 <ul class="form__achievement-list">
-                  <li class="form__achievement-list__item">
+                  <li class="form__achievement-list-item">
                     <input
                       class="hidden"
                       type="checkbox"
@@ -129,7 +137,7 @@
                     />
                     <label for="selfie">Сделал селфи с акулой</label>
                   </li>
-                  <li class="form__achievement-list__item">
+                  <li class="form__achievement-list-item">
                     <input
                       class="hidden"
                       type="checkbox"
@@ -139,7 +147,7 @@
                     />
                     <label for="beach">Обгорел на пляже</label>
                   </li>
-                  <li class="form__achievement-list__item">
+                  <li class="form__achievement-list-item">
                     <input
                       class="hidden"
                       type="checkbox"
@@ -148,7 +156,7 @@
                     />
                     <label for="chuck">Видел Чака Норриса</label>
                   </li>
-                  <li class="form__achievement-list__item">
+                  <li class="form__achievement-list-item">
                     <input
                       class="hidden"
                       type="checkbox"
@@ -157,7 +165,7 @@
                     />
                     <label for="souvenir">Накупил сувениров</label>
                   </li>
-                  <li class="form__achievement-list__item">
+                  <li class="form__achievement-list-item">
                     <input
                       class="hidden"
                       type="checkbox"
@@ -166,7 +174,7 @@
                     />
                     <label for="tower">Удержал башню</label>
                   </li>
-                  <li class="form__achievement-list__item">
+                  <li class="form__achievement-list-item">
                     <input
                       class="hidden"
                       type="checkbox"
@@ -182,7 +190,7 @@
 
             <!--  Phone and email -->
 
-            <fieldset class="form__contacts">
+            <fieldset class="form__contacts container">
               <legend class="form__contacts-legend">
                 контактная информация
               </legend>
@@ -211,12 +219,12 @@
 
             <!--  App -->
             <div class="form__application-wrapper">
-              <fieldset class="form__application-form">
+              <fieldset class="form__application-form container">
                 <legend class="form__application-legend">
                   С каким приложением путешествовали?
                 </legend>
                 <ul class="form__application-list">
-                  <li class="form__application-list__item">
+                  <li class="form__application-list-item">
                     <input
                       class="hidden"
                       type="radio"
@@ -227,7 +235,7 @@
                     />
                     <label for="ios">Pink для iOS</label>
                   </li>
-                  <li class="form__application-list__item">
+                  <li class="form__application-list-item">
                     <input
                       class="hidden"
                       type="radio"
@@ -237,7 +245,7 @@
                     />
                     <label for="android">Pink на Android</label>
                   </li>
-                  <li class="form__application-list__item">
+                  <li class="form__application-list-item">
                     <input
                       class="hidden"
                       type="radio"
@@ -253,14 +261,14 @@
 
             <!--  Feedback -->
 
-            <fieldset class="form__feedback">
+            <fieldset class="form__feedback container">
               <legend class="form__feedback-label">Опишите свои эмоции</legend>
               <textarea
                 class="form__feedback-textarea"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"
               ></textarea>
             </fieldset>
-            <div class="form__button-wrap">
+            <div class="form__button-wrap container">
               <button type="submit" class="button form__button">
                 Отправить форму
               </button>

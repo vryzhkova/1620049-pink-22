@@ -8,6 +8,9 @@
 }
 
 //Form__name
+.form__name {
+  border: none;
+}
 
 .form__label {
   display: block;
@@ -40,8 +43,6 @@
 }
 
 .form__achievement {
-  margin: 0;
-  padding: 0;
   border: none;
 }
 
@@ -60,7 +61,7 @@
   text-align: left;
 }
 
-.form__achievement-list__item {
+.form__achievement-list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -70,8 +71,6 @@
 // Phone and email
 
 .form__contacts {
-  margin: 0;
-  padding: 0;
   border: none;
 }
 
@@ -103,8 +102,6 @@
 // App
 
 .form__application-form {
-  margin: 0;
-  padding: 0;
   border: none;
 }
 
@@ -120,7 +117,7 @@
   text-transform: uppercase;
 }
 
-.form__application-list__item {
+.form__application-list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -174,6 +171,10 @@
 //Media
 
 @media (min-width: $tablet-width) {
+  .form__name-wrap {
+    display: flex;
+  }
+
   .form__achievement-wrapper {
     background-color: transparent;
     order: 4;
@@ -226,10 +227,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contest-title-win {
-    width: 747px;
-  }
-
   .form {
     flex-direction: row;
     flex-wrap: wrap;
