@@ -1,28 +1,9 @@
-// .page-footer {
-//   display: flex;
-// }
-
 .page-footer__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   // display: flex;
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer__social {
-    flex-direction: column;
-    justify-content: space-betweens;
-  }
-
-  .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 // @media (min-width: $tablet-width) {
-//   .page-footer__social {
-//     flex-direction: column;
-//     justify-content: space-betweens;
-//   }
+
 // }

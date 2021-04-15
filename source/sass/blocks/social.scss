@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

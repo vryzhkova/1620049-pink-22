@@ -2,6 +2,14 @@
   text-align: center;
   // width: 320px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+//Form__name
+.form__name {
+  border: none;
 }
 
 .form__label {
@@ -29,11 +37,13 @@
 
 //  Checkbox
 
+.form__achievement-wrapper {
+  background-color: $form-wrap;
+  width: 100%;
+}
+
 .form__achievement {
-  margin: 0;
-  padding: 0;
   border: none;
-  background: $form-wrap;
 }
 
 .form__achievement-legend {
@@ -45,7 +55,13 @@
   // outline: none;
 }
 
-.form__achievement-list__item {
+.form__achievement-list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.form__achievement-list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -55,17 +71,19 @@
 // Phone and email
 
 .form__contacts {
-  margin: 0;
-  padding: 0;
   border: none;
 }
 
 .form__contacts-legend {
+  display: none;
+}
+
+.form__contacts-label {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  color: #d22856;
   text-transform: uppercase;
-  color: $text-form;
 }
 
 .form__contacts-input {
@@ -84,10 +102,11 @@
 // App
 
 .form__application-form {
-  margin: 0;
-  padding: 0;
   border: none;
-  background: $form-wrap;
+}
+
+.form__application-wrapper {
+  background-color: $form-wrap;
 }
 
 .form__application-legend {
@@ -98,7 +117,7 @@
   text-transform: uppercase;
 }
 
-.form__application-list__item {
+.form__application-list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -106,6 +125,10 @@
 }
 
 // Feedback
+
+.form__feedback {
+  border: none;
+}
 
 .form__feedback-label {
   font-weight: 400;
@@ -117,7 +140,7 @@
 }
 
 .form__feedback-textarea {
-  width: 276px;
+  width: 100%;
   height: 197px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -132,4 +155,97 @@
   font-size: 14px;
   line-height: 30px;
   color: $text-base;
+}
+
+//Button
+
+.form__button {
+  background: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+//Media
+
+@media (min-width: $tablet-width) {
+  .form__name-wrap {
+    display: flex;
+  }
+
+  .form__achievement-wrapper {
+    background-color: transparent;
+    order: 4;
+  }
+
+  .form__achievement {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+
+  .form__contacts-legend {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $text-form;
+  }
+
+  .form__contacts {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    order: 3;
+  }
+
+  .form__application-wrapper {
+    background-color: transparent;
+    order: 2;
+  }
+
+  .form__application-form {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    // order: 2;
+  }
+
+  .form__feedback {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    order: 5;
+  }
+
+  .form__name {
+    order: 1;
+  }
+
+  .form__button-wrap {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__name {
+    width: 430px;
+  }
+
+  .form__contacts {
+    width: 100%;
+  }
+
+  .form__application-wrapper {
+    width: 430px;
+    height: 100%;
+  }
+
+  .form__feedback {
+    width: 100%;
+  }
 }

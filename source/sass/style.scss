@@ -6,7 +6,7 @@
 
 //Blocks
 
-@import "./blocks/header.scss";
+@import "./blocks/page-header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/button.scss";
@@ -16,12 +16,13 @@
 @import "./blocks/reviews.scss";
 @import "./blocks/price.scss";
 @import "./blocks/price-table.scss";
+@import "./blocks/table-price.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/contacts-list.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/form.scss";
-@import "./blocks/contest-title.scss";
+@import "./blocks/contest-title-win.scss";
 @import "./blocks/contest.scss";
 @import "./blocks/contacts-label.scss";
 @import "./blocks/failed.scss";
@@ -30,3 +31,4 @@
 @import "./blocks/gallery.scss";
 @import "./blocks/panorama.scss";
 @import "./blocks/filter.scss";
+@import "./blocks/social.scss";
