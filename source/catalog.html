@@ -8,44 +8,59 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="header-wrap">
-        <a href="index.html" class="page-header__logo">
-          <img
-            src="img/pink-logo.svg"
-            width="74"
-            height="23"
-            alt="Логотип Pink"
-          />
-        </a>
-        <nav class="main-nav">
+      <nav class="page-header__main-nav main-nav">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <img
+              class="page-header__logo-mobile"
+              src="img/pink-logo.svg"
+              width="74"
+              height="23"
+              alt="Логотип Pink"
+            />
+            <img
+              class="page-header__logo-tablet"
+              src="img/header/pink-logo-tablet.svg"
+              width="145"
+              height="40"
+              alt="Логотип Pink"
+            />
+            <img
+              class="page-header__logo-desktop"
+              src="img/header/pink-logo-desktop.svg"
+              width="147"
+              height="40"
+              alt="Логотип Pink"
+            />
+          </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a href="index.html"> Главная </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#"> Фотографии </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html"> Конкурс </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
-                  HTML ACADEMY
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div class="photo">
-        <div class="photo__wrapper">
-          <h2 class="photo__title">Фотографии пользователей</h2>
         </div>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html"> Главная </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html"> Фотографии </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link"> Конкурс </a>
+          </li>
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="photo container">
+        <h2 class="photo__title">Фотографии пользователей</h2>
       </div>
     </header>
 
@@ -68,11 +83,12 @@
               height="137"
               alt="Фото - панорама дня: подвестной мост"
             />
-
-            <blockquote class="panorama__post-item">
+            <blockquote class="panorama__post-item container">
               <div class="panorama__author-info">
-                <p class="panorama__author-name">Анна</p>
-                <span class="panorama__date">(5 минут назад)</span>
+                <div class="panorama__author-wrap">
+                  <p class="panorama__author-name">Анна</p>
+                  <span class="panorama__date">(5 минут назад)</span>
+                </div>
                 <p class="panorama__text">
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите
                   прямую трансляцию в перископе, задавайте свои вопросы!
@@ -96,7 +112,7 @@
             </blockquote>
           </div>
 
-          <ul class="gallery__list">
+          <ul class="gallery__list container">
             <li class="gallery__list-item">
               <img
                 class="gallery__list-image"
@@ -106,8 +122,10 @@
                 height="180"
               />
               <div class="gallery__list-authorinfo">
-                <p class="gallery__list-author-name">Левон</p>
-                <span class="gallery__list-time">(5 часов назад)</span>
+                <div class="gallery__author-wrap">
+                  <p class="gallery__list-author-name">Левон</p>
+                  <span class="gallery__list-time">(5 часов назад)</span>
+                </div>
                 <p class="gallery__list-text">
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
@@ -137,8 +155,10 @@
                 height="180"
               />
               <div class="gallery__list-authorinfo">
-                <p class="gallery__list-author-name">Антон</p>
-                <span class="gallery__list-time">(12 часов назад)</span>
+                <div class="gallery__author-wrap">
+                  <p class="gallery__list-author-name">Антон</p>
+                  <span class="gallery__list-time">(12 часов назад)</span>
+                </div>
                 <p class="gallery__list-text">Соседи будут рады!</p>
                 <button class="gallery__list-button-heart" type="button">
                   <svg
@@ -166,8 +186,10 @@
                 height="180"
               />
               <div class="gallery__list-authorinfo">
-                <p class="gallery__list-author-name">Борис</p>
-                <span class="gallery__list-time">(20 часов назад)</span>
+                <div class="gallery__author-wrap">
+                  <p class="gallery__list-author-name">Борис</p>
+                  <span class="gallery__list-time">(20 часов назад)</span>
+                </div>
                 <p class="gallery__list-text">
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
@@ -197,8 +219,10 @@
                 height="180"
               />
               <div class="gallery__list-authorinfo">
-                <p class="gallery__list-author-name">Сергей</p>
-                <span class="gallery__list-time">(25 часов назад)</span>
+                <div class="gallery__author-wrap">
+                  <p class="gallery__list-author-name">Сергей</p>
+                  <span class="gallery__list-time">(25 часов назад)</span>
+                </div>
                 <p class="gallery__list-text">Самая кубанская в мире!</p>
                 <button class="gallery__list-button-heart" type="button">
                   <svg
@@ -226,8 +250,10 @@
                 height="180"
               />
               <div class="gallery__list-authorinfo">
-                <p class="gallery__list-author-name">Максим</p>
-                <span class="gallery__list-time">(40 часов назад)</span>
+                <div class="gallery__author-wrap">
+                  <p class="gallery__list-author-name">Максим</p>
+                  <span class="gallery__list-time">(40 часов назад)</span>
+                </div>
                 <p class="gallery__list-text">Где снег-то?</p>
                 <button class="gallery__list-button-heart" type="button">
                   <svg
@@ -255,8 +281,10 @@
                 height="180"
               />
               <div class="gallery__list-authorinfo">
-                <p class="gallery__list-author-name">Надежда</p>
-                <span class="gallery__list-time">(45 часов назад)</span>
+                <div class="gallery__author-wrap">
+                  <p class="gallery__list-author-name">Надежда</p>
+                  <span class="gallery__list-time">(45 часов назад)</span>
+                </div>
                 <p class="gallery__list-text">Всем GM и взаимные лайки!</p>
                 <button class="gallery__list-button-heart" type="button">
                   <svg
@@ -276,16 +304,19 @@
               </div>
             </li>
           </ul>
-          <p class="gallery__title">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-          </p>
+          <div class="gallery__headline container">
+            <p class="gallery__title">Затмите их всех!</p>
+            <p class="gallery__title-text">
+              Выкладывайте все, что накопилось в телефоне!
+            </p>
+          </div>
         </section>
 
         <section class="filter">
           <h2 class="visually-hidden">
             Отредактировать и запостить новую фотографию
           </h2>
-          <div class="filter__wrapper">
+          <div class="container">
             <form class="filter__form">
               <label for="form-file"
                 ><span class="visually-hidden">Выберите фотографию</span></label
@@ -297,65 +328,71 @@
                 name="form-file"
               />
               <div class="filter__tools">
-                <button>
-                  <img
-                    src="img/catalog/crop.svg"
-                    alt="Иконка: вырезать"
-                    class="filter__tools-image"
-                    width="44"
-                    height="44"
-                  />
-                </button>
+                <div class="filter__tools-instrument filter__tools-crop">
+                  <button class="filter__tools-button">
+                    <img
+                      src="img/catalog/crop.svg"
+                      alt="Иконка: вырезать"
+                      class="filter__tools-image"
+                      width="44"
+                      height="44"
+                    />
+                  </button>
 
-                <!-- Range -->
-                <fieldset class="filter-item">
-                  <div class="range-filter">
-                    <div class="scale">
-                      <div class="bar"></div>
+                  <!-- Range -->
+                  <fieldset class="filter-item">
+                    <div class="range-filter">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle" tabindex="0"></div>
                     </div>
-                    <div class="toggle" tabindex="0"></div>
-                  </div>
-                </fieldset>
+                  </fieldset>
+                </div>
 
-                <button>
-                  <img
-                    src="img/catalog/fill.svg"
-                    alt="Иконка: заливка"
-                    class="filter__tools-image"
-                    width="48"
-                    height="43"
-                  />
-                </button>
+                <div class="filter__tools-instrument filter__tools-fill">
+                  <button class="filter__tools-button">
+                    <img
+                      src="img/catalog/fill.svg"
+                      alt="Иконка: заливка"
+                      class="filter__tools-image"
+                      width="48"
+                      height="43"
+                    />
+                  </button>
 
-                <!-- Range -->
-                <fieldset class="visually-hidden filter-item">
-                  <div class="range-filter">
-                    <div class="scale">
-                      <div class="bar"></div>
+                  <!-- Range -->
+                  <fieldset class="visually-hidden filter-item">
+                    <div class="range-filter">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle" tabindex="0"></div>
                     </div>
-                    <div class="toggle" tabindex="0"></div>
-                  </div>
-                </fieldset>
+                  </fieldset>
+                </div>
 
-                <button>
-                  <img
-                    src="img/catalog/contrast.svg"
-                    alt="Иконка: контраст"
-                    class="filter__tools-image"
-                    width="32"
-                    height="32"
-                  />
-                </button>
+                <div class="filter__tools-instrument filter__tools-contrast">
+                  <button class="filter__tools-button">
+                    <img
+                      src="img/catalog/contrast.svg"
+                      alt="Иконка: контраст"
+                      class="filter__tools-image"
+                      width="32"
+                      height="32"
+                    />
+                  </button>
 
-                <!-- Range -->
-                <fieldset class="visually-hidden filter-item">
-                  <div class="range-filter">
-                    <div class="scale">
-                      <div class="bar"></div>
+                  <!-- Range -->
+                  <fieldset class="visually-hidden filter-item">
+                    <div class="range-filter">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle" tabindex="0"></div>
                     </div>
-                    <div class="toggle" tabindex="0"></div>
-                  </div>
-                </fieldset>
+                  </fieldset>
+                </div>
               </div>
 
               <div class="filter__button">
@@ -373,60 +410,60 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <a href="index.html"
+      <div class="container social">
+        <div class="page-footer__social">
+          <a href="#"
             ><img
               src="img/footer/copyright-logo.svg"
               width="145"
               height="40"
               alt="Логотип Pink"
           /></a>
-          <ul class="social__list">
-            <li class="social__item">
-              <a
-                class="social__link social__link--twitter"
-                href="#"
-                aria-label="twitter"
-              >
-                <img
-                  src="img/footer/twitter.svg"
-                  width="18"
-                  height="14"
-                  alt="twitter-logo"
-                />
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--facebook"
-                href="#"
-                aria-label="Фейсбук"
-              >
-                <img
-                  src="img/footer/facebook.svg"
-                  width="9"
-                  height="18"
-                  alt="facebook-logo"
-                />
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--youtube"
-                href="#"
-                aria-label="Youtube"
-              >
-                <img
-                  src="img/footer/youtube.svg"
-                  width="15"
-                  height="13"
-                  alt="youtube-logo"
-                />
-              </a>
-            </li>
-          </ul>
         </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a
+              class="social__link social__link--twitter"
+              href="#"
+              aria-label="twitter"
+            >
+              <img
+                src="img/footer/twitter.svg"
+                width="18"
+                height="14"
+                alt="twitter-logo"
+              />
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--facebook"
+              href="#"
+              aria-label="Фейсбук"
+            >
+              <img
+                src="img/footer/facebook.svg"
+                width="9"
+                height="18"
+                alt="facebook-logo"
+              />
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--youtube"
+              href="#"
+              aria-label="Youtube"
+            >
+              <img
+                src="img/footer/youtube.svg"
+                width="15"
+                height="13"
+                alt="youtube-logo"
+              />
+            </a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a

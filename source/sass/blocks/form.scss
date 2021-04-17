@@ -7,6 +7,13 @@
   justify-content: space-around;
 }
 
+.form__fieldset {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
+}
+
 //Form__name
 .form__name {
   border: none;
@@ -230,6 +237,9 @@
   .form {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 960px;
+    padding: 0 10px;
   }
 
   .form__name {
@@ -240,9 +250,17 @@
     width: 100%;
   }
 
+  .form__application-form {
+    width: 432px;
+  }
+
   .form__application-wrapper {
     width: 430px;
     height: 100%;
+  }
+
+  .form__achievement {
+    width: 100%;
   }
 
   .form__feedback {
