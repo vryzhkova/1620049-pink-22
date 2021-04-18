@@ -20,6 +20,7 @@
 }
 
 .gallery__list-authorinfo {
+  margin: 0;
   padding-top: 25px;
   padding-left: 17px;
   padding-bottom: 26px;
@@ -34,6 +35,13 @@
   font-size: 14px;
   line-height: 24px;
   color: $text-base;
+  min-height: 48px;
+}
+
+.gallery__list-button-wrap {
+  display: flex;
+
+  align-items: baseline;
 }
 
 .gallery__list-button-heart {
@@ -59,6 +67,7 @@
 
 .gallery__list-image {
   width: 100%;
+  display: block;
 }
 
 .gallery__list-author-name {
@@ -78,6 +87,10 @@
   color: $text-base;
 }
 
+.gallery__author-wrap {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .gallery__title {
     font-size: 18px;
@@ -93,6 +106,11 @@
   .gallery__headline {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .gallery__list-button-wrap {
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
 }
 

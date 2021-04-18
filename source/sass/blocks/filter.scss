@@ -5,6 +5,7 @@
 
 .filter__tools {
   display: flex;
+  flex-direction: column;
 }
 
 .filter__tools-instrument {
@@ -47,22 +48,22 @@
   border: none;
 }
 
-.range-filter {
+.filter__range-filter {
   position: relative;
 }
 
-.scale {
+.filter__scale {
   width: 240px;
   height: 2px;
   background: #283645;
 }
 
-.bar {
+.filter__bar {
   width: 65%;
   margin-left: 0%;
 }
 
-.toggle {
+.filter__toggle {
   position: absolute;
   top: -7px;
   width: 14px;
