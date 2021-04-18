@@ -3,13 +3,14 @@
   width: 100%;
 }
 
-.filter__wrapper {
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .filter__tools {
   display: flex;
+  flex-direction: column;
+}
+
+.filter__tools-instrument {
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter__button-post {
@@ -23,4 +24,60 @@
   line-height: 18px;
   color: $button-rose;
   text-align: center;
+}
+
+.filter__button-cancel {
+  border: 3px solid #283645;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645;
+  opacity: 0.1;
+  text-align: center;
+}
+
+.filter__tools-button {
+  border: none;
+}
+
+.filter-item {
+  border: none;
+}
+
+.filter__range-filter {
+  position: relative;
+}
+
+.filter__scale {
+  width: 240px;
+  height: 2px;
+  background: #283645;
+}
+
+.filter__bar {
+  width: 65%;
+  margin-left: 0%;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 50%;
+  left: 80%;
+}
+
+@media (min-width: $tablet-width) {
+  .filter__tools {
+    display: flex;
+    flex-direction: column;
+  }
 }
