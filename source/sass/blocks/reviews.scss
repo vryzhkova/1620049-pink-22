@@ -3,11 +3,21 @@
   padding: 0 20px;
 }
 
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
 .reviews__author-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  // text-align: center;
+  font-style: normal;
   color: $text-title;
 }
 
@@ -21,6 +31,15 @@
 }
 
 .reviews__work {
+  margin: 0;
+  padding: 0;
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews-button-item {
   display: none;
 }
 
@@ -30,12 +49,23 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  // text-align: center;
+  width: 280px;
   color: $text-base;
 }
 
-.reviews__author-block {
-  // text-align: center;
+.slider__toggle {
+  border: none;
+  border-radius: 50%;
+  background: #283645;
+  opacity: 0.3;
+  width: 6px;
+  height: 6px;
+}
+
+.slider__toggle--current {
+  background: #ffffff;
+  border: 3px solid #283645;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,17 +73,38 @@
     display: block;
   }
 
-  .reviews__author-block {
-    order: 2;
+  .reviews__author-name {
+    font-size: 20px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    width: 620px;
+    order: -1;
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .reviews__work {
-//     display: block;
-//   }
+@media (min-width: $desktop-width) {
+  .reviews {
+    background-image: url("../img/advantages/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 79px 63px;
+  }
 
-//   .reviews__author-block {
-//     order: 2;
-//   }
-// }
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__work {
+    font-size: 18px;
+  }
+
+  .reviews__text {
+    width: 688px;
+  }
+
+  .reviews-button-item {
+    display: block;
+  }
+}

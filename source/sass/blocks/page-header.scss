@@ -1,6 +1,9 @@
 .page-header {
   position: relative;
   background-image: url("../img/header/back-desktop.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 50% 256px;
+  // background-size: 100% 853px;
   color: $text-header;
   margin: 0 auto;
   // padding: 0 20px;
@@ -31,11 +34,20 @@
   height: 23px;
 }
 
+.page-header__logo-mobile {
+  width: 74px;
+  height: 23px;
+}
+
 .page-header__logo-tablet {
+  width: 145px;
+  height: 40px;
   display: none;
 }
 
 .page-header__logo-desktop {
+  width: 147px;
+  height: 40px;
   display: none;
 }
 
@@ -64,6 +76,7 @@
 
   .page-header__logo-desktop {
     display: block;
+    margin-left: 130px;
   }
 
   .page-header__logo-mobile,
