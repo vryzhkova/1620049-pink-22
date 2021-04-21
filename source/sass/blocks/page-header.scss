@@ -1,13 +1,10 @@
 .page-header {
   position: relative;
   background-image: url("../img/header/back-desktop.jpg");
-  // background-repeat: no-repeat;
-  // background-position: 50% 256px;
-  // background-size: 100% 853px;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $text-header;
   margin: 0 auto;
-  // padding: 0 20px;
-  // background-color: $background-base;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -68,15 +65,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__main-nav-wrap {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header__main-nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3);
+    // align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
+    background-color: transparent;
+    // background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__logo-desktop {
     display: block;
-    margin-left: 130px;
   }
 
   .page-header__logo-mobile,

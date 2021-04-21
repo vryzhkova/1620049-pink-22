@@ -1,5 +1,15 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social__list {
   display: flex;
+}
+
+.social__item {
+  margin-right: 50px;
 }
 
 @media (min-width: $tablet-width) {

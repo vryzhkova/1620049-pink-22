@@ -6,10 +6,14 @@
 
 .price__toggles {
   text-align: center;
+  padding-top: 45px;
 }
 
 .price__toggle {
+  padding: 0;
+  margin-right: 19px;
   border: none;
+  box-sizing: content-box;
   border-radius: 50%;
   background: #283645;
   opacity: 0.3;
@@ -33,4 +37,10 @@
   overflow: hidden;
   line-height: 30px;
   // text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .price__toggle {
+    display: none;
+  }
 }
