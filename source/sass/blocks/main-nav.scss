@@ -1,6 +1,6 @@
-.main-nav {
-  // height: 325px;
-}
+// .main-nav {
+//   height: 325px;
+// }
 
 .main-nav__item a {
   color: $text-header;
@@ -67,10 +67,16 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    width: 622px;
+    justify-content: flex-start;
+    // width: 622px;
     border-top: 0;
-    line-height: 18px;
     background-color: transparent;
+    box-sizing: border-box;
+    margin: 0 auto;
+    // width: 960px;
+    padding: 0 10px;
+    // padding-left: 173px;
+    padding-top: 35px;
   }
 
   .main-nav__item {
@@ -79,10 +85,16 @@
     border: 0;
   }
 
-  .main-nav__link {
-    padding: 0;
+  .main-nav__item a {
     font-weight: 400;
     text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 79px;
+  }
+
+  .main-nav__link {
+    padding: 0;
   }
 
   .main-nav__toggle {

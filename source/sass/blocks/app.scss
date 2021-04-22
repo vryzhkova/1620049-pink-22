@@ -1,10 +1,15 @@
 .app {
+  background-image: url("../img/header/phone-screen.png");
+  background-position: 5px 160px;
+  background-size: 320px 286px;
+  background-repeat: no-repeat;
   padding-top: 29px;
 }
 
 .app__title {
   // margin: 0;
   padding: 0;
+  padding-bottom: 310px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -12,18 +17,25 @@
   max-width: 300px;
 }
 
-.app-list {
-  padding-top: 20px;
+.app__list {
+  display: flex;
+  // justify-content: space-around;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.download-app {
+  margin-right: 35px;
 }
 
 .app__download {
-  background-color: $app-download;
   text-align: center;
-  height: 271px;
   padding-top: 30px;
 }
 
 .app-button {
+  display: inline-block;
+  padding: 13px 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -35,22 +47,61 @@
 .app__slogan {
   margin: 0;
   padding: 0;
+  padding-top: 31px;
+  padding-bottom: 38px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  margin-top: 31px;
-  margin-bottom: 38px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .app__download {
-//     display: none;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .app {
+    background-image: url("../img/header/phone-screen-tablet.png");
+    background-position: 14px 116px;
+    background-size: 660px 545px;
+  }
 
-// @media (min-width: $desktop-width) {
-//   .app__download {
-//     display: none;
-//   }
-// }
+  .app__content-wrapper {
+    width: 300px;
+  }
+
+  .app__download {
+    display: flex;
+    background-color: transparent;
+    width: 340px;
+  }
+
+  .app__title {
+    font-size: 40px;
+    line-height: 120%;
+    width: 247px;
+    padding-bottom: 39px;
+  }
+
+  .app__slogan {
+    font-size: 18px;
+    padding-bottom: 119px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app {
+    background-image: url("../img/header/phone-screen-desktop.png");
+    background-position: 60px 108px;
+    background-size: 1050px 645px;
+  }
+
+  .app__download {
+    background-color: transparent;
+  }
+
+  .app__title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .app__slogan {
+    padding-bottom: 130px;
+  }
+}
