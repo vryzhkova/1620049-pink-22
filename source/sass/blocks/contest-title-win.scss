@@ -1,6 +1,8 @@
 .contest-title-win {
   margin: 0;
   padding: 0;
+  padding-top: 54px;
+  padding-bottom: 55px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -16,6 +18,8 @@
   .contest-title-win {
     font-size: 18px;
     width: 490px;
+    padding-top: 100px;
+    padding-bottom: 82px;
   }
 
   .contest-title-win__form {
@@ -33,7 +37,8 @@
 
 @media (min-width: $desktop-width) {
   .contest-title-win {
-    width: 747px;
+    width: 760px;
+    padding-bottom: 89px;
   }
 
   .contest-title-win__form {
