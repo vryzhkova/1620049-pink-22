@@ -256,7 +256,12 @@
 }
 
 .form__feedback-textarea::placeholder {
-  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
 }
 
 .form__helper-text {
