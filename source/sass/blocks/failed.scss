@@ -1,12 +1,26 @@
 .failed {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
   width: 320px;
   height: 289px;
   text-align: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
+  box-sizing: border-box;
+
+  background: #ffffff;
 }
 
 .failed__title {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  margin-top: 44px;
+  width: 329px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -14,6 +28,10 @@
 }
 
 .failed__text {
+  padding: 0;
+  margin: 0 auto;
+  width: 317px;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -24,10 +42,15 @@
   background: $button-green;
   border: 2px solid $button-green;
   border-radius: 1px;
+  width: 296px;
+  height: 59px;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: $button-color;
+  text-transform: uppercase;
+  padding: 23px 134px 23px 135px;
 }
 
 @media (min-width: $tablet-width) {

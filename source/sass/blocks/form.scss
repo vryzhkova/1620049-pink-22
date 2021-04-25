@@ -1,7 +1,7 @@
 .form {
   text-align: center;
   // width: 320px;
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,12 +15,15 @@
 }
 
 //Form__name
+
 .form__name {
   border: none;
 }
 
 .form__label {
   display: block;
+  padding-left: 20px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -30,8 +33,9 @@
 }
 
 .form__input {
-  // width: 276px;
   height: 59px;
+  padding-left: 20px;
+  margin-bottom: 29px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -40,6 +44,7 @@
   border: 2px solid $form-border;
   border-radius: 1px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 //  Checkbox
@@ -59,7 +64,9 @@
   line-height: 18px;
   color: $text-form;
   text-transform: uppercase;
-  // outline: none;
+  padding-top: 42px;
+  padding-bottom: 44px;
+  width: 218px;
 }
 
 .form__achievement-list {
@@ -73,12 +80,54 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-base;
+  padding-bottom: 69px;
+}
+
+.form__achievement-label-checkbox {
+  position: relative;
+  padding-left: 69px;
+  cursor: pointer;
+}
+
+.form__achievement-label-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.form__achievement-label-checkbox::after {
+  content: none;
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__achievement-checkbox:checked + .form__achievement-label-checkbox::after {
+  content: "";
 }
 
 // Phone and email
 
+.form__contacts-list {
+  padding-left: 0;
+  margin: 0;
+}
+
 .form__contacts {
   border: none;
+  padding-top: 42px;
 }
 
 .form__contacts-legend {
@@ -86,6 +135,10 @@
 }
 
 .form__contacts-label {
+  padding-left: 20px;
+  padding-bottom: 17px;
+  text-align-last: left;
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -94,9 +147,10 @@
 }
 
 .form__contacts-input {
-  // width: 276px;
-  height: 59px;
   width: 100%;
+  margin-bottom: 29px;
+  padding-left: 20px;
+  height: 59px;
   text-align: left;
   font-weight: 400;
   font-size: 18px;
@@ -104,9 +158,15 @@
   color: $text-base;
   border: 2px solid $form-border;
   border-radius: 1px;
+  box-sizing: border-box;
 }
 
 // App
+
+.form__application-list {
+  padding-left: 0;
+  margin: 0;
+}
 
 .form__application-form {
   border: none;
@@ -117,6 +177,11 @@
 }
 
 .form__application-legend {
+  padding-top: 42px;
+  padding-bottom: 52px;
+  padding-right: 25px;
+  padding-left: 25px;
+  width: 180px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -125,16 +190,51 @@
 }
 
 .form__application-list-item {
+  text-align: left;
+  margin-bottom: 62px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: $text-base;
 }
 
+.form__application-label {
+  position: relative;
+  padding-left: 70px;
+}
+
+.form__application-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -6px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form__application-label::after {
+  content: none;
+  position: absolute;
+  left: 13px;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.form__application-checkbox:checked + .form__application-label::after {
+  content: "";
+}
+
 // Feedback
 
 .form__feedback {
   border: none;
+  margin-top: 42px;
 }
 
 .form__feedback-label {
@@ -144,10 +244,14 @@
   text-transform: uppercase;
   color: $text-form;
   display: block;
+  margin-bottom: 22px;
 }
 
 .form__feedback-textarea {
   width: 100%;
+  padding-top: 22px;
+  padding-right: 25px;
+  padding-left: 20px;
   height: 197px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -155,6 +259,16 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-base;
+  box-sizing: border-box;
+}
+
+.form__feedback-textarea::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
 }
 
 .form__helper-text {
@@ -162,9 +276,14 @@
   font-size: 14px;
   line-height: 30px;
   color: $text-base;
+  text-transform: uppercase;
 }
 
 //Button
+
+.form__button-wrap {
+  margin-bottom: 26px;
+}
 
 .form__button {
   background: #2aab6d;
@@ -173,13 +292,43 @@
   align-items: center;
   text-transform: uppercase;
   color: #ffffff;
+  width: 100%;
+  padding: 23px 45px 23px 45px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 46px;
+}
+
+.form__helper-simbol {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 //Media
 
 @media (min-width: $tablet-width) {
+  .form__fieldset {
+    width: 616px;
+  }
+
+  .form__name {
+    width: 616px;
+    order: 1;
+  }
+
+  .form__label {
+    padding-right: 20px;
+    padding-top: 15px;
+  }
+
   .form__name-wrap {
     display: flex;
+  }
+
+  .form__input {
+    margin-bottom: 56px;
   }
 
   .form__achievement-wrapper {
@@ -190,6 +339,23 @@
   .form__achievement {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    margin-bottom: 65px;
+    width: 616px;
+  }
+
+  .form__achievement-legend {
+    line-height: 30px;
+    width: 380px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .form__contacts {
+    width: 616px;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    order: 3;
+    margin-top: 65px;
   }
 
   .form__contacts-legend {
@@ -199,12 +365,43 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $text-form;
+    padding-left: 31px;
+    padding-right: 31px;
   }
 
-  .form__contacts {
-    border: 2px solid #e5e5e5;
-    border-radius: 1px;
-    order: 3;
+  .form__contacts-label {
+    order: 1;
+  }
+
+  .form__contacts-list {
+    margin: 0;
+    padding: 0;
+    // padding-right: 60px;
+  }
+
+  .form__contacts-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__contacts-item::after {
+    content: "";
+    position: absolute;
+    top: 3;
+    right: 0;
+    width: 59px;
+    height: 59px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form__contacts-phone::after {
+    background-image: url("../img/contacts-phone.svg");
+  }
+
+  .form__contacts-email::after {
+    background-image: url("../img/contacts-message.svg");
   }
 
   .form__application-wrapper {
@@ -213,23 +410,33 @@
   }
 
   .form__application-form {
+    width: 616px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     // order: 2;
   }
 
   .form__feedback {
+    width: 616px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: 5;
+    padding: 47px 60px 53px 60px;
   }
 
-  .form__name {
-    order: 1;
+  .form__feedback-label {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   .form__button-wrap {
     order: 6;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__button {
+    width: 296px;
   }
 }
 
@@ -244,6 +451,13 @@
 
   .form__name {
     width: 430px;
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+  }
+
+  .form__input {
+    margin-bottom: 58px;
   }
 
   .form__contacts {
@@ -259,8 +473,22 @@
     height: 100%;
   }
 
+  .form__application-legend {
+    padding-top: 0;
+  }
+
   .form__achievement {
     width: 100%;
+  }
+
+  .form__achievement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__achievement-list-item {
+    width: 270px;
   }
 
   .form__feedback {
