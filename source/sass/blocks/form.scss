@@ -10,16 +10,14 @@
 .form__fieldset {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 100%;
-  padding: 0 60px;
+  width: 320px;
+  padding: 0 20px;
 }
 
 //Form__name
 
 .form__name {
   border: none;
-  padding-bottom: 15px;
-  width: 100%;
 }
 
 .form__label {
@@ -46,6 +44,7 @@
   border: 2px solid $form-border;
   border-radius: 1px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 //  Checkbox
@@ -121,11 +120,14 @@
 
 // Phone and email
 
+.form__contacts-list {
+  padding-left: 0;
+  margin: 0;
+}
+
 .form__contacts {
   border: none;
   padding-top: 42px;
-  padding-bottom: 44px;
-  width: 100%;
 }
 
 .form__contacts-legend {
@@ -156,9 +158,15 @@
   color: $text-base;
   border: 2px solid $form-border;
   border-radius: 1px;
+  box-sizing: border-box;
 }
 
 // App
+
+.form__application-list {
+  padding-left: 0;
+  margin: 0;
+}
 
 .form__application-form {
   border: none;
@@ -227,8 +235,6 @@
 .form__feedback {
   border: none;
   margin-top: 42px;
-  margin-bottom: 52px;
-  width: 100%;
 }
 
 .form__feedback-label {
@@ -253,6 +259,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-base;
+  box-sizing: border-box;
 }
 
 .form__feedback-textarea::placeholder {
@@ -302,6 +309,15 @@
 //Media
 
 @media (min-width: $tablet-width) {
+  .form__fieldset {
+    width: 616px;
+  }
+
+  .form__name {
+    width: 616px;
+    order: 1;
+  }
+
   .form__label {
     padding-right: 20px;
     padding-top: 15px;
@@ -324,6 +340,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     margin-bottom: 65px;
+    width: 616px;
   }
 
   .form__achievement-legend {
@@ -334,6 +351,7 @@
   }
 
   .form__contacts {
+    width: 616px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: 3;
@@ -392,12 +410,14 @@
   }
 
   .form__application-form {
+    width: 616px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     // order: 2;
   }
 
   .form__feedback {
+    width: 616px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: 5;
@@ -407,10 +427,6 @@
   .form__feedback-label {
     padding-left: 38px;
     padding-right: 38px;
-  }
-
-  .form__name {
-    order: 1;
   }
 
   .form__button-wrap {
