@@ -3,6 +3,27 @@
   width: 100%;
 }
 
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 29px;
+}
+
+.filter__form-image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  background-image: url("../img/photo-road.jpg");
+  background-position: 50% 0;
+  background-size: 280px 374px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-bottom: 43px;
+}
+
 .filter__tools {
   display: flex;
   flex-direction: column;
@@ -24,6 +45,8 @@
   line-height: 18px;
   color: $button-rose;
   text-align: center;
+  margin-top: 73px;
+  margin-bottom: 12px;
 }
 
 .filter__button-cancel {
@@ -38,6 +61,7 @@
   color: #283645;
   opacity: 0.1;
   text-align: center;
+  margin-bottom: 41px;
 }
 
 .filter__tools-button {
@@ -48,9 +72,48 @@
   border: none;
 }
 
+// !!!!!!!!!!!!!!!1
+
 .filter__range-filter {
   position: relative;
+  display: none;
+  align-items: center;
+  height: 72px;
 }
+
+// .filter__range-filter-active {
+//   display: block;
+// }
+
+.filter__range-filter-active {
+  display: flex;
+}
+
+.filter__icon-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter__range-scale {
+  padding: 0;
+  background-color: transparent;
+  margin: 0 0 0 auto;
+  width: 100%;
+  height: 14px;
+}
+
+.filter__range-scale::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  bottom: -16px;
+  width: 240px;
+  height: 1px;
+  background-color: #dddfe0;
+}
+
+// !!!!!!!!!!!!!!1
 
 .filter__scale {
   width: 240px;
@@ -76,8 +139,61 @@
 }
 
 @media (min-width: $tablet-width) {
+  .filter__form {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 29px;
+  }
+
   .filter__tools {
+    margin-top: 0;
+    margin-left: 50px;
+    width: 275px;
+  }
+
+  .filter__tools-instrument {
+    display: none;
+  }
+
+  .filter__range-filter {
     display: flex;
-    flex-direction: column;
+    margin-bottom: 34px;
+  }
+
+  .filter__icon-wrapper {
+    display: flex;
+    width: 27px;
+    height: 27px;
+  }
+
+  .filter__form-image {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    background-color: transparent;
+  }
+
+  .filter__form {
+    background-color: #f2f2f2;
+    padding: 57px 60px 57px 80px;
+  }
+
+  .filter__range-scale {
+    margin-right: 30px;
+    width: 288px;
+  }
+
+  .filter__button {
+    display: inline-block;
+  }
+
+  .filter__button-post,
+  .filter__button-cancel {
+    width: 45%;
   }
 }
