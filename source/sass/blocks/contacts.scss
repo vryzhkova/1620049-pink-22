@@ -7,13 +7,28 @@
   padding: 0 20px;
 }
 
+.contacts__map-frame {
+  min-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.contacts__map-image {
+  min-width: 100%;
+  max-height: 416px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
 .contacts__title {
   margin: 0;
   padding: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  color: $text-base;
+  color: $text-base-dark-blue;
   text-align: center;
 }
 
@@ -33,7 +48,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: $text-contacts;
+  color: $text-base-pink;
 }
 
 .contacts__adress {
@@ -49,13 +64,13 @@
 .contacts__map::before {
   content: "";
   position: absolute;
-  z-index: 1;
-  top: 120px;
+  z-index: 100;
+  top: 0;
   left: 0;
   right: 0;
   height: 123px;
   background-image: url("../img/footer/triangle-white-footer.svg");
-  background-size: 1200px 70%;
+  background-size: 100% 121px;
   background-position: 50% 0;
   background-repeat: no-repeat;
 }

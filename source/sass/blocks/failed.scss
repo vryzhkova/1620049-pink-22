@@ -8,11 +8,10 @@
   width: 320px;
   height: 289px;
   text-align: center;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px $shadow-popup;
   border-radius: 5px;
   box-sizing: border-box;
-
-  background: #ffffff;
+  background: $background-popup;
 }
 
 .failed__title {
@@ -24,7 +23,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: $text-title;
+  color: $text-base-black;
 }
 
 .failed__text {
@@ -35,7 +34,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $text-base;
+  color: $text-base-dark-blue;
 }
 
 .failed__button {
@@ -48,7 +47,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: $button-color;
+  color: $button-text-color;
   text-transform: uppercase;
   padding: 23px 134px 23px 135px;
 }

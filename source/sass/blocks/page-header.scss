@@ -1,25 +1,29 @@
 .page-header {
   position: relative;
-  background-image: url("../img/header/back-mobile.jpg");
+  background-image: url("../img/header/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 767px;
-  color: $text-header;
+  color: $text-base-white;
   margin: 0 auto;
-  background-color: $app-download;
+  background-color: $background-app;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/back-mobile@2x.jpg");
+  }
 }
 
 .page-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 21px 20px;
-  background-color: $background-base;
+  background-color: $background-nav;
 }
 
-.page-header__wrap {
-  background: $header-wrap;
-  opacity: 0.3;
-  height: 66px;
-}
+// .page-header__wrap {
+//   background: $header-wrap;
+//   opacity: 0.3;
+//   height: 66px;
+// }
 
 .page-header__main-nav {
   margin: 0 auto;
@@ -50,8 +54,12 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-image: url("../img/header/back-tablet.jpg");
+    background-image: url("../img/header/back-tablet@1x.jpg");
     background-size: 100% 1010px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/back-tablet@2x.jpg");
+    }
   }
 
   .page-header__logo-wrapper {
@@ -59,45 +67,47 @@
     padding-bottom: 43px;
   }
 
-  .page-header__logo-tablet {
-    display: block;
-  }
+  // .page-header__logo-tablet {
+  //   display: block;
+  // }
 
-  .page-header__logo-mobile,
-  .page-header__logo-desktop {
-    display: none;
-  }
+  // .page-header__logo-mobile,
+  // .page-header__logo-desktop {
+  //   display: none;
+  // }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-image: url("../img/header/back-desktop.jpg");
+    background-image: url("../img/header/back-desktop@1x.jpg");
     background-size: 100% 1010px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/back-desktop@2x.jpg");
+    }
   }
 
   .page-header__main-nav-wrap {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $background-header;
   }
 
   .page-header__main-nav {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     padding-left: 10px;
     padding-right: 10px;
     width: 940px;
     background-color: transparent;
-    // background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .page-header__logo-desktop {
-    display: block;
-  }
+  // .page-header__logo-desktop {
+  //   display: block;
+  // }
 
-  .page-header__logo-mobile,
-  .page-header__logo-tablet {
-    display: none;
-  }
+  // .page-header__logo-mobile,
+  // .page-header__logo-tablet {
+  //   display: none;
+  // }
 
   .page-header__logo-wrapper {
     padding-left: 0;

@@ -1,5 +1,5 @@
 .filter {
-  background-color: $background-gallery;
+  background-color: $background-blockquote;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -71,19 +71,20 @@
   bottom: -16px;
   width: 320px;
   height: 1px;
-  background-color: #dddfe0;
+  background: $filter-after-line;
+  opacity: 0.1;
 }
 
 .filter__scale {
   width: 240px;
   height: 2px;
-  background: #283645;
+  background-color: $background-scale;
 }
 
-.filter__bar {
-  width: 65%;
-  margin-left: 0%;
-}
+// .filter__bar {
+//   width: 65%;
+//   margin-left: 0%;
+// }
 
 .filter__toggle {
   position: absolute;
@@ -91,8 +92,8 @@
   left: 205px;
   width: 14px;
   height: 14px;
-  background: #ffffff;
-  border: 2px solid #d22856;
+  background-color: $background-toggle;
+  border: 2px solid $border-toggle;
   box-sizing: border-box;
   border-radius: 50%;
 }
@@ -100,7 +101,7 @@
 // Filter - buttons
 
 .filter__button-post {
-  border: 3px solid $button-rose;
+  border: 3px solid $button-pink;
   box-sizing: border-box;
   border-radius: 30px;
   width: 280px;
@@ -108,14 +109,14 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  color: $button-rose;
+  color: $button-pink;
   text-align: center;
-  margin-top: 73px;
+  // margin-top: 73px;
   margin-bottom: 12px;
 }
 
 .filter__button-cancel {
-  border: 3px solid #283645;
+  border: 3px solid $button-cancel;
   box-sizing: border-box;
   border-radius: 30px;
   width: 280px;
@@ -123,10 +124,10 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  color: #283645;
+  color: $button-cancel;
   opacity: 0.1;
   text-align: center;
-  margin-bottom: 41px;
+  // margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -173,7 +174,8 @@
   }
 
   .filter__controls {
-    padding-left: 49px;
+    width: 280px;
+    margin-left: auto;
   }
 }
 
@@ -182,13 +184,9 @@
     background-color: transparent;
   }
 
-  .filter__controls {
-    padding-left: 90px;
-  }
-
   .filter__form {
-    background-color: #f2f2f2;
-    padding: 57px 60px 57px 80px;
+    background-color: $background-filter;
+    padding: 57px 160px 57px 80px;
   }
 
   .filter__scale {
@@ -198,11 +196,6 @@
   .filter__range-filter::after {
     width: 410px;
   }
-
-  // .filter__icon-wrapper {
-  //   width: 44px;
-  //   height: 44px;
-  // }
 
   .filter__button {
     display: flex;

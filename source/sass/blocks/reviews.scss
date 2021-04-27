@@ -20,7 +20,7 @@
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
-  color: $text-title;
+  color: $text-base-white;
   padding-bottom: 30px;
 }
 
@@ -61,7 +61,7 @@
   font-size: 14px;
   line-height: 30px;
   width: 280px;
-  color: $text-base;
+  color: $text-base-dark-blue;
 }
 
 .slider__toggle {
@@ -70,15 +70,15 @@
   border: none;
   box-sizing: content-box;
   border-radius: 50%;
-  background: #283645;
+  background: $background-price-toggle;
   opacity: 0.3;
   width: 6px;
   height: 6px;
 }
 
 .slider__toggle--current {
-  background: #ffffff;
-  border: 3px solid #283645;
+  background: $background-toggle;
+  border: 3px solid $background-price-toggle;
   opacity: 1;
 }
 
