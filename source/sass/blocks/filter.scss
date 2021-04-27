@@ -1,6 +1,7 @@
 .filter {
   background-color: $background-gallery;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .filter__form {
@@ -24,6 +25,8 @@
   padding-bottom: 43px;
 }
 
+//  icons
+
 .filter__tools {
   display: flex;
   flex-direction: column;
@@ -33,6 +36,68 @@
   display: flex;
   justify-content: space-between;
 }
+
+.filter__tools-button {
+  border: none;
+}
+
+.filter__icon-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-item {
+  border: none;
+}
+
+// Range
+
+.filter__range-filter {
+  position: relative;
+  display: none;
+  align-items: center;
+  height: 72px;
+}
+
+.filter__range-filter-active {
+  display: flex;
+}
+
+.filter__range-filter::after {
+  content: "";
+  position: absolute;
+  left: -16px;
+  bottom: -16px;
+  width: 320px;
+  height: 1px;
+  background-color: #dddfe0;
+}
+
+.filter__scale {
+  width: 240px;
+  height: 2px;
+  background: #283645;
+}
+
+.filter__bar {
+  width: 65%;
+  margin-left: 0%;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: 28px;
+  left: 205px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+// Filter - buttons
 
 .filter__button-post {
   border: 3px solid $button-rose;
@@ -64,80 +129,6 @@
   margin-bottom: 41px;
 }
 
-.filter__tools-button {
-  border: none;
-}
-
-.filter-item {
-  border: none;
-}
-
-// !!!!!!!!!!!!!!!1
-
-.filter__range-filter {
-  position: relative;
-  display: none;
-  align-items: center;
-  height: 72px;
-}
-
-// .filter__range-filter-active {
-//   display: block;
-// }
-
-.filter__range-filter-active {
-  display: flex;
-}
-
-.filter__icon-wrapper {
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.filter__range-scale {
-  padding: 0;
-  background-color: transparent;
-  margin: 0 0 0 auto;
-  width: 100%;
-  height: 14px;
-}
-
-.filter__range-scale::after {
-  content: "";
-  position: absolute;
-  left: 17px;
-  bottom: -16px;
-  width: 240px;
-  height: 1px;
-  background-color: #dddfe0;
-}
-
-// !!!!!!!!!!!!!!1
-
-.filter__scale {
-  width: 240px;
-  height: 2px;
-  background: #283645;
-}
-
-.filter__bar {
-  width: 65%;
-  margin-left: 0%;
-}
-
-.filter__toggle {
-  position: absolute;
-  top: -7px;
-  width: 14px;
-  height: 14px;
-  background: #ffffff;
-  border: 2px solid #d22856;
-  box-sizing: border-box;
-  border-radius: 50%;
-  left: 80%;
-}
-
 @media (min-width: $tablet-width) {
   .filter__form {
     flex-direction: row;
@@ -149,6 +140,15 @@
   .filter__tools {
     margin-top: 0;
     margin-left: 50px;
+    width: 275px;
+  }
+
+  .filter__scale {
+    width: 202px;
+    height: 2px;
+  }
+
+  .filter__range-filter::after {
     width: 275px;
   }
 
@@ -171,6 +171,10 @@
     width: 300px;
     height: 400px;
   }
+
+  .filter__controls {
+    padding-left: 49px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -178,22 +182,41 @@
     background-color: transparent;
   }
 
+  .filter__controls {
+    padding-left: 90px;
+  }
+
   .filter__form {
     background-color: #f2f2f2;
     padding: 57px 60px 57px 80px;
   }
 
-  .filter__range-scale {
-    margin-right: 30px;
+  .filter__scale {
     width: 288px;
   }
 
+  .filter__range-filter::after {
+    width: 410px;
+  }
+
+  // .filter__icon-wrapper {
+  //   width: 44px;
+  //   height: 44px;
+  // }
+
   .filter__button {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .filter__button-post {
+    margin-right: 44px;
   }
 
   .filter__button-post,
   .filter__button-cancel {
-    width: 45%;
+    width: 183px;
   }
 }
