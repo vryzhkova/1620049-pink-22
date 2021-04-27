@@ -1,7 +1,31 @@
 .filter {
   background-color: $background-gallery;
   width: 100%;
+  margin-bottom: 40px;
 }
+
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 29px;
+}
+
+.filter__form-image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  background-image: url("../img/photo-road.jpg");
+  background-position: 50% 0;
+  background-size: 280px 374px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-bottom: 43px;
+}
+
+//  icons
 
 .filter__tools {
   display: flex;
@@ -13,43 +37,41 @@
   justify-content: space-between;
 }
 
-.filter__button-post {
-  border: 3px solid $button-rose;
-  box-sizing: border-box;
-  border-radius: 30px;
-  width: 280px;
-  height: 55px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: $button-rose;
-  text-align: center;
-}
-
-.filter__button-cancel {
-  border: 3px solid #283645;
-  box-sizing: border-box;
-  border-radius: 30px;
-  width: 280px;
-  height: 55px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: #283645;
-  opacity: 0.1;
-  text-align: center;
-}
-
 .filter__tools-button {
   border: none;
+}
+
+.filter__icon-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .filter-item {
   border: none;
 }
 
+// Range
+
 .filter__range-filter {
   position: relative;
+  display: none;
+  align-items: center;
+  height: 72px;
+}
+
+.filter__range-filter-active {
+  display: flex;
+}
+
+.filter__range-filter::after {
+  content: "";
+  position: absolute;
+  left: -16px;
+  bottom: -16px;
+  width: 320px;
+  height: 1px;
+  background-color: #dddfe0;
 }
 
 .filter__scale {
@@ -65,19 +87,136 @@
 
 .filter__toggle {
   position: absolute;
-  top: -7px;
+  top: 28px;
+  left: 205px;
   width: 14px;
   height: 14px;
   background: #ffffff;
   border: 2px solid #d22856;
   box-sizing: border-box;
   border-radius: 50%;
-  left: 80%;
+}
+
+// Filter - buttons
+
+.filter__button-post {
+  border: 3px solid $button-rose;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $button-rose;
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 12px;
+}
+
+.filter__button-cancel {
+  border: 3px solid #283645;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645;
+  opacity: 0.1;
+  text-align: center;
+  margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
+  .filter__form {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 29px;
+  }
+
   .filter__tools {
+    margin-top: 0;
+    margin-left: 50px;
+    width: 275px;
+  }
+
+  .filter__scale {
+    width: 202px;
+    height: 2px;
+  }
+
+  .filter__range-filter::after {
+    width: 275px;
+  }
+
+  .filter__tools-instrument {
+    display: none;
+  }
+
+  .filter__range-filter {
     display: flex;
-    flex-direction: column;
+    margin-bottom: 34px;
+  }
+
+  .filter__icon-wrapper {
+    display: flex;
+    width: 27px;
+    height: 27px;
+  }
+
+  .filter__form-image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .filter__controls {
+    padding-left: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    background-color: transparent;
+  }
+
+  .filter__controls {
+    padding-left: 90px;
+  }
+
+  .filter__form {
+    background-color: #f2f2f2;
+    padding: 57px 60px 57px 80px;
+  }
+
+  .filter__scale {
+    width: 288px;
+  }
+
+  .filter__range-filter::after {
+    width: 410px;
+  }
+
+  // .filter__icon-wrapper {
+  //   width: 44px;
+  //   height: 44px;
+  // }
+
+  .filter__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .filter__button-post {
+    margin-right: 44px;
+  }
+
+  .filter__button-post,
+  .filter__button-cancel {
+    width: 183px;
   }
 }
