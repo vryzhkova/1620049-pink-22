@@ -17,8 +17,8 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
-  color: $text-header;
-  background-color: $background-panorama;
+  color: $text-base-white;
+  background-color: $background-pink;
   text-align: center;
   width: 140px;
   height: 36px;
@@ -34,14 +34,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color: $text-base;
+  color: $text-base-dark-blue;
 }
 
 .panorama__date {
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
-  color: $text-base;
+  color: $text-base-dark-blue;
   text-transform: uppercase;
 }
 
@@ -51,12 +51,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $text-base;
+  color: $text-base-dark-blue;
   width: 253px;
 }
 
 .panorama__heart {
-  color: $text-contacts;
+  color: $text-color-like;
   text-transform: uppercase;
   border: none;
 }

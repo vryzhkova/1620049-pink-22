@@ -7,9 +7,9 @@
   width: 320px;
   height: 380px;
   text-align: center;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px $shadow-popup;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: $background-popup;
 }
 
 .success__title {
@@ -20,7 +20,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: $text-title;
+  color: $text-base-white;
 }
 
 .success__text {
@@ -31,11 +31,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $text-base;
+  color: $text-base-dark-blue;
 }
 
 .success__wrap {
-  background: $form-wrap;
+  background: $background-fieldset;
   width: 100%;
   height: 163px;
   border-radius: 0 0 5px 5px;

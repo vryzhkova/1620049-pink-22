@@ -4,16 +4,16 @@
 }
 
 .table-price__header {
-  border-right: 2px solid $table-grid;
+  border-right: 2px solid $table-grid-border;
   font-size: 18px;
-  color: $text-table-title;
+  color: $text-base-white;
   background-color: $table-background;
 }
 
 .table-price__header:first-child {
   display: none;
   border-right: 0;
-  border-bottom: 2px solid $table-grid;
+  border-bottom: 2px solid $table-grid-border;
   background-color: transparent;
 }
 
@@ -34,14 +34,14 @@
 }
 
 .table-price__cell {
-  border-right: 2px solid $table-grid;
-  border-bottom: 2px solid $table-grid;
-  background-color: #ffffff;
+  border-right: 2px solid $table-grid-border;
+  border-bottom: 2px solid $table-grid-border;
+  background-color: $table-background-base;
 }
 
 .table-price__cell:first-child {
   display: none;
-  border-left: 2px solid $table-grid;
+  border-left: 2px solid $table-grid-border;
 }
 
 .table-price__feature {
@@ -73,6 +73,13 @@
   background-image: url("../img/table/icon-no.svg");
 }
 
+.table-price__header--hit {
+  background-image: url("../img/table/table-hit-mobile.svg");
+  background-size: 74px 74px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: $tablet-width) {
   .table-price {
     width: 100%;
@@ -96,5 +103,19 @@
 
   .table-price__feature::before {
     content: "";
+  }
+
+  .table-price__header--hit {
+    background-image: url("../img/table/table-hit-tablet.svg");
+    background-size: 61px 61px;
+    background-position: -6 -10;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table-price__header--hit {
+    background-image: url("../img/table/table-hit-desktop.svg");
+    background-size: 74px 74px;
+    background-position: 0 0;
   }
 }

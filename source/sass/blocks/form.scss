@@ -14,6 +14,14 @@
   padding: 0 20px;
 }
 
+.form input:hover {
+  border-color: $input-hover;
+}
+
+.form input:active {
+  border-color: $input-active;
+}
+
 //Form__name
 
 .form__name {
@@ -27,7 +35,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: $text-form;
+  color: $text-base-dark-blue;
   text-transform: uppercase;
   text-align: left;
 }
@@ -40,7 +48,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: left;
-  color: $text-base;
+  color: $text-base-dark-blue;
   border: 2px solid $form-border;
   border-radius: 1px;
   width: 100%;
@@ -50,7 +58,7 @@
 //  Checkbox
 
 .form__achievement-wrapper {
-  background-color: $form-wrap;
+  background-color: $background-fieldset;
   width: 100%;
 }
 
@@ -62,7 +70,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $text-form;
+  color: $form-title;
   text-transform: uppercase;
   padding-top: 42px;
   padding-bottom: 44px;
@@ -79,7 +87,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: $text-base;
+  color: $text-base-dark-blue;
   padding-bottom: 69px;
 }
 
@@ -97,9 +105,9 @@
   transform: translateY(-50%);
   width: 35px;
   height: 35px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $border-checkbox;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: $background-color-checkbox;
 }
 
 .form__achievement-label-checkbox::after {
@@ -116,6 +124,14 @@
 
 .form__achievement-checkbox:checked + .form__achievement-label-checkbox::after {
   content: "";
+}
+
+.form__achievement-label-checkbox:hover::before {
+  border-color: $input-hover;
+}
+
+.form__achievement-label-checkbox:active::before {
+  border-color: $input-active;
 }
 
 // Phone and email
@@ -142,7 +158,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #d22856;
+  color: $form-title;
   text-transform: uppercase;
 }
 
@@ -155,7 +171,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: $text-base;
+  color: $text-base-dark-blue;
   border: 2px solid $form-border;
   border-radius: 1px;
   box-sizing: border-box;
@@ -173,7 +189,7 @@
 }
 
 .form__application-wrapper {
-  background-color: $form-wrap;
+  background-color: $background-fieldset;
 }
 
 .form__application-legend {
@@ -185,7 +201,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $text-form;
+  color: $form-title;
   text-transform: uppercase;
 }
 
@@ -195,12 +211,13 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: $text-base;
+  color: $text-base-dark-blue;
 }
 
 .form__application-label {
   position: relative;
   padding-left: 70px;
+  cursor: pointer;
 }
 
 .form__application-label::before {
@@ -210,9 +227,9 @@
   top: -6px;
   width: 37px;
   height: 37px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $border-checkbox;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $background-color-checkbox;
 }
 
 .form__application-label::after {
@@ -230,6 +247,14 @@
   content: "";
 }
 
+.form__application-label:hover::before {
+  border-color: $input-hover;
+}
+
+.form__application-label:active::before {
+  border-color: $input-active;
+}
+
 // Feedback
 
 .form__feedback {
@@ -242,7 +267,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $text-form;
+  color: $form-title;
   display: block;
   margin-bottom: 22px;
 }
@@ -253,13 +278,21 @@
   padding-right: 25px;
   padding-left: 20px;
   height: 197px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $form-border;
   border-radius: 1px;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: $text-base;
+  color: $text-base-dark-blue;
   box-sizing: border-box;
+}
+
+.form__feedback-textarea:hover {
+  border-color: $input-hover;
+}
+
+.form__feedback-textarea:active {
+  border-color: $input-active;
 }
 
 .form__feedback-textarea::placeholder {
@@ -268,40 +301,54 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $text-base-dark-blue;
 }
 
 .form__helper-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: $text-base;
+  color: $text-base-dark-blue;
   text-transform: uppercase;
 }
 
 //Button
 
 .form__button-wrap {
+  margin-top: 52px;
   margin-bottom: 26px;
 }
 
 .form__button {
-  background: #2aab6d;
-  border: 2px solid #2aab6d;
+  background-color: $button-green;
+  border: 2px solid $button-green;
   border-radius: 1px;
   align-items: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $button-text-color;
   width: 100%;
   padding: 23px 45px 23px 45px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 46px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: $button-green-hover;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button:disabled {
+  background-color: $button-green-disabled;
 }
 
 .form__helper-simbol {
-  color: #d22856;
+  color: $text-base-pink;
   font-size: 14px;
   line-height: 30px;
 }
@@ -337,7 +384,7 @@
   }
 
   .form__achievement {
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border;
     border-radius: 1px;
     margin-bottom: 65px;
     width: 620px;
@@ -352,7 +399,7 @@
 
   .form__contacts {
     width: 620px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border;
     border-radius: 1px;
     order: 3;
     margin-top: 65px;
@@ -364,7 +411,7 @@
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
-    color: $text-form;
+    color: $form-title;
     padding-left: 31px;
     padding-right: 31px;
   }
@@ -411,14 +458,14 @@
 
   .form__application-form {
     width: 620px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border;
     border-radius: 1px;
     // order: 2;
   }
 
   .form__feedback {
     width: 620px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border;
     border-radius: 1px;
     order: 5;
     padding: 47px 60px 53px 60px;
@@ -433,6 +480,7 @@
     order: 6;
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
   }
 
   .form__button {
@@ -462,6 +510,16 @@
 
   .form__contacts {
     width: 100%;
+  }
+
+  .form__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .form__contacts-item {
+    width: 371px;
   }
 
   .form__application-form {

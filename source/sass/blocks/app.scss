@@ -1,9 +1,13 @@
 .app {
-  background-image: url("../img/header/phone-screen.png");
-  background-position: 5px 160px;
+  background-image: url("../img/header/phone-screen-mobile@x1.png");
+  background-position: 5px 159px;
   background-size: 320px 286px;
   background-repeat: no-repeat;
   padding-top: 29px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/phone-screen-mobile@x2.png");
+  }
 }
 
 .app__title {
@@ -39,9 +43,18 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  border: 3px solid #ffffff;
+  border: 3px solid $button-border-white;
   box-sizing: border-box;
   border-radius: 29px;
+}
+
+.app-button:hover {
+  background-color: $button-hover;
+  color: $text-base-pink;
+}
+
+.app-button:active {
+  color: $button-pink-active;
 }
 
 .app__slogan {
@@ -57,9 +70,13 @@
 
 @media (min-width: $tablet-width) {
   .app {
-    background-image: url("../img/header/phone-screen-tablet.png");
+    background-image: url("../img/header/phone-screen-tablet@x1.png");
     background-position: 14px 116px;
     background-size: 660px 545px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/phone-screen-tablet@x2.png");
+    }
   }
 
   .app__content-wrapper {
@@ -87,9 +104,13 @@
 
 @media (min-width: $desktop-width) {
   .app {
-    background-image: url("../img/header/phone-screen-desktop.png");
+    background-image: url("../img/header/phone-screen-desktop@x1.png");
     background-position: 60px 108px;
     background-size: 1050px 645px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/phone-screen-desktop@x1.png");
+    }
   }
 
   .app__download {
