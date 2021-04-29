@@ -14,6 +14,14 @@
   padding: 0 20px;
 }
 
+.form input:hover {
+  border-color: $input-hover;
+}
+
+.form input:active {
+  border-color: $input-active;
+}
+
 //Form__name
 
 .form__name {
@@ -118,6 +126,14 @@
   content: "";
 }
 
+.form__achievement-label-checkbox:hover::before {
+  border-color: $input-hover;
+}
+
+.form__achievement-label-checkbox:active::before {
+  border-color: $input-active;
+}
+
 // Phone and email
 
 .form__contacts-list {
@@ -201,6 +217,7 @@
 .form__application-label {
   position: relative;
   padding-left: 70px;
+  cursor: pointer;
 }
 
 .form__application-label::before {
@@ -228,6 +245,14 @@
 
 .form__application-checkbox:checked + .form__application-label::after {
   content: "";
+}
+
+.form__application-label:hover::before {
+  border-color: $input-hover;
+}
+
+.form__application-label:active::before {
+  border-color: $input-active;
 }
 
 // Feedback
@@ -262,6 +287,14 @@
   box-sizing: border-box;
 }
 
+.form__feedback-textarea:hover {
+  border-color: $input-hover;
+}
+
+.form__feedback-textarea:active {
+  border-color: $input-active;
+}
+
 .form__feedback-textarea::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -282,11 +315,12 @@
 //Button
 
 .form__button-wrap {
+  margin-top: 52px;
   margin-bottom: 26px;
 }
 
 .form__button {
-  background: $button-green;
+  background-color: $button-green;
   border: 2px solid $button-green;
   border-radius: 1px;
   align-items: center;
@@ -298,6 +332,19 @@
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 46px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: $button-green-hover;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button:disabled {
+  background-color: $button-green-disabled;
 }
 
 .form__helper-simbol {
@@ -433,6 +480,7 @@
     order: 6;
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
   }
 
   .form__button {
@@ -462,6 +510,16 @@
 
   .form__contacts {
     width: 100%;
+  }
+
+  .form__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .form__contacts-item {
+    width: 371px;
   }
 
   .form__application-form {

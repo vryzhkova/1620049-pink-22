@@ -74,6 +74,15 @@
   opacity: 0.3;
   width: 6px;
   height: 6px;
+  cursor: pointer;
+}
+
+.slider__toggle:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.1;
 }
 
 .slider__toggle--current {
@@ -127,9 +136,31 @@
   .reviews-buttons {
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    // bottom: 10px;
+    left: 60px;
+    right: 60px;
   }
 
   .reviews-button-item {
-    display: block;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    bottom: 180px;
+    padding: 0;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+
+  .reviews-button-item:hover {
+    opacity: 0.6;
+  }
+
+  .reviews-button-item:active {
+    opacity: 0.1;
   }
 }

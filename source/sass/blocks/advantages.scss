@@ -116,6 +116,15 @@
   color: $text-base-pink;
 }
 
+.advantages__research-link:hover {
+  color: $text-base-dark-blue;
+  text-decoration-line: underline;
+}
+
+.advantages__research-link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__headline {
     margin-bottom: 0;
@@ -151,24 +160,25 @@
 
   .advantages__research {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-bottom: 109px;
+    background-image: url("../img/advantages/research-clock.svg");
+    background-position: 11px 36px;
+    background-size: 238px 276px;
+    background-repeat: no-repeat;
   }
-
-  // .advantages__research-title {
-  //   margin-bottom: 24px;
-  // }
 
   .advantages__research-img {
     display: block;
-    // width: 238px;
-    // height: 276px;
+    width: 238px;
+    height: 276px;
     margin-top: 54px;
   }
 
   .advantages__research-about {
     display: flex;
     flex-direction: column;
+
     margin-top: 102px;
     width: 320px;
   }
@@ -240,6 +250,11 @@
     }
   }
 
+  .advantages__research {
+    background-position: 11px 8px;
+    background-size: 298px 345px;
+  }
+
   .advantages__research-wrap {
     background-color: $background-grey-advantages;
   }
@@ -261,10 +276,4 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  // .advantages__research-img {
-  //   display: block;
-  //   width: 298px;
-  //   height: 345px;
-  // }
 }

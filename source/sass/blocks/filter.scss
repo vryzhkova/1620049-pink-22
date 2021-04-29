@@ -113,6 +113,16 @@
   text-align: center;
   // margin-top: 73px;
   margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.filter__button-post:hover {
+  background-color: $button-pink;
+  color: $text-base-white;
+}
+
+.filter__button-post:active {
+  color: $button-pink-active;
 }
 
 .filter__button-cancel {
@@ -127,7 +137,18 @@
   color: $button-cancel;
   opacity: 0.1;
   text-align: center;
-  // margin-bottom: 41px;
+  cursor: pointer;
+}
+
+.filter__button-cancel:hover {
+  border-color: $button-cancel;
+  opacity: 0.3;
+}
+
+.filter__button-cancel:active {
+  background-color: $button-cancel;
+  // opacity: 0.3;
+  color: $button-pink-active;
 }
 
 @media (min-width: $tablet-width) {

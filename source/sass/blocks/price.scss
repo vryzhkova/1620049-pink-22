@@ -19,12 +19,21 @@
   opacity: 0.3;
   width: 6px;
   height: 6px;
+  cursor: pointer;
 }
 
 .price__toggle--current {
   background: $background-toggle;
   border: 3px solid $background-price-toggle;
   opacity: 1;
+}
+
+.price__toggle:hover {
+  opacity: 0.6;
+}
+
+.price__toggle:active {
+  opacity: 0.1;
 }
 
 .price__table {

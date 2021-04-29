@@ -48,6 +48,15 @@
   border-radius: 29px;
 }
 
+.app-button:hover {
+  background-color: $button-hover;
+  color: $text-base-pink;
+}
+
+.app-button:active {
+  color: $button-pink-active;
+}
+
 .app__slogan {
   margin: 0;
   padding: 0;
