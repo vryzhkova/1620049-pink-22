@@ -18,7 +18,9 @@
   border-color: $input-hover;
 }
 
-.form input:active {
+.form input:active,
+.form input:focus {
+  outline: none;
   border-color: $input-active;
 }
 
@@ -291,7 +293,9 @@
   border-color: $input-hover;
 }
 
-.form__feedback-textarea:active {
+.form__feedback-textarea:active,
+.form__feedback-textarea:focus {
+  outline: none;
   border-color: $input-active;
 }
 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/svg" />
+    <link rel="apple-touch-icon" href="favicon/152.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -196,27 +199,33 @@
         <div class="advantages__wrap">
           <ul class="advantages__list container">
             <li class="advantages__item advantages__item-desktop-1">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
-              </p>
+              <div class="advantages__wrapper">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально в несколько кликов!
+                </p>
+              </div>
             </li>
             <li class="advantages__item advantages__item-desktop-2">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
+              <div class="advantages__wrapper">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">
+                  Сделайте снимок и украсьте его смайликом или текстовой
+                  подписью, чтобы усилить эффект
+                </p>
+              </div>
             </li>
             <li
               class="advantages__item advantages__item-mobile advantages__item-desktop-3"
             >
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых
-              </p>
+              <div class="advantages__wrapper">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                  и заводите новых
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -482,7 +491,7 @@
                 555-66-66
               </a>
             </li>
-            <li class="contacts-item">
+            <li class="contacts-item contacts-item-email">
               <p class="contacts-list__title">Пишите:</p>
               <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru
