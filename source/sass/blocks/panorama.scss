@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.panorama__link {
+  width: 320px;
+  height: 137px;
+}
+
 .panorama__image {
   position: relative;
   width: 100%;
@@ -61,7 +66,17 @@
   border: none;
 }
 
+.gallery__link {
+  width: 280px;
+  height: 180px;
+}
+
 @media (min-width: $tablet-width) {
+  .panorama__link {
+    width: 660px;
+    height: 509px;
+  }
+
   .panorama__post-item {
     width: 620px;
     display: flex;
@@ -72,15 +87,29 @@
   .panorama__text {
     width: 520px;
   }
+
+  .gallery__link {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .panorama__link {
+    width: 1200px;
+    height: 506px;
+  }
+
   .panorama__post-item {
     width: 940px;
-    // height: 96px;
   }
 
   .panorama__text {
     width: 874px;
+  }
+
+  .gallery__link {
+    width: 300px;
+    height: 400px;
   }
 }
