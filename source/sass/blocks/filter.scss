@@ -39,6 +39,11 @@
 
 .filter__tools-button {
   border: none;
+  cursor: pointer;
+}
+
+.filter__tools-button:hover {
+  opacity: 0.5;
 }
 
 .filter__icon-wrapper {
@@ -99,6 +104,10 @@
 }
 
 // Filter - buttons
+
+.filter__button {
+  margin-top: 50px;
+}
 
 .filter__button-post {
   border: 3px solid $button-pink;
@@ -172,6 +181,7 @@
 
   .filter__range-filter::after {
     width: 275px;
+    bottom: -5px;
   }
 
   .filter__tools-instrument {
@@ -180,7 +190,7 @@
 
   .filter__range-filter {
     display: flex;
-    margin-bottom: 34px;
+    // margin-bottom: 34px;
   }
 
   .filter__icon-wrapper {
@@ -218,11 +228,18 @@
     width: 410px;
   }
 
+  .filter__icon-full {
+    width: 44px;
+    height: 44px;
+  }
+
   .filter__button {
+    width: 380px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    margin-top: 110px;
   }
 
   .filter__button-post {
@@ -231,6 +248,7 @@
 
   .filter__button-post,
   .filter__button-cancel {
+    display: block;
     width: 183px;
   }
 }
