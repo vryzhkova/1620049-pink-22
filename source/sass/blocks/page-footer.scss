@@ -12,28 +12,7 @@
   margin-bottom: 41px;
 }
 
-.page-footer__social-link-desktop {
-  display: none;
-}
-
-.page-footer__social-link:active,
-.page-footer__social-link-desktop:active {
-  opacity: 0.3;
-}
-
-.page-footer__social-logo {
-  color: $input-hover;
-}
-
-.page-footer__social-logo:hover {
-  color: $text-hover;
-}
-
-// .page-footer__social-logo:active {
-//   opacity: 0.3;
-// }
-
-.page-footer__social-mobile {
+.page-footer__social-logo-desktop {
   display: none;
 }
 
@@ -47,7 +26,7 @@
 }
 
 .page-footer__copyright__link-image:hover {
-  fill: $input-hover;
+  color: red;
 }
 
 .page-footer__copyright__link-image:active {
@@ -59,12 +38,8 @@
 // }
 
 @media (min-width: $desktop-width) {
-  .page-footer__social-link {
+  .page-footer__social-logo {
     display: none;
-  }
-
-  .page-footer__social-link-desktop {
-    display: block;
   }
 
   .page-footer__social-logo-desktop {

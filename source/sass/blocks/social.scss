@@ -27,17 +27,14 @@
   background-position: center;
 }
 
-.social__link:hover {
-  border: 3px solid $text-base-dark-blue;
-}
-
-.social__link:active {
-  opacity: 0.3;
-}
-
-.social__link-image {
+.social__link-icon {
+  display: block;
   margin: auto;
 }
+
+// .social__link-icon:active {
+//   color: red;
+// }
 
 @media (min-width: $tablet-width) {
   .social {
