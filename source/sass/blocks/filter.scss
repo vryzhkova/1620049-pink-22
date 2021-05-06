@@ -42,7 +42,16 @@
   cursor: pointer;
 }
 
-.filter__tools-button:hover {
+.filter__tools-icon-crop {
+  fill: $text-hover;
+}
+
+.filter__tools-icon-contrast,
+.filter__tools-icon-fill {
+  opacity: 0.3;
+}
+
+.filter__tools-icons:hover {
   opacity: 0.5;
 }
 
@@ -199,6 +208,16 @@
     height: 27px;
   }
 
+  .filter__tools-icon-fill {
+    opacity: 1;
+    fill: $text-hover;
+  }
+
+  .filter__tools-icon-contrast {
+    opacity: 1;
+    fill: $text-hover;
+  }
+
   .filter__form-image {
     width: 300px;
     height: 400px;
@@ -228,9 +247,19 @@
     width: 410px;
   }
 
-  .filter__icon-full {
+  .filter__tools-icon-crop {
     width: 44px;
     height: 44px;
+  }
+
+  .filter__tools-icon-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter__tools-icon-contrast {
+    width: 32px;
+    height: 32px;
   }
 
   .filter__button {

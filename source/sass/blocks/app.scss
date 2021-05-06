@@ -1,9 +1,8 @@
 .app {
   background-image: url("../img/header/phone-screen-mobile@x1.png");
-  background-position: 5px 159px;
+  background-position: 0 86px;
   background-size: 320px 286px;
   background-repeat: no-repeat;
-  padding-top: 29px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header/phone-screen-mobile@x2.png");
@@ -11,9 +10,10 @@
 }
 
 .app__title {
-  // margin: 0;
+  margin: 0;
+  margin-top: 23px;
   padding: 0;
-  padding-bottom: 310px;
+  padding-bottom: 285px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -25,7 +25,8 @@
   display: flex;
   // justify-content: space-around;
   align-items: baseline;
-  margin-top: 30px;
+  margin-top: 32px;
+  margin-left: 38px;
 }
 
 .download-app {
@@ -34,12 +35,12 @@
 
 .app__download {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .app-button {
   display: inline-block;
-  padding: 13px 35px;
+  padding: 15px 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -60,8 +61,8 @@
 .app__slogan {
   margin: 0;
   padding: 0;
-  padding-top: 31px;
-  padding-bottom: 38px;
+  padding-top: 15px;
+  padding-bottom: 32px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -71,7 +72,7 @@
 @media (min-width: $tablet-width) {
   .app {
     background-image: url("../img/header/phone-screen-tablet@x1.png");
-    background-position: 14px 116px;
+    background-position: 0 72px;
     background-size: 660px 545px;
 
     @media (min-resolution: 2dppx) {
@@ -87,25 +88,41 @@
     display: flex;
     background-color: transparent;
     width: 340px;
+    padding-top: 0;
   }
 
   .app__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 92px;
+    padding-bottom: 30px;
+    padding-left: 26px;
     font-size: 40px;
     line-height: 120%;
     width: 247px;
-    padding-bottom: 39px;
   }
 
   .app__slogan {
     font-size: 18px;
-    padding-bottom: 119px;
+    padding-bottom: 114px;
+    padding-top: 28px;
+  }
+
+  .app-button {
+    padding: 16px 45px;
+    text-align: left;
+  }
+
+  .app__list {
+    margin-top: 44px;
+    margin-left: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .app {
     background-image: url("../img/header/phone-screen-desktop@x1.png");
-    background-position: 60px 108px;
+    background-position: 26px 98px;
     background-size: 1050px 645px;
 
     @media (min-resolution: 2dppx) {
@@ -114,15 +131,23 @@
   }
 
   .app__download {
+    margin-top: 5px;
     background-color: transparent;
   }
 
   .app__title {
     font-size: 50px;
     line-height: 68px;
+    padding-top: 100px;
+  }
+
+  .app__list {
+    margin-top: 67px;
+    margin-left: 47px;
   }
 
   .app__slogan {
+    padding-top: 47px;
     padding-bottom: 130px;
   }
 }

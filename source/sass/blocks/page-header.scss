@@ -2,7 +2,7 @@
   position: relative;
   background-image: url("../img/header/back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 767px;
+  background-size: 100% 721px;
   color: $text-base-white;
   margin: 0 auto;
   background-color: $background-app;
@@ -15,7 +15,7 @@
 .page-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 21px 20px;
+  padding: 23px 20px;
   background-color: $background-nav;
 }
 
@@ -41,11 +41,15 @@
   display: none;
 }
 
-.page-header__logo:hover {
+.page-header__logo-icon {
+  fill: $text-base-white;
+}
+
+.page-header__logo-icon:hover {
   fill: $text-hover;
 }
 
-.page-header__logo:active {
+.page-header__logo-icon:active {
   opacity: 0.3;
 }
 

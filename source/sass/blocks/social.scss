@@ -7,13 +7,14 @@
 .social__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 53px;
+  margin-bottom: 38px;
   display: flex;
+  justify-content: space-around;
 }
 
-.social__item {
-  margin-right: 14px;
-}
+// .social__item {
+//   margin-right: 14px;
+// }
 
 .social__link {
   display: flex;
@@ -31,10 +32,6 @@
   display: block;
   margin: auto;
 }
-
-// .social__link-icon:active {
-//   color: red;
-// }
 
 @media (min-width: $tablet-width) {
   .social {

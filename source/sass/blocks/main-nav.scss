@@ -72,7 +72,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: flex-start;
     border-top: 0;
     background-color: transparent;
@@ -80,6 +80,7 @@
     margin: 0 auto;
     padding: 0 10px;
     padding-top: 35px;
+    padding-left: 174px;
   }
 
   .main-nav__item {

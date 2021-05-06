@@ -1,5 +1,5 @@
 .contacts {
-  margin-top: 47px;
+  margin-top: 42px;
 }
 
 .contacts__wrapper {
@@ -33,11 +33,11 @@
 }
 
 .contacts__title-connection {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .contacts-item {
-  margin-bottom: 31px;
+  margin-bottom: 19px;
 }
 
 .contacts-item-order {
@@ -71,6 +71,7 @@
 
 .contacts__map {
   width: 100%;
+  margin-top: 33px;
   position: relative;
 }
 
@@ -84,15 +85,27 @@
   height: 123px;
   background-image: url("../img/footer/triangle-white-footer.svg");
   background-size: 100% 121px;
-  background-position: 50% 0;
+  background-position: 50% -88px;
   background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 44px;
+  }
+
+  .contacts__title-connection {
+    margin-bottom: 33px;
+  }
+
   .contacts-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .contacts-item {
+    margin-bottom: 46px;
   }
 
   .contacts-item-email {
@@ -108,16 +121,36 @@
     width: 218px;
   }
 
+  .contacts__map {
+    margin-top: -21px;
+  }
+
   .contacts__map-image {
     height: 374px;
     width: 660px;
   }
+
+  .contacts__map::before {
+    background-position: 50% -53px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-top: 60px;
+  }
+
   .contacts__title {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  .contacts__title-connection {
+    margin-bottom: 39px;
+  }
+
+  .contacts-item {
+    margin-bottom: 80px;
   }
 
   .contacts__map-image {
