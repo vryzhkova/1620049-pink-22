@@ -2,9 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" type="image/svg" />
   </head>
   <body class="page__body">
@@ -12,8 +12,8 @@
       <div class="page-header__main-nav-wrap">
         <nav class="page-header__main-nav main-nav">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo">
-              <svg
+            <a class="page-header__logo"
+              ><svg
                 class="page-header__logo-icon page-header__logo-mobile"
                 width="74"
                 height="23"
@@ -33,35 +33,31 @@
                 height="40"
               >
                 <use xlink:href="img/icons.svg#pink-logo-desktop"></use>
-              </svg>
-            </a>
-            <button class="main-nav__toggle" type="button">
+              </svg> </a
+            ><button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="index.html"> Главная </a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html"> Фотографии </a>
+              <a class="main-nav__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link"> Конкурс </a>
+              <a class="main-nav__link">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a
                 class="main-nav__link"
                 href="https://htmlacademy.ru/intensive/adaptive"
+                >HTML Academy</a
               >
-                HTML Academy
-              </a>
             </li>
           </ul>
         </nav>
       </div>
-
       <div class="contest container">
         <div class="contest__wrapper">
           <p class="contest__title">
@@ -70,7 +66,6 @@
         </div>
       </div>
     </header>
-
     <main class="page-main">
       <h1 class="visually-hidden">Форма заявки на конкурс</h1>
       <section class="contest">
@@ -84,10 +79,8 @@
               >
             </p>
           </div>
-
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <!-- Name -->
-
             <fieldset class="form__name form__fieldset">
               <div class="form__name-wrap">
                 <label class="form__label" for="surname">Фамилия:</label>
@@ -122,7 +115,6 @@
                 />
               </div>
             </fieldset>
-
             <!-- Checkbox -->
             <div class="form__achievement-wrapper">
               <fieldset class="form__achievement form__fieldset container">
@@ -136,7 +128,7 @@
                       type="checkbox"
                       name="selfie"
                       id="selfie"
-                      checked
+                      checked="checked"
                     />
                     <label class="form__achievement-label-checkbox" for="selfie"
                       >Сделал селфи с акулой</label
@@ -148,7 +140,7 @@
                       type="checkbox"
                       name="beach"
                       id="beach"
-                      checked
+                      checked="checked"
                     />
                     <label class="form__achievement-label-checkbox" for="beach"
                       >Обгорел на пляже</label
@@ -195,7 +187,7 @@
                       type="checkbox"
                       name="hotel"
                       id="hotel"
-                      checked
+                      checked="checked"
                     />
                     <label class="form__achievement-label-checkbox" for="hotel"
                       >Разгромил отель</label
@@ -204,9 +196,7 @@
                 </ul>
               </fieldset>
             </div>
-
             <!--  Phone and email -->
-
             <fieldset class="form__contacts form__fieldset">
               <legend class="form__contacts-legend">
                 контактная информация
@@ -239,7 +229,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <!--  App -->
             <div class="form__application-wrapper">
               <fieldset class="form__application-form form__fieldset">
@@ -254,7 +243,7 @@
                       name="application"
                       value="ios"
                       id="ios"
-                      checked
+                      checked="checked"
                     />
                     <label class="form__application-label" for="ios"
                       >Pink для iOS</label
@@ -287,9 +276,7 @@
                 </ul>
               </fieldset>
             </div>
-
             <!--  Feedback -->
-
             <fieldset class="form__feedback form__fieldset">
               <legend class="form__feedback-label">Опишите свои эмоции</legend>
               <textarea
@@ -301,15 +288,15 @@
               <button type="submit" class="button form__button">
                 Отправить форму
               </button>
-              <small class="form__helper-text">
-                <span class="form__helper-simbol">*</span> — обязательные поля
-              </small>
+              <small class="form__helper-text"
+                ><span class="form__helper-simbol">*</span> — обязательные
+                поля</small
+              >
             </div>
           </form>
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="container social">
         <div class="page-footer__social">
@@ -317,8 +304,7 @@
             class="page-footer__social-link"
             href="#"
             aria-label="Логотип приложения Pink"
-          >
-            <svg class="page-footer__social-logo" width="145" height="40">
+            ><svg class="page-footer__social-logo" width="145" height="40">
               <use xlink:href="img/icons.svg#footer-logo"></use>
             </svg>
             <svg
@@ -326,31 +312,27 @@
               width="147"
               height="40"
             >
-              <use xlink:href="img/icons.svg#footer-logo-desktop"></use>
-            </svg>
-          </a>
+              <use xlink:href="img/icons.svg#footer-logo-desktop"></use></svg
+          ></a>
         </div>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="twitter">
-              <svg class="social__link-icon" width="18" height="14">
-                <use xlink:href="img/icons.svg#twitter"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="twitter"
+              ><svg class="social__link-icon" width="18" height="14">
+                <use xlink:href="img/icons.svg#twitter"></use></svg
+            ></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Фейсбук">
-              <svg class="social__link-icon" width="9" height="18">
-                <use xlink:href="img/icons.svg#facebook"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="Фейсбук"
+              ><svg class="social__link-icon" width="9" height="18">
+                <use xlink:href="img/icons.svg#facebook"></use></svg
+            ></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Youtube">
-              <svg class="social__link-icon" width="15" height="13">
-                <use xlink:href="img/icons.svg#youtube"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="Youtube"
+              ><svg class="social__link-icon" width="15" height="13">
+                <use xlink:href="img/icons.svg#youtube"></use></svg
+            ></a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
@@ -358,19 +340,16 @@
           <a
             class="page-footer__copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <svg
+            ><svg
               class="page-footer__copyright__link-image"
               width="27"
               height="34"
             >
-              <use xlink:href="img/icons.svg#academy"></use>
-            </svg>
-          </a>
+              <use xlink:href="img/icons.svg#academy"></use></svg
+          ></a>
         </div>
       </div>
     </footer>
-
     <!-- Popup -->
     <div class="failed">
       <p class="failed__title">Что-то пошло не так!</p>
@@ -379,7 +358,6 @@
       </p>
       <button class="button failed__button" type="button">Ок</button>
     </div>
-
     <div class="success">
       <p class="success__title">Ваша заявка отправлена</p>
       <p class="success__text">

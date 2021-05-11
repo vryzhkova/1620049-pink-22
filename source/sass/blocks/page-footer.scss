@@ -49,7 +49,14 @@
 
 // logo HTML
 
+.page-footer__copyright {
+  display: flex;
+  align-items: baseline;
+}
+
 .page-footer__copyright-text {
+  padding: 0;
+  margin: 0;
   margin-right: 15px;
   font-weight: 400;
   font-size: 14px;

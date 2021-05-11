@@ -2,9 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" type="image/svg" />
     <link rel="apple-touch-icon" href="favicon/152.png" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -14,8 +14,8 @@
       <div class="page-header__main-nav-wrap">
         <nav class="page-header__main-nav main-nav">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo">
-              <svg
+            <a class="page-header__logo"
+              ><svg
                 class="page-header__logo-icon page-header__logo-mobile"
                 width="74"
                 height="23"
@@ -35,35 +35,31 @@
                 height="40"
               >
                 <use xlink:href="img/icons.svg#pink-logo-desktop"></use>
-              </svg>
-            </a>
-            <button class="main-nav__toggle" type="button">
+              </svg> </a
+            ><button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link"> Главная </a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html"> Фотографии </a>
+              <a class="main-nav__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html"> Конкурс </a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a
                 class="main-nav__link"
                 href="https://htmlacademy.ru/intensive/adaptive"
+                >HTML Academy</a
               >
-                HTML Academy
-              </a>
             </li>
           </ul>
         </nav>
       </div>
-
       <section class="app container">
         <h2 class="visually-hidden">Ссылка на приложение</h2>
         <div class="app__content-wrapper">
@@ -73,24 +69,20 @@
               <a
                 class="button app-button"
                 href="https://www.apple.com/ru/app-store/"
+                >Скачать приложение</a
               >
-                Скачать приложение
-              </a>
               <div class="app__list">
                 <a
                   href="https://www.apple.com/ru/app-store/"
                   class="download-app"
-                >
-                  <svg class="app__logo-apple" width="47" height="56">
+                  ><svg class="app__logo-apple" width="47" height="56">
                     <use xlink:href="img/icons.svg#apple"></use>
-                  </svg>
-                </a>
-                <a href="https://play.google.com/store" class="download-app">
-                  <svg class="app__logo-android" width="43" height="47">
+                  </svg> </a
+                ><a href="https://play.google.com/store" class="download-app"
+                  ><svg class="app__logo-android" width="43" height="47">
                     <use xlink:href="img/icons.svg#android"></use>
-                  </svg>
-                </a>
-                <a
+                  </svg> </a
+                ><a
                   href="https://www.microsoft.com/ru-RU/store/apps"
                   class="download-app"
                   ><svg class="app__logo-microsoft" width="44" height="41">
@@ -98,28 +90,23 @@
                 ></a>
               </div>
               <p class="app__slogan">
-                Доступно для iPhone, iPad, Android,<br />
-                Windows Phone, OS X, Windows 8
+                Доступно для iPhone, iPad, Android,<br />Windows Phone, OS X,
+                Windows 8
               </p>
             </div>
           </div>
         </div>
       </section>
     </header>
-
     <main class="page-main">
       <h1 class="visually-hidden">
         Пинк - приложение для раскрашивания серых будней в розовый цвет
       </h1>
-
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__headline">Устали от серости мегаполиса?</p>
-          <p class="advantages__caption">
-            Нам есть, что вам <br />
-            предложить!
-          </p>
+          <p class="advantages__caption">Нам есть, что вам<br />предложить!</p>
         </div>
         <div class="advantages__wrap">
           <ul class="advantages__list container">
@@ -157,10 +144,10 @@
         <div class="advantages__research-wrap">
           <div class="advantages__research container">
             <div class="advantages__research-about">
-              <p class="advantages__research-title">Эффект на 24 часа!</p>
+              <p class="advantages__research-title">Эффект</br> на 24 часа!</p>
               <p class="advantages__research-text">
                 Британские ученые провели исследования и доказали, что
-                положительный эффект от использования приложения длится целые
+                положительный эффект</br> от использования приложения длится целые
                 сутки!
               </p>
               <a href="#" class="advantages__research-link"
@@ -170,7 +157,6 @@
           </div>
         </div>
       </section>
-
       <section class="reviews">
         <div class="container slider">
           <h2 class="visually-hidden">Отзывы пользователей приложения</h2>
@@ -237,7 +223,6 @@
           </div>
         </div>
       </section>
-
       <section class="price">
         <div class="price__slider price__wrapper">
           <h2 class="visually-hidden">Тарифы и стоимость</h2>
@@ -263,7 +248,6 @@
                   </th>
                 </tr>
               </thead>
-
               <tbody>
                 <tr>
                   <td class="table-price__cell">Розовый фильтр</td>
@@ -274,9 +258,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--true"
+                        ><span class="visually-hidden">Да</span></span
                       >
-                        <span class="visually-hidden">Да</span>
-                      </span>
                     </div>
                   </td>
                   <td class="table-price__cell">
@@ -286,9 +269,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--true"
+                        ><span class="visually-hidden">Да</span></span
                       >
-                        <span class="visually-hidden">Да</span>
-                      </span>
                     </div>
                   </td>
                   <td class="table-price__cell">
@@ -298,13 +280,11 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--true"
+                        ><span class="visually-hidden">Да</span></span
                       >
-                        <span class="visually-hidden">Да</span>
-                      </span>
                     </div>
                   </td>
                 </tr>
-
                 <tr>
                   <td class="table-price__cell">Смайлики</td>
                   <td class="table-price__cell">
@@ -314,9 +294,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--false"
+                        ><span class="visually-hidden">Нет</span></span
                       >
-                        <span class="visually-hidden">Нет</span>
-                      </span>
                     </div>
                   </td>
                   <td class="table-price__cell">
@@ -326,9 +305,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--true"
+                        ><span class="visually-hidden">Да</span></span
                       >
-                        <span class="visually-hidden">Да</span>
-                      </span>
                     </div>
                   </td>
                   <td class="table-price__cell">
@@ -338,13 +316,11 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--true"
+                        ><span class="visually-hidden">Да</span></span
                       >
-                        <span class="visually-hidden">Да</span>
-                      </span>
                     </div>
                   </td>
                 </tr>
-
                 <tr>
                   <td class="table-price__cell">Комментарии</td>
                   <td class="table-price__cell">
@@ -354,9 +330,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--false"
+                        ><span class="visually-hidden">Нет</span></span
                       >
-                        <span class="visually-hidden">Нет</span>
-                      </span>
                     </div>
                   </td>
                   <td class="table-price__cell">
@@ -366,9 +341,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--false"
+                        ><span class="visually-hidden">Нет</span></span
                       >
-                        <span class="visually-hidden">Нет</span>
-                      </span>
                     </div>
                   </td>
                   <td class="table-price__cell">
@@ -378,9 +352,8 @@
                     >
                       <span
                         class="table-price__feature-value table-price__feature-value--true"
+                        ><span class="visually-hidden">Да</span></span
                       >
-                        <span class="visually-hidden">Да</span>
-                      </span>
                     </div>
                   </td>
                 </tr>
@@ -397,7 +370,6 @@
           </div>
         </div>
       </section>
-
       <section class="contacts">
         <!-- <div class="contacts__wrapper"> -->
         <h2 class="visually-hidden">Контакты</h2>
@@ -411,15 +383,16 @@
           <ul class="contacts-list">
             <li class="contacts-item">
               <p class="contacts-list__title">Звоните:</p>
-              <a class="contacts__phone" href="tel:+78125556666">
-                <span class="contacts__phone-mobile"></span> +7 (812) 555-66-66
-              </a>
+              <a class="contacts__phone" href="tel:+78125556666"
+                ><span class="contacts__phone-mobile"></span> +7 (812)
+                555-66-66</a
+              >
             </li>
             <li class="contacts-item contacts-item-email">
               <p class="contacts-list__title">Пишите:</p>
-              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru"
+                >mail@htmlacademy.ru</a
+              >
             </li>
             <li class="contacts-item">
               <p class="contacts-list__title">Приезжайте в гости:</p>
@@ -435,22 +408,19 @@
             height="416"
             allowfullscreen
             title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-          ></iframe> -->
-          <picture>
-            <source
+          ></iframe> --><picture
+            ><source
               media="(min-width: 1200px)"
               srcset="
                 img/footer/map-desktop@1x.jpg,
                 img/footer/map-desktop@2x.jpg 2x
-              "
-            />
+              " />
             <source
               media="(min-width: 660px)"
               srcset="
                 img/footer/map-tablet@1x.jpg,
                 img/footer/map-tablet@2x.jpg 2x
-              "
-            />
+              " />
             <img
               class="contacts__map-image"
               src="img/footer/map-mobile@1x.jpg"
@@ -458,12 +428,10 @@
               width="320"
               height="200"
               alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-            />
-          </picture>
+          /></picture>
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="container social">
         <div class="page-footer__social">
@@ -471,8 +439,7 @@
             class="page-footer__social-link"
             href="#"
             aria-label="Логотип приложения Pink"
-          >
-            <svg class="page-footer__social-logo" width="145" height="40">
+            ><svg class="page-footer__social-logo" width="145" height="40">
               <use xlink:href="img/icons.svg#footer-logo"></use>
             </svg>
             <svg
@@ -480,31 +447,27 @@
               width="147"
               height="40"
             >
-              <use xlink:href="img/icons.svg#footer-logo-desktop"></use>
-            </svg>
-          </a>
+              <use xlink:href="img/icons.svg#footer-logo-desktop"></use></svg
+          ></a>
         </div>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="twitter">
-              <svg class="social__link-icon" width="18" height="14">
-                <use xlink:href="img/icons.svg#twitter"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="twitter"
+              ><svg class="social__link-icon" width="18" height="14">
+                <use xlink:href="img/icons.svg#twitter"></use></svg
+            ></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Фейсбук">
-              <svg class="social__link-icon" width="9" height="18">
-                <use xlink:href="img/icons.svg#facebook"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="Фейсбук"
+              ><svg class="social__link-icon" width="9" height="18">
+                <use xlink:href="img/icons.svg#facebook"></use></svg
+            ></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Youtube">
-              <svg class="social__link-icon" width="15" height="13">
-                <use xlink:href="img/icons.svg#youtube"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="Youtube"
+              ><svg class="social__link-icon" width="15" height="13">
+                <use xlink:href="img/icons.svg#youtube"></use></svg
+            ></a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
@@ -512,15 +475,13 @@
           <a
             class="page-footer__copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <svg
+            ><svg
               class="page-footer__copyright__link-image"
               width="27"
               height="34"
             >
-              <use xlink:href="img/icons.svg#academy"></use>
-            </svg>
-          </a>
+              <use xlink:href="img/icons.svg#academy"></use></svg
+          ></a>
         </div>
       </div>
     </footer>

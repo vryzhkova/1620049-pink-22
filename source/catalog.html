@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" type="image/svg" />
   </head>
   <body class="page__body">
@@ -12,8 +12,8 @@
       <div class="page-header__main-nav-wrap">
         <nav class="page-header__main-nav main-nav">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo">
-              <svg
+            <a class="page-header__logo"
+              ><svg
                 class="page-header__logo-icon page-header__logo-mobile"
                 width="74"
                 height="23"
@@ -33,76 +33,66 @@
                 height="40"
               >
                 <use xlink:href="img/icons.svg#pink-logo-desktop"></use>
-              </svg>
-            </a>
-            <button class="main-nav__toggle" type="button">
+              </svg> </a
+            ><button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="index.html"> Главная </a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link"> Фотографии </a>
+              <a class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html"> Конкурс </a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a
                 class="main-nav__link"
                 href="https://htmlacademy.ru/intensive/adaptive"
+                >HTML Academy</a
               >
-                HTML Academy
-              </a>
             </li>
           </ul>
         </nav>
       </div>
-
       <div class="photo container">
         <h2 class="photo__title">Фотографии пользователей</h2>
       </div>
     </header>
-
     <main class="page-main">
       <h1 class="visually-hidden">Каталог фотографий пользователей</h1>
       <div class="page-main__gallery-wrapper">
         <section class="gallery">
           <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
-
           <p class="gallery__title">
             Взгляните на фотографии, которые выкладывают пользователи! Видите,
             как не хватает ваших?
           </p>
           <div class="panorama">
             <p class="panorama__of-day">Панорама дня</p>
-            <a class="panorama__link" href="#">
-              <picture>
-                <source
+            <a class="panorama__link" href="#"
+              ><picture
+                ><source
                   media="(min-width: 960px)"
                   srcset="
                     img/catalog/panorama-desktop@1x.jpg,
                     img/catalog/panorama-desktop@2x.jpg 2x
-                  "
-                />
+                  " />
                 <source
                   media="(min-width: 660px)"
                   srcset="
                     img/catalog/panorama-tablet@1x.jpg,
                     img/catalog/panorama-tablet@2x.jpg 2x
-                  "
-                />
+                  " />
                 <img
                   class="panorama__image"
                   src="img/catalog/panorama-mobile@1x.jpg"
                   srcset="img/catalog/panorama-mobile@2x.jpg 2x"
-                  alt="Фото - панорама дня: подвестной мост"
-                />
-              </picture>
-            </a>
+                  alt="Фото - панорама дня: подвестной мост" /></picture
+            ></a>
             <div class="container">
               <blockquote class="gallery__list-authorinfo panorama__post-item">
                 <div class="gallery__author-wrap">
@@ -129,33 +119,28 @@
               </blockquote>
             </div>
           </div>
-
           <ul class="gallery__list container">
             <li class="gallery__list-item">
-              <a class="gallery__link" href="#">
-                <picture>
-                  <source
+              <a class="gallery__link" href="#"
+                ><picture
+                  ><source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-car-desktop@1x.jpg,
                       img/catalog/photo-car-desktop@1x.jpg 2x
-                    "
-                  />
+                    " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-car-tablet@1x.jpg,
                       img/catalog/photo-car-tablet@1x.jpg
-                    "
-                  />
+                    " />
                   <img
                     class="gallery__list-image"
                     src="img/catalog/photo-car-mobile@1x.jpg"
                     srcset="img/catalog/photo-car-mobile@2x.jpg 2x"
-                    alt="Фото пользователя: белая машина"
-                  />
-                </picture>
-              </a>
+                    alt="Фото пользователя: белая машина" /></picture
+              ></a>
               <blockquote
                 class="gallery__list-authorinfo gallery__list-author-info"
               >
@@ -180,30 +165,26 @@
               </blockquote>
             </li>
             <li class="gallery__list-item">
-              <a class="gallery__link" href="#">
-                <picture>
-                  <source
+              <a class="gallery__link" href="#"
+                ><picture
+                  ><source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-dramset-desktop@1x.jpg,
                       img/catalog/photo-dramset-desktop@1x.jpg 2x
-                    "
-                  />
+                    " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-dramset-tablet@1x.jpg,
                       img/catalog/photo-dramset-tablet@1x.jpg
-                    "
-                  />
+                    " />
                   <img
                     class="gallery__list-image"
                     src="img/catalog/photo-dramset-mobile@1x.jpg"
                     srcset="img/catalog/photo-dramset-mobile@2x.jpg 2x"
-                    alt="Фото пользователя: барабаны"
-                  />
-                </picture>
-              </a>
+                    alt="Фото пользователя: барабаны" /></picture
+              ></a>
               <blockquote
                 class="gallery__list-authorinfo gallery__list-author-info"
               >
@@ -226,30 +207,26 @@
               </blockquote>
             </li>
             <li class="gallery__list-item">
-              <a class="gallery__link" href="#">
-                <picture>
-                  <source
+              <a class="gallery__link" href="#"
+                ><picture
+                  ><source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-roof-desktop@1x.jpg,
                       img/catalog/photo-roof-desktop@1x.jpg 2x
-                    "
-                  />
+                    " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-roof-tablet@1x.jpg,
                       img/catalog/photo-roof-tablet@1x.jpg
-                    "
-                  />
+                    " />
                   <img
                     class="gallery__list-image"
                     src="img/catalog/photo-roof-mobile@1x.jpg"
                     srcset="img/catalog/photo-roof-mobile@2x.jpg 2x"
-                    alt="Фото пользователя: стеклянная крыша"
-                  />
-                </picture>
-              </a>
+                    alt="Фото пользователя: стеклянная крыша" /></picture
+              ></a>
               <blockquote
                 class="gallery__list-authorinfo gallery__list-author-info"
               >
@@ -274,30 +251,26 @@
               </blockquote>
             </li>
             <li class="gallery__list-item">
-              <a class="gallery__link" href="#">
-                <picture>
-                  <source
+              <a class="gallery__link" href="#"
+                ><picture
+                  ><source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-market-desktop@1x.jpg,
                       img/catalog/photo-market-desktop@1x.jpg 2x
-                    "
-                  />
+                    " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-market-tablet@1x.jpg,
                       img/catalog/photo-market-tablet@1x.jpg
-                    "
-                  />
+                    " />
                   <img
                     class="gallery__list-image"
                     src="img/catalog/photo-market-mobile@1x.jpg"
                     srcset="img/catalog/photo-market-mobile@2x.jpg 2x"
-                    alt="Фото пользователя: кубанский рынок"
-                  />
-                </picture>
-              </a>
+                    alt="Фото пользователя: кубанский рынок" /></picture
+              ></a>
               <blockquote
                 class="gallery__list-authorinfo gallery__list-author-info"
               >
@@ -313,37 +286,32 @@
                     </svg>
                   </button>
                   <p class="gallery__list-button-heart">
-                    Нравится:
-                    <span class="gallery__list-likes-number">4</span>
+                    Нравится: <span class="gallery__list-likes-number">4</span>
                   </p>
                 </div>
               </blockquote>
             </li>
             <li class="gallery__list-item">
-              <a class="gallery__link" href="#">
-                <picture>
-                  <source
+              <a class="gallery__link" href="#"
+                ><picture
+                  ><source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-legs-desktop@1x.jpg,
                       img/catalog/photo-legs-desktop@1x.jpg 2x
-                    "
-                  />
+                    " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-legs-tablet@1x.jpg,
                       img/catalog/photo-legs-tablet@1x.jpg
-                    "
-                  />
+                    " />
                   <img
                     class="gallery__list-image"
                     src="img/catalog/photo-legs-mobile@1x.jpg"
                     srcset="img/catalog/photo-legs-mobile@2x.jpg 2x"
-                    alt="Фото пользователя: ноги человека в горах"
-                  />
-                </picture>
-              </a>
+                    alt="Фото пользователя: ноги человека в горах" /></picture
+              ></a>
               <blockquote
                 class="gallery__list-authorinfo gallery__list-author-info"
               >
@@ -366,30 +334,26 @@
               </blockquote>
             </li>
             <li class="gallery__list-item">
-              <a class="gallery__link" href="#">
-                <picture>
-                  <source
+              <a class="gallery__link" href="#"
+                ><picture
+                  ><source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-plain-desktop@1x.jpg,
                       img/catalog/photo-plain-desktop@1x.jpg 2x
-                    "
-                  />
+                    " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-plain-tablet@1x.jpg,
                       img/catalog/photo-plain-tablet@1x.jpg
-                    "
-                  />
+                    " />
                   <img
                     class="gallery__list-image"
                     src="img/catalog/photo-plain-mobile@1x.jpg"
                     srcset="img/catalog/photo-plain-mobile@2x.jpg 2x"
-                    alt="Фото пользователя: ноги человека в горах"
-                  />
-                </picture>
-              </a>
+                    alt="Фото пользователя: ноги человека в горах" /></picture
+              ></a>
               <blockquote
                 class="gallery__list-authorinfo gallery__list-author-info"
               >
@@ -419,14 +383,12 @@
             </p>
           </div>
         </section>
-
         <section class="filter">
           <h2 class="visually-hidden">
             Отредактировать и запостить новую фотографию
           </h2>
           <div class="container">
             <!-- form -->
-
             <form class="filter__form" action="https://echo.htmlacademy.ru/">
               <input
                 class="visually-hidden filter__form-file"
@@ -441,7 +403,6 @@
               ></label>
               <div class="filter__controls">
                 <!-- icons-->
-
                 <div class="filter__tools">
                   <div class="filter__tools-instrument filter__tools-crop">
                     <button class="filter__tools-button" type="button">
@@ -473,9 +434,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- ./icons-->
-
-                <!-- Range-1 -->
+                <!-- ./icons--><!-- Range-1 -->
                 <div class="filter__range-filter filter__range-filter-active">
                   <div class="filter__icon-wrapper">
                     <svg
@@ -495,7 +454,6 @@
                     </div>
                   </fieldset>
                 </div>
-
                 <!-- Range-2 -->
                 <div class="filter__range-filter">
                   <div class="filter__icon-wrapper">
@@ -516,7 +474,6 @@
                     </div>
                   </fieldset>
                 </div>
-
                 <!-- Range-3 -->
                 <div class="filter__range-filter">
                   <div class="filter__icon-wrapper">
@@ -537,9 +494,7 @@
                     </div>
                   </fieldset>
                 </div>
-
                 <!-- ./Range -->
-
                 <div class="filter__button">
                   <button class="button filter__button-post" type="submit">
                     Запостить
@@ -555,7 +510,6 @@
         </section>
       </div>
     </main>
-
     <footer class="page-footer">
       <div class="container social">
         <div class="page-footer__social">
@@ -563,8 +517,7 @@
             class="page-footer__social-link"
             href="#"
             aria-label="Логотип приложения Pink"
-          >
-            <svg class="page-footer__social-logo" width="145" height="40">
+            ><svg class="page-footer__social-logo" width="145" height="40">
               <use xlink:href="img/icons.svg#footer-logo"></use>
             </svg>
             <svg
@@ -572,31 +525,27 @@
               width="147"
               height="40"
             >
-              <use xlink:href="img/icons.svg#footer-logo-desktop"></use>
-            </svg>
-          </a>
+              <use xlink:href="img/icons.svg#footer-logo-desktop"></use></svg
+          ></a>
         </div>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="twitter">
-              <svg class="social__link-icon" width="18" height="14">
-                <use xlink:href="img/icons.svg#twitter"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="twitter"
+              ><svg class="social__link-icon" width="18" height="14">
+                <use xlink:href="img/icons.svg#twitter"></use></svg
+            ></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Фейсбук">
-              <svg class="social__link-icon" width="9" height="18">
-                <use xlink:href="img/icons.svg#facebook"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="Фейсбук"
+              ><svg class="social__link-icon" width="9" height="18">
+                <use xlink:href="img/icons.svg#facebook"></use></svg
+            ></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Youtube">
-              <svg class="social__link-icon" width="15" height="13">
-                <use xlink:href="img/icons.svg#youtube"></use>
-              </svg>
-            </a>
+            <a class="social__link" href="#" aria-label="Youtube"
+              ><svg class="social__link-icon" width="15" height="13">
+                <use xlink:href="img/icons.svg#youtube"></use></svg
+            ></a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
@@ -604,15 +553,13 @@
           <a
             class="page-footer__copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <svg
+            ><svg
               class="page-footer__copyright__link-image"
               width="27"
               height="34"
             >
-              <use xlink:href="img/icons.svg#academy"></use>
-            </svg>
-          </a>
+              <use xlink:href="img/icons.svg#academy"></use></svg
+          ></a>
         </div>
       </div>
     </footer>

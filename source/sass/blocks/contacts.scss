@@ -82,10 +82,10 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 123px;
+  height: 33px;
   background-image: url("../img/footer/triangle-white-footer.svg");
-  background-size: 100% 121px;
-  background-position: 50% -88px;
+  background-size: 100% 33px;
+  background-position: 50% 0;
   background-repeat: no-repeat;
 }
 
@@ -131,13 +131,17 @@
   }
 
   .contacts__map::before {
-    background-position: 50% -53px;
+    background-size: 100% 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     margin-top: 60px;
+  }
+
+  .contacts__map {
+    margin-top: 58px;
   }
 
   .contacts__title {
@@ -160,5 +164,9 @@
 
   .contacts-item-email {
     order: 1;
+  }
+
+  .contacts__map::before {
+    background-size: 100% 124px;
   }
 }
