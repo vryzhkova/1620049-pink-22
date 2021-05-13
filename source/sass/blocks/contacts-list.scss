@@ -16,6 +16,16 @@
   color: $text-base-dark-blue;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts-list__title {
     margin-bottom: 22px;

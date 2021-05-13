@@ -1,6 +1,6 @@
 .price {
-  background-image: linear-gradient(175deg, #ffffff 14%, #f2f2f2 14%);
-  padding-top: 139px;
+  background-image: linear-gradient(176deg, #ffffff 9%, #f2f2f2 9%);
+  padding-top: 128px;
   padding-bottom: 46px;
 }
 
@@ -60,7 +60,8 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding-top: 112px;
+    background-image: linear-gradient(176deg, #ffffff 10%, #f2f2f2 10%);
+    padding-top: 95px;
     padding-bottom: 16px;
   }
 
@@ -80,7 +81,7 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 159px;
+    padding-top: 154px;
     padding-bottom: 41px;
     background-image: linear-gradient(175deg, #ffffff 16%, #f2f2f2 16%);
   }

@@ -62,12 +62,11 @@
   height: 24px;
 }
 
-@media (min-width: $tablet-width) {
-  // .main-nav__logo-wrapper {
-  //   padding-top: 27px;
-  //   padding-bottom: 43px;
-  // }
-}
+// @media (min-width: $tablet-width) {
+//   .main-nav__item {
+//     padding-top: 1px;
+//   }
+// }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
@@ -80,7 +79,7 @@
     margin: 0 auto;
     padding: 0 10px;
     padding-top: 35px;
-    padding-left: 174px;
+    padding-left: 171px;
   }
 
   .main-nav__item {
@@ -94,7 +93,10 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
-    margin-right: 79px;
+  }
+
+  .main-nav__item:not(:last-child) a {
+    margin-right: 75px;
   }
 
   .main-nav__link {

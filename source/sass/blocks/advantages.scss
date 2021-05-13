@@ -132,8 +132,9 @@
   }
 
   .advantages__wrap {
+    background-image: linear-gradient(176deg, #ffffff 8%, #f2f2f2 8%);
     padding-top: 1px;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
   }
 
   .advantages__headline {
@@ -220,6 +221,7 @@
   .advantages__wrap {
     padding-bottom: 25px;
     background-image: linear-gradient(175deg, #ffffff 20%, #f2f2f2 20%);
+    margin-bottom: -30px;
   }
 
   .advantages__headline {
@@ -238,36 +240,38 @@
     line-height: 30px;
     padding-bottom: 23px;
     padding-right: 42px;
+    margin-top: 56px;
+    margin-left: 28px;
   }
 
   .advantages__description {
     font-size: 18px;
     line-height: 30px;
-    margin-left: 7px;
+    margin-left: -7px;
     width: 252px;
   }
 
   .advantages__item {
+    padding-top: 311px;
+    width: 240px;
     text-align: center;
-    padding-top: 315px;
+    background-size: 292px 302px;
   }
 
   .advantages__wrapper {
     margin: 0;
     padding: 0;
-    padding-top: 53px;
-    padding-left: 4px;
     background: #f2f2f2;
   }
 
   .advantages__list {
     padding: 0;
     padding-top: 45px;
-    margin-left: 139px;
     background-image: none;
     flex-direction: row;
-    align-items: baseline;
+    align-items: stretch;
     justify-content: space-around;
+    width: 960px;
   }
 
   .advantages__item-desktop-1 {
@@ -314,14 +318,14 @@
   }
 
   .advantages__research-about {
-    margin-top: 102px;
+    margin-top: 104px;
     width: 570px;
   }
 
   .advantages__research-title {
     width: 300px;
     line-height: 30px;
-    margin-bottom: -4px;
+    margin-bottom: 26px;
   }
 
   .advantages__research-text {
