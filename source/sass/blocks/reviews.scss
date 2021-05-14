@@ -144,6 +144,11 @@
   .reviews__author-name {
     display: block;
     font-size: 24px;
+    width: 893px;
+  }
+
+  .reviews__author-info {
+    width: 893px;
   }
 
   .reviews__work {
@@ -168,7 +173,7 @@
   }
 
   .reviews__author-block {
-    margin-right: 47px;
+    margin-right: 0;
   }
 
   .reviews-button-item {
@@ -176,7 +181,7 @@
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-    bottom: 180px;
+    bottom: 157px;
     padding: 0;
     width: 22px;
     height: 41px;

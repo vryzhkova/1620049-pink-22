@@ -82,9 +82,13 @@
 @media (min-width: $desktop-width) {
   .price {
     padding-top: 154px;
-    padding-bottom: 41px;
+    padding-bottom: 44px;
     background-image: linear-gradient(175deg, #ffffff 16%, #f2f2f2 16%);
   }
+
+  // .price__slider {
+  //   padding-left: -2px;
+  // }
 
   .price__wrapper {
     width: 960px;

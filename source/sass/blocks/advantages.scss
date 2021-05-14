@@ -215,13 +215,13 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-top: 57px;
+    padding-top: 62px;
   }
 
   .advantages__wrap {
     padding-bottom: 25px;
     background-image: linear-gradient(175deg, #ffffff 20%, #f2f2f2 20%);
-    margin-bottom: -30px;
+    margin-bottom: 0;
   }
 
   .advantages__headline {
@@ -238,17 +238,15 @@
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
-    padding-bottom: 23px;
-    padding-right: 42px;
     margin-top: 56px;
-    margin-left: 28px;
+    margin-bottom: 11px;
   }
 
   .advantages__description {
     font-size: 18px;
     line-height: 30px;
     margin-left: -7px;
-    width: 252px;
+    width: 247px;
   }
 
   .advantages__item {
@@ -276,8 +274,8 @@
 
   .advantages__item-desktop-1 {
     background-image: url("../img/advantages/desktop-screen-1@x1.png");
-    background-position: -15px 11px;
-    background-size: 300px 382px;
+    background-position: -34px 11px;
+    background-size: 308px 382px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -287,8 +285,8 @@
 
   .advantages__item-desktop-2 {
     background-image: url("../img/advantages/desktop-screen-2@x1.png");
-    background-position: -15px 11px;
-    background-size: 300px 382px;
+    background-position: -34px 11px;
+    background-size: 308px 382px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -298,8 +296,8 @@
 
   .advantages__item-desktop-3 {
     background-image: url("../img/advantages/desktop-screen-3@x1.png");
-    background-position: -15px 11px;
-    background-size: 300px 382px;
+    background-position: -34px 11px;
+    background-size: 308px 382px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
