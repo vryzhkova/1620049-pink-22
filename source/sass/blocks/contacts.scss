@@ -172,8 +172,11 @@
   }
 
   .contacts__map-image {
+    position: absolute;
     height: 502px;
     width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .contacts-item-email {
