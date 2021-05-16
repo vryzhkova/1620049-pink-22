@@ -77,7 +77,7 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
-Sprite;
+// Sprite
 
 const sprite = () => {
   return gulp
