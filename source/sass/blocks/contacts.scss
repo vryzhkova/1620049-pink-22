@@ -15,6 +15,7 @@
 }
 
 .contacts__map-image {
+  position: absolute;
   width: 100%;
   height: 200px;
   z-index: 1;
@@ -84,6 +85,7 @@
 
 .contacts__map {
   width: 100%;
+  height: 200px;
   position: relative;
 }
 
@@ -125,15 +127,13 @@
     line-height: 54px;
   }
 
-  // .contacts__adress {
-  //   width: 218px;
-  // }
-
   .contacts__map {
     margin-top: -21px;
+    height: 374px;
   }
 
   .contacts__map-image {
+    position: absolute;
     height: 374px;
     width: 660px;
   }
@@ -156,6 +156,7 @@
 
   .contacts__map {
     margin: 0;
+    height: 502px;
   }
 
   .contacts__title {

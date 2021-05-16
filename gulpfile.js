@@ -72,26 +72,26 @@ const createWebp = () => {
   return gulp
     .src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.createWebp = createWebp;
 
-// Sprite
+Sprite;
 
-// const sprite = () => {
-//   return gulp
-//     .src("source/img/icons/*.svg")
-//     .pipe(
-//       svgstore({
-//         inlineSvg: true,
-//       })
-//     )
-//     .pipe(rename("sprite.svg"))
-//     .pipe(gulp.dest("build/img"));
-// };
+const sprite = () => {
+  return gulp
+    .src("source/img/icons/*.svg")
+    .pipe(
+      svgstore({
+        inlineSvg: true,
+      })
+    )
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+};
 
-// exports.sprite = sprite;
+exports.sprite = sprite;
 
 // Copy
 
@@ -157,12 +157,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(
-    styles,
-    html,
-    // sprite,
-    createWebp
-  )
+  gulp.parallel(styles, html, sprite, createWebp)
 );
 
 exports.build = build;
@@ -173,11 +168,6 @@ exports.default = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(
-    styles,
-    html,
-    // sprite,
-    createWebp
-  ),
+  gulp.parallel(styles, html, sprite, createWebp),
   gulp.series(server, watcher)
 );
