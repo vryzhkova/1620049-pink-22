@@ -147,7 +147,8 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/img/icons/*.svg", gulp.series(sprite, reload));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles, reload));
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
@@ -167,7 +168,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
-  optimizeImages,
+  copyImages,
   gulp.parallel(styles, html, sprite, createWebp),
   gulp.series(server, watcher)
 );
