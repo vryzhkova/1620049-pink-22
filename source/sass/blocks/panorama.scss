@@ -16,17 +16,16 @@
 .panorama__of-day {
   position: absolute;
   margin: 0;
-  padding: 0;
+  padding: 6px 19px 6px 19px;
   z-index: 1;
   left: 50%;
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $text-base-white;
   background-color: $background-pink;
   text-align: center;
-  width: 140px;
-  height: 36px;
 }
 
 .panorama__author-wrap {
@@ -53,11 +52,26 @@
 .panorama__text {
   margin: 0;
   padding: 0;
+  padding-top: 1px;
+  padding-left: 5px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $text-base-dark-blue;
-  width: 253px;
+  width: 250px;
+}
+
+.panorama__post-item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 18px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-blockquote;
+  box-sizing: border-box;
+  width: 280px;
 }
 
 .panorama__heart {
@@ -77,15 +91,30 @@
     height: 509px;
   }
 
+  .panorama__author-wrap {
+    margin-right: 304px;
+  }
+
+  .panorama__of-day {
+    left: 76%;
+    margin-top: 57px;
+  }
+
   .panorama__post-item {
-    width: 620px;
+    width: 646px;
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 30px 32px 30px;
+    padding: 23px 24px 24px;
+  }
+
+  .panorama__list-button-heart {
+    padding-right: 10px;
   }
 
   .panorama__text {
     width: 520px;
+    padding: 0;
+    padding-left: 6px;
   }
 
   .gallery__link {
@@ -102,14 +131,19 @@
 
   .panorama__post-item {
     width: 940px;
+    padding: 23px 13px 23px 21px;
+  }
+
+  .panorama__author-wrap {
+    margin-right: 625px;
+  }
+
+  .panorama__of-day {
+    left: 930px;
+    margin-top: 54px;
   }
 
   .panorama__text {
     width: 874px;
-  }
-
-  .gallery__link {
-    width: 300px;
-    height: 400px;
   }
 }

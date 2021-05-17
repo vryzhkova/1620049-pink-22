@@ -4,8 +4,9 @@
 }
 
 .table-price__header {
+  padding-top: 11px;
+  padding-bottom: 26px;
   border-right: 2px solid $table-grid-border;
-  font-size: 18px;
   color: $text-base-white;
   background-color: $table-background;
 }
@@ -17,8 +18,15 @@
   background-color: transparent;
 }
 
+// .table-price__license-type {
+//   padding-bottom: 3px;
+// }
+
 .table-price__license-type,
 .table-price__license-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
   display: block;
   text-transform: uppercase;
 }
@@ -34,9 +42,16 @@
 }
 
 .table-price__cell {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 21px;
   border-right: 2px solid $table-grid-border;
   border-bottom: 2px solid $table-grid-border;
   background-color: $table-background-base;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .table-price__cell:first-child {
@@ -62,12 +77,14 @@
 }
 
 .table-price__feature-value--true {
+  padding-left: 29px;
   width: 31px;
   height: 21px;
   background-image: url("../img/table/icon-yes.svg");
 }
 
 .table-price__feature-value--false {
+  padding-left: 35px;
   width: 27px;
   height: 27px;
   background-image: url("../img/table/icon-no.svg");
@@ -85,16 +102,27 @@
     width: 100%;
   }
 
+  .table-price__header {
+    padding-bottom: 8px;
+  }
+
   .table-price__header:first-child {
     display: table-cell;
   }
 
   .table-price__cell {
     width: 25%;
+    text-transform: unset;
+    padding-bottom: 7px;
+    padding-left: 3px;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 30px;
   }
 
   .table-price__cell:first-child {
     display: table-cell;
+    padding-left: 15px;
   }
 
   .table-price__feature {
@@ -113,6 +141,35 @@
 }
 
 @media (min-width: $desktop-width) {
+  .table-price {
+    width: 102%;
+  }
+
+  .table-price__header {
+    padding-bottom: 22px;
+  }
+
+  .table-price__license-type {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+
+  .table-price__license-price {
+    font-size: 24px;
+  }
+
+  .table-price__cell {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 8px;
+    font-size: 18px;
+  }
+
+  .table-price__cell:first-child {
+    padding-left: 29px;
+  }
+
   .table-price__header--hit {
     background-image: url("../img/table/table-hit-desktop.svg");
     background-size: 74px 74px;

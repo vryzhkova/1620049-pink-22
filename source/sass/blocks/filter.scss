@@ -1,7 +1,7 @@
 .filter {
   background-color: $background-blockquote;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .filter__form {
@@ -34,7 +34,7 @@
 
 .filter__tools-instrument {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .filter__tools-button {
@@ -42,7 +42,16 @@
   cursor: pointer;
 }
 
-.filter__tools-button:hover {
+.filter__tools-icon-crop {
+  fill: $text-hover;
+}
+
+.filter__tools-icon-contrast,
+.filter__tools-icon-fill {
+  opacity: 0.3;
+}
+
+.filter__tools-icons:hover {
   opacity: 0.5;
 }
 
@@ -54,6 +63,8 @@
 
 .filter-item {
   border: none;
+  margin: 0;
+  margin-left: 7px;
 }
 
 // Range
@@ -73,7 +84,7 @@
   content: "";
   position: absolute;
   left: -16px;
-  bottom: -16px;
+  bottom: 2px;
   width: 320px;
   height: 1px;
   background: $filter-after-line;
@@ -86,15 +97,10 @@
   background-color: $background-scale;
 }
 
-// .filter__bar {
-//   width: 65%;
-//   margin-left: 0%;
-// }
-
 .filter__toggle {
   position: absolute;
   top: 28px;
-  left: 205px;
+  left: 212px;
   width: 14px;
   height: 14px;
   background-color: $background-toggle;
@@ -106,7 +112,8 @@
 // Filter - buttons
 
 .filter__button {
-  margin-top: 50px;
+  margin-top: 36px;
+  padding-bottom: 12px;
 }
 
 .filter__button-post {
@@ -164,7 +171,7 @@
   .filter__form {
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 57px;
     padding-bottom: 29px;
   }
 
@@ -174,14 +181,35 @@
     width: 275px;
   }
 
+  .filter-item {
+    margin-left: 14px;
+  }
+
+  .filter__toggle {
+    top: 30px;
+    left: 214px;
+  }
+
+  .filter__toggle:nth-child(2) {
+    top: 30px;
+    left: 100px;
+  }
+
+  .filter__toggle:nth-child(3) {
+    top: 30px;
+    left: 250px;
+  }
+
   .filter__scale {
-    width: 202px;
+    margin-top: 5px;
+    width: 203px;
     height: 2px;
   }
 
   .filter__range-filter::after {
     width: 275px;
-    bottom: -5px;
+    bottom: 1px;
+    margin-left: 17px;
   }
 
   .filter__tools-instrument {
@@ -190,7 +218,6 @@
 
   .filter__range-filter {
     display: flex;
-    // margin-bottom: 34px;
   }
 
   .filter__icon-wrapper {
@@ -199,14 +226,36 @@
     height: 27px;
   }
 
+  .filter__tools-icon-fill {
+    opacity: 1;
+    fill: $text-hover;
+  }
+
+  .filter__tools-icon-contrast {
+    opacity: 1;
+    fill: $text-hover;
+  }
+
   .filter__form-image {
     width: 300px;
     height: 400px;
+    padding-bottom: 25px;
   }
 
   .filter__controls {
-    width: 280px;
+    width: 274px;
     margin-left: auto;
+    margin-top: -16px;
+  }
+
+  .filter__button {
+    margin-top: 66px;
+    width: 261px;
+  }
+
+  .filter__button-post {
+    width: 261px;
+    margin-bottom: 24px;
   }
 }
 
@@ -217,7 +266,8 @@
 
   .filter__form {
     background-color: $background-filter;
-    padding: 57px 160px 57px 80px;
+    padding: 57px 160px 21px 80px;
+    margin-bottom: 28px;
   }
 
   .filter__scale {
@@ -228,18 +278,29 @@
     width: 410px;
   }
 
-  .filter__icon-full {
+  .filter__tools-icon-crop {
     width: 44px;
     height: 44px;
   }
 
+  .filter__tools-icon-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter__tools-icon-contrast {
+    width: 32px;
+    height: 32px;
+  }
+
   .filter__button {
-    width: 380px;
+    width: 410px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 110px;
+    margin-top: 143px;
+    margin-left: -36px;
   }
 
   .filter__button-post {

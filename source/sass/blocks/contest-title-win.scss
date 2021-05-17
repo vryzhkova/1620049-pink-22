@@ -1,8 +1,8 @@
 .contest-title-win {
   margin: 0;
   padding: 0;
-  padding-top: 54px;
-  padding-bottom: 55px;
+  padding-top: 45px;
+  padding-bottom: 34px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -16,10 +16,12 @@
 
 @media (min-width: $tablet-width) {
   .contest-title-win {
+    margin: 0;
     font-size: 18px;
     width: 490px;
-    padding-top: 100px;
-    padding-bottom: 82px;
+    padding-top: 91px;
+    padding-bottom: 73px;
+    padding-left: 65px;
   }
 
   .contest-title-win__form {
@@ -39,6 +41,7 @@
   .contest-title-win {
     width: 760px;
     padding-bottom: 89px;
+    padding-left: 90px;
   }
 
   .contest-title-win__form {

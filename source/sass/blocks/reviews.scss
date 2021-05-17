@@ -1,3 +1,7 @@
+.reviews {
+  margin-bottom: 10px;
+}
+
 .reviews__wrapper {
   margin: 0 auto;
   padding: 0 20px;
@@ -20,13 +24,24 @@
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
-  color: $text-base-white;
-  padding-bottom: 30px;
+  color: $text-base-black;
+  padding-bottom: 13px;
+}
+
+.reviews__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  width: 280px;
+  color: $text-base-dark-blue;
 }
 
 .reviews__list {
-  padding-top: 50px;
-  padding-bottom: 44px;
+  padding-top: 41px;
+  padding-bottom: 23px;
 }
 
 .reviews__list,
@@ -35,8 +50,13 @@
 }
 
 .reviews__toggles {
-  text-align: center;
-  padding-bottom: 60px;
+  // text-align: center;
+  // padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+  padding-left: 17px;
 }
 
 .reviews__work {
@@ -52,16 +72,6 @@
   display: none;
   border: none;
   background-color: transparent;
-}
-
-.reviews__text {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  width: 280px;
-  color: $text-base-dark-blue;
 }
 
 .slider__toggle {
@@ -92,20 +102,30 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 16px;
+  }
+
   .reviews__work {
     display: block;
   }
 
   .reviews__author-name {
+    display: inline-block;
     font-size: 20px;
-    padding-bottom: 17px;
+    padding-bottom: 0;
   }
 
   .reviews__text {
     font-size: 18px;
     width: 620px;
     order: -1;
-    margin-bottom: 50px;
+    margin-bottom: 28px;
+  }
+
+  .reviews__list {
+    padding-top: 50px;
+    padding-bottom: 36px;
   }
 }
 
@@ -113,16 +133,22 @@
   .reviews {
     background-image: url("../img/advantages/quotes.svg");
     background-repeat: no-repeat;
-    background-position: 50% 40px;
+    background-position: 48% 58px;
     background-size: 79px 63px;
   }
 
   .reviews__list {
-    padding-top: 193px;
+    padding-top: 170px;
   }
 
   .reviews__author-name {
+    display: block;
     font-size: 24px;
+    width: 893px;
+  }
+
+  .reviews__author-info {
+    width: 893px;
   }
 
   .reviews__work {
@@ -138,9 +164,16 @@
     justify-content: space-between;
     position: absolute;
     z-index: 1;
-    // bottom: 10px;
-    left: 60px;
-    right: 60px;
+    left: 106px;
+    right: 152px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__author-block {
+    margin-right: 0;
   }
 
   .reviews-button-item {
@@ -148,7 +181,7 @@
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-    bottom: 180px;
+    bottom: 157px;
     padding: 0;
     width: 22px;
     height: 41px;

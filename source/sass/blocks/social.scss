@@ -7,12 +7,14 @@
 .social__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 53px;
+  padding-left: 7px;
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 38px;
 }
 
 .social__item {
-  margin-right: 14px;
+  margin: 0 5px 0 3px;
 }
 
 .social__link {
@@ -32,15 +34,21 @@
   margin: auto;
 }
 
-// .social__link-icon:active {
-//   color: red;
-// }
-
 @media (min-width: $tablet-width) {
   .social {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+  }
+
+  .social__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 7px;
+  }
+
+  .social__item {
+    margin: 0 5px 0 3px;
   }
 }

@@ -4,8 +4,8 @@
 
 .photo__title {
   margin: 0;
-  padding-top: 36px;
-  padding-bottom: 84px;
+  padding-top: 26px;
+  padding-bottom: 78px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -15,8 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .photo__title {
-    padding-top: 81px;
-    padding-bottom: 143px;
+    padding-top: 64px;
+    padding-bottom: 128px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -24,8 +24,8 @@
 
 @media (min-width: $desktop-width) {
   .photo__title {
-    padding-top: 74px;
-    padding-bottom: 104px;
+    padding-top: 59px;
+    padding-bottom: 89px;
     font-size: 50px;
     line-height: 68px;
     max-width: 358px;

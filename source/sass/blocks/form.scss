@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 29px;
 }
 
 .form__fieldset {
@@ -28,12 +29,13 @@
 
 .form__name {
   border: none;
+  margin-bottom: 25px;
 }
 
 .form__label {
   display: block;
-  padding-left: 20px;
-  padding-bottom: 15px;
+  padding-left: 23px;
+  padding-bottom: 5px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -43,9 +45,11 @@
 }
 
 .form__input {
-  height: 59px;
+  height: 63px;
   padding-left: 20px;
-  margin-bottom: 29px;
+  padding-bottom: 16px;
+  padding-top: 17px;
+  margin-bottom: 17px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -74,7 +78,7 @@
   line-height: 18px;
   color: $form-title;
   text-transform: uppercase;
-  padding-top: 42px;
+  padding-top: 39px;
   padding-bottom: 44px;
   width: 218px;
 }
@@ -90,12 +94,12 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-base-dark-blue;
-  padding-bottom: 69px;
+  padding-bottom: 51px;
 }
 
 .form__achievement-label-checkbox {
   position: relative;
-  padding-left: 69px;
+  padding-left: 59px;
   cursor: pointer;
 }
 
@@ -145,7 +149,8 @@
 
 .form__contacts {
   border: none;
-  padding-top: 42px;
+  padding-top: 31px;
+  padding-bottom: 25px;
 }
 
 .form__contacts-legend {
@@ -153,8 +158,9 @@
 }
 
 .form__contacts-label {
-  padding-left: 20px;
-  padding-bottom: 17px;
+  padding-top: 0;
+  padding-left: 24px;
+  padding-bottom: 5px;
   text-align-last: left;
   display: block;
   font-weight: 400;
@@ -166,9 +172,11 @@
 
 .form__contacts-input {
   width: 100%;
-  margin-bottom: 29px;
+  margin-bottom: 17px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   padding-left: 20px;
-  height: 59px;
+  height: 63px;
   text-align: left;
   font-weight: 400;
   font-size: 18px;
@@ -195,8 +203,8 @@
 }
 
 .form__application-legend {
-  padding-top: 42px;
-  padding-bottom: 52px;
+  padding-top: 39px;
+  padding-bottom: 39px;
   padding-right: 25px;
   padding-left: 25px;
   width: 180px;
@@ -209,7 +217,7 @@
 
 .form__application-list-item {
   text-align: left;
-  margin-bottom: 62px;
+  margin-bottom: 45px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -261,7 +269,7 @@
 
 .form__feedback {
   border: none;
-  margin-top: 42px;
+  margin-top: 39px;
 }
 
 .form__feedback-label {
@@ -271,12 +279,12 @@
   text-transform: uppercase;
   color: $form-title;
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 .form__feedback-textarea {
   width: 100%;
-  padding-top: 22px;
+  padding-top: 13px;
   padding-right: 25px;
   padding-left: 20px;
   height: 197px;
@@ -319,8 +327,8 @@
 //Button
 
 .form__button-wrap {
-  margin-top: 52px;
-  margin-bottom: 26px;
+  margin-top: 47px;
+  margin-bottom: -9px;
 }
 
 .form__button {
@@ -331,11 +339,11 @@
   text-transform: uppercase;
   color: $button-text-color;
   width: 100%;
-  padding: 23px 45px 23px 45px;
+  padding: 15px 45px 14px 45px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 46px;
+  margin-bottom: 34px;
   cursor: pointer;
 }
 
@@ -365,21 +373,53 @@
   }
 
   .form__name {
-    width: 620px;
+    width: 659px;
     order: 1;
+    margin-bottom: -33px;
   }
 
   .form__label {
-    padding-right: 20px;
-    padding-top: 15px;
+    padding-right: 18px;
+    padding-top: 17px;
+    padding-left: 0;
   }
 
   .form__name-wrap {
     display: flex;
   }
 
+  .form__application-form {
+    margin-bottom: -12px;
+    width: 620px;
+    border: 2px solid $form-border;
+    border-radius: 1px;
+  }
+
+  .form__application-legend {
+    width: auto;
+  }
+
+  .form__application-list {
+    padding-top: 9px;
+    padding-bottom: 13px;
+  }
+
+  .form__application-label {
+    padding-left: 99px;
+  }
+
+  .form__application-label::before {
+    left: 38px;
+    top: -8px;
+  }
+
+  .form__application-label::after {
+    left: 51px;
+    top: 5px;
+  }
+
   .form__input {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   .form__achievement-wrapper {
@@ -390,15 +430,38 @@
   .form__achievement {
     border: 2px solid $form-border;
     border-radius: 1px;
-    margin-bottom: 65px;
+    margin-bottom: 21px;
     width: 620px;
   }
 
   .form__achievement-legend {
     line-height: 30px;
     width: 380px;
+    padding-top: 52px;
     padding-left: 31px;
     padding-right: 31px;
+    padding-bottom: 40px;
+  }
+
+  .form__achievement-label-checkbox {
+    padding-left: 97px;
+  }
+
+  .form__achievement-label-checkbox::before {
+    left: 38px;
+  }
+
+  .form__achievement-label-checkbox::after {
+    left: 47px;
+    top: 4px;
+  }
+
+  .form__achievement-list {
+    width: 575px;
+  }
+
+  .form__achievement-list-item {
+    padding-bottom: 52px;
   }
 
   .form__contacts {
@@ -407,6 +470,7 @@
     border-radius: 1px;
     order: 3;
     margin-top: 65px;
+    padding-bottom: 0;
   }
 
   .form__contacts-legend {
@@ -427,7 +491,12 @@
   .form__contacts-list {
     margin: 0;
     padding: 0;
-    // padding-right: 60px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .form__contacts-input {
+    margin-bottom: 33px;
   }
 
   .form__contacts-item {
@@ -460,35 +529,43 @@
     order: 2;
   }
 
-  .form__application-form {
-    width: 620px;
-    border: 2px solid $form-border;
-    border-radius: 1px;
-    // order: 2;
-  }
-
   .form__feedback {
     width: 620px;
     border: 2px solid $form-border;
     border-radius: 1px;
     order: 5;
-    padding: 47px 60px 53px 60px;
+    padding: 47px 60px 42px 60px;
   }
 
   .form__feedback-label {
     padding-left: 38px;
     padding-right: 38px;
+    margin-bottom: -11px;
+  }
+
+  .form__feedback-textarea {
+    padding-top: 14px;
+    padding-left: 18px;
+    padding-bottom: 5px;
+  }
+
+  .form__feedback-textarea::placeholder {
+    width: 600px;
   }
 
   .form__button-wrap {
     order: 6;
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 66px;
   }
 
   .form__button {
-    width: 296px;
+    width: 300px;
+  }
+
+  .form__helper-text {
+    margin-top: 17px;
   }
 }
 
@@ -496,64 +573,120 @@
   .form {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     width: 960px;
     padding: 0 10px;
+    margin-top: -56px;
+    margin-bottom: -12px;
   }
 
   .form__name {
     width: 430px;
     margin: 0;
     padding: 0;
-    padding-top: 45px;
+    padding-top: 52px;
+  }
+
+  .form__label {
+    padding-right: -2px;
+    padding-left: 10px;
+    padding-top: 18px;
   }
 
   .form__input {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
+    padding-right: 10px;
   }
 
   .form__contacts {
     width: 100%;
+    margin-top: -4px;
   }
 
   .form__contacts-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
   }
 
   .form__contacts-item {
     width: 371px;
   }
 
+  .form__contacts-input {
+    margin-bottom: 6px;
+  }
+
+  .form__contacts-label {
+    padding-bottom: 13px;
+  }
+
   .form__application-form {
     width: 432px;
   }
 
+  // .form__application-legend {
+  //   margin-bottom: 10px;
+  // }
+
   .form__application-wrapper {
     width: 430px;
+    padding-top: -4px;
     height: 100%;
+    margin-bottom: 10px;
   }
 
-  .form__application-legend {
-    padding-top: 0;
+  .form__application-label {
+    padding-left: 92px;
   }
 
   .form__achievement {
     width: 100%;
+    margin-bottom: 26px;
   }
 
   .form__achievement-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: auto;
   }
 
   .form__achievement-list-item {
-    width: 270px;
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    padding-bottom: 53px;
+  }
+
+  .form__achievement-checkbox {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__achievement-label-checkbox {
+    margin: 0;
+    padding: 0;
+    padding-left: 59px;
   }
 
   .form__feedback {
     width: 100%;
+    padding-top: 47px;
+    padding-bottom: 39px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .form__feedback-textarea {
+    padding-top: 10px;
+    padding-left: 28px;
+    height: 125px;
+  }
+
+  .form__button-wrap {
+    margin-top: 64px;
   }
 }
