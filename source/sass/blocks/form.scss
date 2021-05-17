@@ -1,11 +1,9 @@
 .form {
   text-align: center;
-  // width: 320px;
-  // width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 
 .form__fieldset {
@@ -51,7 +49,7 @@
   padding-top: 17px;
   margin-bottom: 17px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   text-align: left;
   color: $text-base-dark-blue;
@@ -324,6 +322,10 @@
   text-transform: uppercase;
 }
 
+.form__helper-text-desktop {
+  display: none;
+}
+
 //Button
 
 .form__button-wrap {
@@ -497,6 +499,7 @@
 
   .form__contacts-input {
     margin-bottom: 33px;
+    padding-left: 21px;
   }
 
   .form__contacts-item {
@@ -510,8 +513,8 @@
     position: absolute;
     top: 3;
     right: 0;
-    width: 59px;
-    height: 59px;
+    width: 65px;
+    height: 60px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -582,7 +585,7 @@
   }
 
   .form__name {
-    width: 430px;
+    width: 445px;
     margin: 0;
     padding: 0;
     padding-top: 52px;
@@ -627,19 +630,25 @@
     width: 432px;
   }
 
-  // .form__application-legend {
-  //   margin-bottom: 10px;
-  // }
-
   .form__application-wrapper {
-    width: 430px;
+    width: 454px;
     padding-top: -4px;
     height: 100%;
     margin-bottom: 10px;
   }
 
   .form__application-label {
-    padding-left: 92px;
+    padding-left: 111px;
+  }
+
+  .form__application-label::before {
+    left: 50px;
+    top: -8px;
+  }
+
+  .form__application-label::after {
+    left: 63px;
+    top: 5px;
   }
 
   .form__achievement {
@@ -669,7 +678,7 @@
   .form__achievement-label-checkbox {
     margin: 0;
     padding: 0;
-    padding-left: 59px;
+    padding-left: 60px;
   }
 
   .form__feedback {
@@ -682,8 +691,16 @@
 
   .form__feedback-textarea {
     padding-top: 10px;
-    padding-left: 28px;
+    padding-left: 18px;
     height: 125px;
+  }
+
+  .form__helper-text-desktop {
+    display: inline-block;
+  }
+
+  .form__button {
+    margin-bottom: 21px;
   }
 
   .form__button-wrap {
