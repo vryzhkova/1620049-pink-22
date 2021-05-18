@@ -46,9 +46,20 @@
     margin: 0;
     padding: 0;
     padding-left: 7px;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 172px;
+    margin-right: 34px;
   }
 
   .social__item {
     margin: 0 5px 0 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    align-items: baseline;
+    margin-right: 13px;
   }
 }

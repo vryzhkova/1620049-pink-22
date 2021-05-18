@@ -488,6 +488,7 @@
 
   .form__contacts-label {
     order: 1;
+    padding-left: 20px;
   }
 
   .form__contacts-list {
@@ -498,7 +499,7 @@
   }
 
   .form__contacts-input {
-    margin-bottom: 33px;
+    margin-bottom: 10px;
     padding-left: 21px;
   }
 
@@ -506,6 +507,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 22px;
   }
 
   .form__contacts-item::after {
@@ -578,22 +580,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    width: 960px;
+    width: 940px;
     padding: 0 10px;
     margin-top: -56px;
     margin-bottom: -12px;
   }
 
   .form__name {
-    width: 445px;
+    width: 435px;
     margin: 0;
     padding: 0;
     padding-top: 52px;
   }
 
   .form__label {
-    padding-right: -2px;
-    padding-left: 10px;
+    padding-right: 18px;
+    padding-left: -1px;
     padding-top: 18px;
   }
 
@@ -616,14 +618,23 @@
 
   .form__contacts-item {
     width: 371px;
+    margin-bottom: 0;
   }
 
   .form__contacts-input {
     margin-bottom: 6px;
+    padding-top: 0;
+    padding-left: 23px;
+    padding-bottom: 6px;
   }
 
   .form__contacts-label {
     padding-bottom: 13px;
+  }
+
+  .form__contacts-item::after {
+    top: -1px;
+    right: -6px;
   }
 
   .form__application-form {
@@ -631,7 +642,7 @@
   }
 
   .form__application-wrapper {
-    width: 454px;
+    width: 435px;
     padding-top: -4px;
     height: 100%;
     margin-bottom: 10px;
@@ -653,7 +664,15 @@
 
   .form__achievement {
     width: 100%;
-    margin-bottom: 26px;
+    margin-bottom: 19px;
+    padding-left: 58px;
+    padding-right: 8px;
+  }
+
+  .form__achievement-legend {
+    padding-left: 27px;
+    padding-right: 76px;
+    width: 374px;
   }
 
   .form__achievement-list {
@@ -661,6 +680,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: auto;
+    padding-top: 1px;
+    padding-bottom: 6px;
   }
 
   .form__achievement-list-item {
@@ -668,6 +689,32 @@
     padding: 0;
     width: 260px;
     padding-bottom: 53px;
+  }
+
+  .form__achievement-list-item:nth-child(1) {
+    order: 1;
+  }
+
+  .form__achievement-list-item:nth-child(2) {
+    order: 4;
+  }
+
+  .form__achievement-list-item:nth-child(3) {
+    margin-left: 18px;
+    order: 2;
+  }
+
+  .form__achievement-list-item:nth-child(4) {
+    margin-left: 18px;
+    order: 5;
+  }
+
+  .form__achievement-list-item:nth-child(5) {
+    order: 3;
+  }
+
+  .form__achievement-list-item:nth-child(6) {
+    order: 6;
   }
 
   .form__achievement-checkbox {
@@ -681,6 +728,14 @@
     padding-left: 60px;
   }
 
+  .form__achievement-label-checkbox::before {
+    left: 0;
+  }
+
+  .form__achievement-label-checkbox::after {
+    left: 9px;
+  }
+
   .form__feedback {
     width: 100%;
     padding-top: 47px;
@@ -691,8 +746,12 @@
 
   .form__feedback-textarea {
     padding-top: 10px;
-    padding-left: 18px;
+    padding-left: 8px;
     height: 125px;
+  }
+
+  .form__helper-text {
+    margin-right: -10px;
   }
 
   .form__helper-text-desktop {
@@ -701,6 +760,7 @@
 
   .form__button {
     margin-bottom: 21px;
+    margin-left: -10px;
   }
 
   .form__button-wrap {
