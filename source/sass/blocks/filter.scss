@@ -35,6 +35,8 @@
 .filter__tools-instrument {
   display: flex;
   justify-content: space-evenly;
+  margin-right: 21px;
+  margin-left: 7px;
 }
 
 .filter__tools-button {
@@ -172,7 +174,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding-top: 57px;
-    padding-bottom: 29px;
+    padding-bottom: 18px;
   }
 
   .filter__tools {
@@ -239,6 +241,7 @@
   .filter__form-image {
     width: 300px;
     height: 400px;
+    background-size: 300px 400px;
     padding-bottom: 25px;
   }
 
@@ -257,6 +260,11 @@
     width: 261px;
     margin-bottom: 24px;
   }
+
+  .filter__button-cancel {
+    width: 260px;
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -272,15 +280,25 @@
 
   .filter__scale {
     width: 288px;
+    margin-left: 34px;
+  }
+
+  .filter__controls {
+    margin-left: 90px;
   }
 
   .filter__range-filter::after {
-    width: 410px;
+    width: 406px;
   }
 
   .filter__tools-icon-crop {
     width: 44px;
     height: 44px;
+  }
+
+  .filter__tools-icon-crop:last-child {
+    width: 32px;
+    height: 32px;
   }
 
   .filter__tools-icon-fill {
@@ -293,14 +311,19 @@
     height: 32px;
   }
 
+  .filter__icon-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+
   .filter__button {
-    width: 410px;
+    width: 407px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 143px;
-    margin-left: -36px;
+    margin-top: 145px;
+    margin-left: 1px;
   }
 
   .filter__button-post {

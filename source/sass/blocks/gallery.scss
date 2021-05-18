@@ -40,6 +40,7 @@
 .gallery__list-button-wrap {
   display: flex;
   align-items: baseline;
+  margin-top: 0;
 }
 
 .gallery__list-button-heart {
@@ -107,6 +108,12 @@
   display: flex;
 }
 
+.gallery__list-button-wrap-panorama {
+  display: flex;
+  align-items: baseline;
+  margin-top: 11px;
+}
+
 @media (min-width: $tablet-width) {
   .gallery__title {
     padding-top: 92px;
@@ -125,38 +132,38 @@
   }
 
   .gallery__list-authorinfo {
-    margin-bottom: 27px;
+    margin-bottom: 19px;
     justify-content: space-between;
-    padding: 33px 0 0 19px;
+    padding: 23px 0 0 19px;
+    width: 300px;
   }
 
   .gallery__list-author-info {
-    margin-left: 5px;
+    padding-left: 24px;
     min-height: 155px;
   }
 
   .gallery__author-wrap {
     order: -1;
-    margin-bottom: -14px;
+    margin-bottom: 1px;
   }
 
   .gallery__list-item {
-    width: 290px;
+    width: 300px;
   }
 
   .gallery__list-text {
-    padding-top: 14px;
-    padding-bottom: 27px;
+    padding-bottom: 0;
   }
 
   .gallery__headline {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 
   .gallery__headline-title {
-    padding: 48px 0 0 0;
+    padding: 45px 0 0 0;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
@@ -172,16 +179,35 @@
   .gallery__list-button-wrap {
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-top: 12px;
+    margin-bottom: 22px;
+    margin-left: 6px;
   }
 
   .gallery__list-button-wrap-panorama {
+    display: flex;
+    align-items: baseline;
     justify-content: flex-start;
     flex-direction: row-reverse;
     order: -1;
+    margin-top: 0;
+  }
+
+  .gallery__list-button-heart {
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .gallery__list {
+    margin-top: 47px;
+  }
+
+  .gallery__list-item {
+    height: 555px;
+    margin-bottom: 54px;
+  }
+
   .gallery__title {
     font-size: 18px;
     line-height: 30px;
@@ -194,16 +220,34 @@
   }
 
   .gallery__list-text {
-    padding-bottom: 13px;
+    padding-bottom: 1px;
+    height: 40px;
   }
 
   .gallery__list-authorinfo {
-    padding: 37px 2px 19px 15px;
-    margin-bottom: 55px;
+    padding: 24px 12px 12px 21px;
+    margin-bottom: 7px;
+  }
+
+  .gallery__list-button-wrap {
+    margin-top: 18px;
+    margin-bottom: 9px;
+  }
+
+  .gallery__list-button-heart {
+    padding-right: 19px;
+  }
+
+  .gallery__list-button-wrap-panorama {
+    order: 0;
+  }
+
+  .gallery__headline {
+    margin-bottom: 67px;
   }
 
   .gallery__headline-title {
-    padding-top: 17px;
+    padding-top: 4px;
   }
 
   .gallery__link {
