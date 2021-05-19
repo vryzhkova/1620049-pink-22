@@ -562,7 +562,7 @@
     order: 6;
     display: flex;
     justify-content: space-between;
-    margin-top: 66px;
+    margin-top: 68px;
   }
 
   .form__button {
@@ -633,8 +633,8 @@
   }
 
   .form__contacts-item::after {
-    top: -1px;
-    right: -6px;
+    top: 1px;
+    right: -1px;
   }
 
   .form__application-form {

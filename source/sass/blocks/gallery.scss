@@ -154,6 +154,8 @@
 
   .gallery__list-text {
     padding-bottom: 0;
+    min-height: 48px;
+    width: 232px;
   }
 
   .gallery__headline {
@@ -230,7 +232,7 @@
   }
 
   .gallery__list-button-wrap {
-    margin-top: 18px;
+    margin-top: 10px;
     margin-bottom: 9px;
   }
 

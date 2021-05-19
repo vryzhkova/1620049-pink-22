@@ -272,6 +272,10 @@
     background-color: transparent;
   }
 
+  .filter-item {
+    margin-left: 2px;
+  }
+
   .filter__form {
     background-color: $background-filter;
     padding: 57px 160px 21px 80px;
@@ -296,18 +300,13 @@
     height: 44px;
   }
 
-  .filter__tools-icon-crop:last-child {
-    width: 32px;
-    height: 32px;
-  }
-
   .filter__tools-icon-fill {
     width: 48px;
     height: 43px;
   }
 
   .filter__tools-icon-contrast {
-    width: 32px;
+    width: 44px;
     height: 32px;
   }
 
