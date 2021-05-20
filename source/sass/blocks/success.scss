@@ -5,8 +5,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 380px;
-  text-align: center;
+  height: 289px;
   box-shadow: 0 7px 15px $shadow-popup;
   border-radius: 5px;
   background-color: $background-popup;
@@ -14,20 +13,22 @@
 
 .success__title {
   margin: 0 auto;
-  margin-top: 49px;
-  margin-bottom: 37px;
-  width: 392px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 266px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: $text-base-white;
+  color: $text-base-black;
 }
 
 .success__text {
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 35px;
-  width: 328px;
+  margin-bottom: 34px;
+  text-align: center;
+  width: 266px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -35,15 +36,19 @@
 }
 
 .success__wrap {
-  background: $background-fieldset;
+  padding-top: 53px;
+  padding-bottom: 51px;
+  background: $background-grey-advantages;
   width: 100%;
-  height: 163px;
   border-radius: 0 0 5px 5px;
 }
 
 .success__wrap-button {
-  margin-top: 52px;
-  padding: 23px 75px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-left: 20px;
   background-color: $button-green;
   border: 2px solid $button-green;
   border-radius: 1px;
@@ -62,10 +67,24 @@
   .success__title {
     font-size: 30px;
     line-height: 40px;
+    margin-top: 39px;
+    margin-bottom: 22px;
   }
 
   .success__text {
     font-size: 18px;
+    width: 310px;
+    margin-bottom: 30px;
+  }
+
+  .success__wrap {
+    padding-top: 49px;
+    padding-bottom: 52px;
+  }
+
+  .success__wrap-button {
+    padding: 12px 75px 16px;
+    margin-left: 80px;
   }
 }
 
@@ -73,5 +92,20 @@
   .success {
     width: 780px;
     height: 377px;
+  }
+
+  .success__title {
+    width: 400px;
+    margin-top: 43px;
+  }
+
+  .success__text {
+    width: 378px;
+    margin-bottom: 40px;
+  }
+
+  .success__wrap-button {
+    padding: 15px 157px 17px;
+    margin-left: 158px;
   }
 }

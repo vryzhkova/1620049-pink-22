@@ -289,8 +289,9 @@
                 Отправить форму
               </button>
               <small class="form__helper-text"
-                ><span class="form__helper-simbol">*</span> — обязательные для
-                заполнения поля</small
+                ><span class="form__helper-simbol">*</span> — обязательные
+                <span class="form__helper-text-desktop">для заполнения</span>
+                поля</small
               >
             </div>
           </form>
@@ -356,7 +357,9 @@
       <p class="failed__text">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="button failed__button" type="button">Ок</button>
+      <div class="failed__wrap">
+        <button class="button failed__button" type="button">Ок</button>
+      </div>
     </div>
     <div class="success">
       <p class="success__title">Ваша заявка отправлена</p>

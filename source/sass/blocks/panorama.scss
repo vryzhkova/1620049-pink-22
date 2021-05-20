@@ -1,6 +1,6 @@
-.panorama {
-  width: 100%;
-}
+// .panorama {
+//   width: 100%;
+// }
 
 .panorama__link {
   width: 320px;
@@ -58,7 +58,7 @@
   font-size: 14px;
   line-height: 24px;
   color: $text-base-dark-blue;
-  width: 250px;
+  width: 256px;
 }
 
 .panorama__post-item {
@@ -66,7 +66,7 @@
   margin-bottom: 20px;
   padding-top: 18px;
   padding-left: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   background-color: $background-blockquote;
@@ -89,6 +89,10 @@
   .panorama__link {
     width: 660px;
     height: 509px;
+  }
+
+  .panorama__tablet-no-br {
+    display: none;
   }
 
   .panorama__author-wrap {
@@ -131,11 +135,11 @@
 
   .panorama__post-item {
     width: 940px;
-    padding: 23px 13px 23px 21px;
+    padding: 23px 13px 0 21px;
   }
 
   .panorama__author-wrap {
-    margin-right: 625px;
+    margin-right: 624px;
   }
 
   .panorama__of-day {
@@ -145,5 +149,8 @@
 
   .panorama__text {
     width: 874px;
+    padding-bottom: 1px;
+    height: 24px;
+    order: 2;
   }
 }

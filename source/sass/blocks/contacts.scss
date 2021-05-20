@@ -23,18 +23,17 @@
   left: 0;
 }
 
-// .contacts__map-marker {
-//   z-index: 10;
-//   top: 0;
-//   left: 0;
-//   transform: translate(-50%, -45%);
-//   width: 35px;
-//   height: 35px;
-//   background-image: url("../img/map-marker.svg");
-//   background-repeat: no-repeat;
-//   background-position: 48% 58px;
-//   background-size: 79px 63px;
-// }
+.contacts__map-marker {
+  position: relative;
+  z-index: 10;
+  top: 56%;
+  left: 160px;
+  transform: translate(-50%, -45%);
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/map-marker.svg");
+  background-repeat: no-repeat;
+}
 
 .contacts__title {
   margin: 0;
@@ -107,6 +106,10 @@
   .contacts {
     margin-top: 44px;
     padding-bottom: 0;
+  }
+
+  .contacts__map-marker {
+    left: 50%;
   }
 
   .contacts__title-connection {

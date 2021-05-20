@@ -1,11 +1,9 @@
 .form {
   text-align: center;
-  // width: 320px;
-  // width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 
 .form__fieldset {
@@ -51,7 +49,7 @@
   padding-top: 17px;
   margin-bottom: 17px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   text-align: left;
   color: $text-base-dark-blue;
@@ -324,6 +322,10 @@
   text-transform: uppercase;
 }
 
+.form__helper-text-desktop {
+  display: none;
+}
+
 //Button
 
 .form__button-wrap {
@@ -486,6 +488,7 @@
 
   .form__contacts-label {
     order: 1;
+    padding-left: 20px;
   }
 
   .form__contacts-list {
@@ -496,13 +499,15 @@
   }
 
   .form__contacts-input {
-    margin-bottom: 33px;
+    margin-bottom: 10px;
+    padding-left: 21px;
   }
 
   .form__contacts-item {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 22px;
   }
 
   .form__contacts-item::after {
@@ -510,8 +515,8 @@
     position: absolute;
     top: 3;
     right: 0;
-    width: 59px;
-    height: 59px;
+    width: 65px;
+    height: 60px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -557,7 +562,7 @@
     order: 6;
     display: flex;
     justify-content: space-between;
-    margin-top: 66px;
+    margin-top: 68px;
   }
 
   .form__button {
@@ -575,22 +580,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    width: 960px;
+    width: 940px;
     padding: 0 10px;
     margin-top: -56px;
     margin-bottom: -12px;
   }
 
   .form__name {
-    width: 430px;
+    width: 435px;
     margin: 0;
     padding: 0;
     padding-top: 52px;
   }
 
   .form__label {
-    padding-right: -2px;
-    padding-left: 10px;
+    padding-right: 18px;
+    padding-left: -1px;
     padding-top: 18px;
   }
 
@@ -613,38 +618,61 @@
 
   .form__contacts-item {
     width: 371px;
+    margin-bottom: 0;
   }
 
   .form__contacts-input {
     margin-bottom: 6px;
+    padding-top: 0;
+    padding-left: 23px;
+    padding-bottom: 6px;
   }
 
   .form__contacts-label {
     padding-bottom: 13px;
   }
 
+  .form__contacts-item::after {
+    top: 1px;
+    right: -1px;
+  }
+
   .form__application-form {
     width: 432px;
   }
 
-  // .form__application-legend {
-  //   margin-bottom: 10px;
-  // }
-
   .form__application-wrapper {
-    width: 430px;
+    width: 435px;
     padding-top: -4px;
     height: 100%;
     margin-bottom: 10px;
   }
 
   .form__application-label {
-    padding-left: 92px;
+    padding-left: 111px;
+  }
+
+  .form__application-label::before {
+    left: 50px;
+    top: -8px;
+  }
+
+  .form__application-label::after {
+    left: 63px;
+    top: 5px;
   }
 
   .form__achievement {
     width: 100%;
-    margin-bottom: 26px;
+    margin-bottom: 19px;
+    padding-left: 58px;
+    padding-right: 8px;
+  }
+
+  .form__achievement-legend {
+    padding-left: 27px;
+    padding-right: 76px;
+    width: 374px;
   }
 
   .form__achievement-list {
@@ -652,6 +680,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: auto;
+    padding-top: 1px;
+    padding-bottom: 6px;
   }
 
   .form__achievement-list-item {
@@ -659,6 +689,32 @@
     padding: 0;
     width: 260px;
     padding-bottom: 53px;
+  }
+
+  .form__achievement-list-item:nth-child(1) {
+    order: 1;
+  }
+
+  .form__achievement-list-item:nth-child(2) {
+    order: 4;
+  }
+
+  .form__achievement-list-item:nth-child(3) {
+    margin-left: 18px;
+    order: 2;
+  }
+
+  .form__achievement-list-item:nth-child(4) {
+    margin-left: 18px;
+    order: 5;
+  }
+
+  .form__achievement-list-item:nth-child(5) {
+    order: 3;
+  }
+
+  .form__achievement-list-item:nth-child(6) {
+    order: 6;
   }
 
   .form__achievement-checkbox {
@@ -669,7 +725,15 @@
   .form__achievement-label-checkbox {
     margin: 0;
     padding: 0;
-    padding-left: 59px;
+    padding-left: 60px;
+  }
+
+  .form__achievement-label-checkbox::before {
+    left: 0;
+  }
+
+  .form__achievement-label-checkbox::after {
+    left: 9px;
   }
 
   .form__feedback {
@@ -682,8 +746,21 @@
 
   .form__feedback-textarea {
     padding-top: 10px;
-    padding-left: 28px;
+    padding-left: 8px;
     height: 125px;
+  }
+
+  .form__helper-text {
+    margin-right: -10px;
+  }
+
+  .form__helper-text-desktop {
+    display: inline-block;
+  }
+
+  .form__button {
+    margin-bottom: 21px;
+    margin-left: -10px;
   }
 
   .form__button-wrap {
