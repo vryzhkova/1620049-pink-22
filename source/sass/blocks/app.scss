@@ -23,13 +23,12 @@
 
 .app__list {
   display: flex;
-  // justify-content: space-around;
   align-items: baseline;
   margin-top: 32px;
   margin-left: 38px;
 }
 
-.download-app {
+.app__download-link {
   margin-right: 35px;
 }
 
@@ -38,9 +37,10 @@
   padding-top: 60px;
 }
 
-.app-button {
+.app__button {
   display: inline-block;
-  padding: 15px 35px;
+  padding: 15px 36px;
+  width: 281px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -49,12 +49,12 @@
   border-radius: 29px;
 }
 
-.app-button:hover {
+.app__button:hover {
   background-color: $button-hover;
   color: $text-base-pink;
 }
 
-.app-button:active {
+.app__button:active {
   color: $button-pink-active;
 }
 
@@ -104,13 +104,12 @@
 
   .app__slogan {
     font-size: 18px;
-    padding-bottom: 114px;
+    padding-bottom: 116px;
     padding-top: 28px;
   }
 
-  .app-button {
-    padding: 16px 45px;
-    text-align: left;
+  .app__button {
+    width: 300px;
   }
 
   .app__list {
@@ -135,10 +134,11 @@
     background-color: transparent;
   }
 
-  .app-button {
-    padding: 16px 29px;
+  .app__button {
+    padding: 15px 29px;
     text-align: left;
     font-size: 21px;
+    width: 301px;
   }
 
   .app__title {

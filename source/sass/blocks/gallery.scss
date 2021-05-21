@@ -114,6 +114,11 @@
   margin-top: 11px;
 }
 
+.gallery__link {
+  width: 280px;
+  height: 180px;
+}
+
 @media (min-width: $tablet-width) {
   .gallery__title {
     padding-top: 92px;
@@ -197,6 +202,11 @@
 
   .gallery__list-button-heart {
     padding-right: 30px;
+  }
+
+  .gallery__link {
+    width: 300px;
+    height: 300px;
   }
 }
 

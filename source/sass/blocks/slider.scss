@@ -1,0 +1,30 @@
+.slider__list {
+  text-align: center;
+}
+
+.slider__toggle {
+  padding: 0;
+  margin-right: 19px;
+  border: none;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background: $background-price-toggle;
+  opacity: 0.3;
+  width: 6px;
+  height: 6px;
+  cursor: pointer;
+}
+
+.slider__toggle:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.1;
+}
+
+.slider__toggle--current {
+  background: $background-toggle;
+  border: 3px solid $background-price-toggle;
+  opacity: 1;
+}

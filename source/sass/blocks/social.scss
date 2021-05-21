@@ -32,6 +32,19 @@
 .social__link-icon {
   display: block;
   margin: auto;
+  fill: $text-hover;
+}
+
+.social__link:hover {
+  border-color: $input-hover;
+}
+
+.social__link:active {
+  opacity: 0.1;
+}
+
+.social__link-icon:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
