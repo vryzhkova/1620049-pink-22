@@ -35,11 +35,17 @@
                 height="40"
               >
                 <use xlink:href="img/sprite.svg#pink-logo-desktop"></use>
-              </svg> </a
-            ><button class="main-nav__toggle" type="button">
+              </svg>
+            </a>
+            <!--
+              Класс при включенном JavaScript: main-nav__toggle--js
+              Класс для "закрытого" состояния кнопки: main-nav__toggle--off
+            -->
+            <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
+          <!-- Класс для закрытия меню: main-nav__list--closed -->
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link">Главная</a>
@@ -67,24 +73,24 @@
           <div class="app__download">
             <div class="app__wrapper">
               <a
-                class="button app-button"
+                class="button app__button"
                 href="https://www.apple.com/ru/app-store/"
                 >Скачать приложение</a
               >
               <div class="app__list">
                 <a
                   href="https://www.apple.com/ru/app-store/"
-                  class="download-app"
+                  class="app__download-link"
                   ><svg class="app__logo-apple" width="47" height="56">
                     <use xlink:href="img/sprite.svg#apple"></use>
                   </svg> </a
-                ><a href="https://play.google.com/store" class="download-app"
+                ><a
+                  href="https://play.google.com/store"
+                  class="app__download-link"
                   ><svg class="app__logo-android" width="43" height="47">
                     <use xlink:href="img/sprite.svg#android"></use>
                   </svg> </a
-                ><a
-                  href="https://www.microsoft.com/ru-RU/store/apps"
-                  class="download-app"
+                ><a href="https://www.microsoft.com/ru-RU/store/apps" class=""
                   ><svg class="app__logo-microsoft" width="44" height="41">
                     <use xlink:href="img/sprite.svg#microsoft"></use></svg
                 ></a>
@@ -412,20 +418,20 @@
         </div>
         <div class="contacts__content container">
           <ul class="contacts-list">
-            <li class="contacts-item">
+            <li class="contacts__item">
               <p class="contacts-list__title">Звоните:</p>
               <a class="contacts__phone" href="tel:+78125556666"
                 ><span class="contacts__phone-mobile"></span> +7 (812)
                 555-66-66</a
               >
             </li>
-            <li class="contacts-item contacts-item-email">
+            <li class="contacts__item contacts__item-email">
               <p class="contacts-list__title">Пишите:</p>
               <a class="contacts__email" href="mailto:mail@htmlacademy.ru"
                 >mail@htmlacademy.ru</a
               >
             </li>
-            <li class="contacts-item">
+            <li class="contacts__item">
               <p class="contacts-list__title">Приезжайте в гости:</p>
               <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
             </li>
@@ -433,14 +439,15 @@
         </div>
         <!-- </div> -->
       </section>
-      <div class="contacts__map">
-        <!-- <iframe
-          class="contacts__map-frame"
+      <div class="contacts-map">
+        <iframe
+          class="contacts-map__frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1613902500053!5m2!1sru!2sby"
           height="416"
           allowfullscreen
           title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-        ></iframe> --><picture
+        ></iframe>
+        <picture
           ><source
             media="(min-width: 1200px)"
             srcset="
@@ -454,14 +461,14 @@
               img/footer/map-tablet@2x.jpg 2x
             " />
           <img
-            class="contacts__map-image"
+            class="contacts-map__image"
             src="img/footer/map-mobile@1x.jpg"
             srcset="img/footer/map-mobile@2x.jpg 2x"
             width="320"
             height="200"
             alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         /></picture>
-        <div class="contacts__map-marker"></div>
+        <div class="contacts-map__marker"></div>
       </div>
     </main>
     <footer class="page-footer">
