@@ -101,6 +101,7 @@
   line-height: 30px;
   color: $text-base-dark-blue;
   padding-bottom: 51px;
+  list-style: none;
 }
 
 .form__achievement-label-checkbox {
@@ -159,6 +160,10 @@
   padding-bottom: 25px;
 }
 
+.form__contacts-item {
+  list-style: none;
+}
+
 .form__contacts-label {
   padding-top: 0;
   padding-left: 24px;
@@ -208,10 +213,6 @@
 }
 
 .form__application-legend {
-  // padding-top: 39px;
-  // padding-bottom: 39px;
-  // padding-right: 25px;
-  // padding-left: 25px;
   width: 180px;
   font-weight: 400;
   font-size: 14px;
@@ -226,7 +227,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-base-dark-blue;
-
+  list-style: none;
   margin-bottom: 45px;
 
   &:last-child {

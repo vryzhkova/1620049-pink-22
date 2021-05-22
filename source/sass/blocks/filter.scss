@@ -61,6 +61,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .filter__item {
@@ -109,6 +110,11 @@
   border: 2px solid $border-toggle;
   box-sizing: border-box;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter__toggle:active {
+  background-color: $input-active;
 }
 
 // Filter - buttons

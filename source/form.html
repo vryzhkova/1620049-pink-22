@@ -8,9 +8,15 @@
     <link rel="icon" href="favicon.ico" type="image/svg" />
   </head>
   <body class="page__body">
+    <!--
+      Класс при включенном JavaScript: page-header--js
+    -->
     <header class="page-header">
       <div class="page-header__main-nav-wrap">
         <nav class="page-header__main-nav main-nav">
+          <!--
+            Класс при включенном JavaScript: page-header__logo-wrapper--js
+          -->
           <div class="page-header__logo-wrapper">
             <a href="index.html" class="page-header__logo"
               ><svg
@@ -33,11 +39,17 @@
                 height="40"
               >
                 <use xlink:href="img/sprite.svg#pink-logo-desktop"></use>
-              </svg> </a
-            ><button class="main-nav__toggle" type="button">
+              </svg>
+            </a>
+            <!--
+              Класс при включенном JavaScript: main-nav__toggle--js
+              Класс для "закрытого" состояния кнопки: main-nav__toggle--off
+            -->
+            <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
+          <!-- Класс для закрытия меню: main-nav__list--closed -->
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -309,7 +321,7 @@
         <div class="page-footer__social">
           <a
             class="page-footer__social-link"
-            href="#"
+            href="index.html"
             aria-label="Логотип приложения Pink"
             ><svg class="page-footer__social-logo" width="145" height="40">
               <use xlink:href="img/sprite.svg#footer-logo"></use>

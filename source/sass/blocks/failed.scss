@@ -11,16 +11,17 @@
   box-shadow: 0 7px 15px $shadow-popup;
   border-radius: 5px;
   box-sizing: border-box;
-  background: $background-popup;
+  background-color: $background-popup;
+  z-index: 99;
 }
 
 .failed__title {
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 25px;
-  margin-top: 35px;
+  margin-bottom: 26px;
+  margin-top: 38px;
   margin-right: 10px;
-  width: 329px;
+  width: 321px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -39,7 +40,7 @@
 }
 
 .failed__wrap {
-  padding-top: 53px;
+  // padding-top: 53px;
   padding-bottom: 51px;
   background: transparent;
   width: 100%;
@@ -70,18 +71,19 @@
   .failed__title {
     font-size: 30px;
     line-height: 40px;
-    margin: 41px 43px 22px auto;
+    margin: 36px 100px 22px auto;
+    width: 260px;
   }
 
   .failed__text {
     font-size: 18px;
-    margin-bottom: 34px;
+    margin-bottom: -15px;
   }
 
   .failed__wrap {
     padding-top: 49px;
     padding-bottom: 52px;
-    background: $background-grey-advantages;
+    background: transparent;
   }
 
   .failed__button {

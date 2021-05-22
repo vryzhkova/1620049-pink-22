@@ -9,6 +9,7 @@
   box-shadow: 0 7px 15px $shadow-popup;
   border-radius: 5px;
   background-color: $background-popup;
+  z-index: 99;
 }
 
 .success__title {

@@ -51,6 +51,7 @@
 .advantages__item {
   text-align: center;
   padding-bottom: 31px;
+  list-style: none;
 }
 
 .advantages__item-mobile {
@@ -290,7 +291,7 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/advantages/desktop-screen-2@x1.png");
+      background-image: url("../img/advantages/desktop-screen-2@x2.png");
     }
   }
 

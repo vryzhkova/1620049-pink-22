@@ -8,9 +8,15 @@
     <link rel="icon" href="favicon.ico" type="image/svg" />
   </head>
   <body class="page__body">
+    <!--
+      Класс при включенном JavaScript: page-header--js
+    -->
     <header class="page-header">
       <div class="page-header__main-nav-wrap">
         <nav class="page-header__main-nav main-nav">
+          <!--
+            Класс при включенном JavaScript: page-header__logo-wrapper--js
+          -->
           <div class="page-header__logo-wrapper">
             <a href="index.html" class="page-header__logo"
               ><svg
@@ -33,11 +39,17 @@
                 height="40"
               >
                 <use xlink:href="img/sprite.svg#pink-logo-desktop"></use>
-              </svg> </a
-            ><button class="main-nav__toggle" type="button">
+              </svg>
+            </a>
+            <!--
+              Класс при включенном JavaScript: main-nav__toggle--js
+              Класс для "закрытого" состояния кнопки: main-nav__toggle--off
+            -->
+            <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
+          <!-- Класс для закрытия меню: main-nav__list--closed -->
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -132,13 +144,13 @@
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-car-desktop@1x.jpg,
-                      img/catalog/photo-car-desktop@1x.jpg 2x
+                      img/catalog/photo-car-desktop@2x.jpg 2x
                     " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-car-tablet@1x.jpg,
-                      img/catalog/photo-car-tablet@1x.jpg
+                      img/catalog/photo-car-tablet@2x.jpg 2x
                     " />
                   <img
                     class="gallery__list-image"
@@ -176,13 +188,13 @@
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-dramset-desktop@1x.jpg,
-                      img/catalog/photo-dramset-desktop@1x.jpg 2x
+                      img/catalog/photo-dramset-desktop@2x.jpg 2x
                     " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-dramset-tablet@1x.jpg,
-                      img/catalog/photo-dramset-tablet@1x.jpg
+                      img/catalog/photo-dramset-tablet@2x.jpg 2x
                     " />
                   <img
                     class="gallery__list-image"
@@ -218,13 +230,13 @@
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-roof-desktop@1x.jpg,
-                      img/catalog/photo-roof-desktop@1x.jpg 2x
+                      img/catalog/photo-roof-desktop@2x.jpg 2x
                     " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-roof-tablet@1x.jpg,
-                      img/catalog/photo-roof-tablet@1x.jpg
+                      img/catalog/photo-roof-tablet@2x.jpg 2x
                     " />
                   <img
                     class="gallery__list-image"
@@ -262,13 +274,13 @@
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-market-desktop@1x.jpg,
-                      img/catalog/photo-market-desktop@1x.jpg 2x
+                      img/catalog/photo-market-desktop@2x.jpg 2x
                     " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-market-tablet@1x.jpg,
-                      img/catalog/photo-market-tablet@1x.jpg
+                      img/catalog/photo-market-tablet@2x.jpg 2x
                     " />
                   <img
                     class="gallery__list-image"
@@ -303,13 +315,13 @@
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-legs-desktop@1x.jpg,
-                      img/catalog/photo-legs-desktop@1x.jpg 2x
+                      img/catalog/photo-legs-desktop@2x.jpg 2x
                     " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-legs-tablet@1x.jpg,
-                      img/catalog/photo-legs-tablet@1x.jpg
+                      img/catalog/photo-legs-tablet@2x.jpg 2x
                     " />
                   <img
                     class="gallery__list-image"
@@ -345,13 +357,13 @@
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-plain-desktop@1x.jpg,
-                      img/catalog/photo-plain-desktop@1x.jpg 2x
+                      img/catalog/photo-plain-desktop@2x.jpg 2x
                     " />
                   <source
                     media="(min-width: 660px)"
                     srcset="
                       img/catalog/photo-plain-tablet@1x.jpg,
-                      img/catalog/photo-plain-tablet@1x.jpg
+                      img/catalog/photo-plain-tablet@2x.jpg 2x
                     " />
                   <img
                     class="gallery__list-image"
@@ -520,7 +532,7 @@
         <div class="page-footer__social">
           <a
             class="page-footer__social-link"
-            href="#"
+            href="index.html"
             aria-label="Логотип приложения Pink"
             ><svg class="page-footer__social-logo" width="145" height="40">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
