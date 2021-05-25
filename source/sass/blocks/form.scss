@@ -642,7 +642,6 @@
     margin: 0 auto;
     width: 940px;
     padding: 0 10px;
-    // margin-top: -56px;
     margin-bottom: -2px;
   }
 
@@ -653,6 +652,10 @@
     padding-top: 4px;
   }
 
+  .form__name-wrap:not(:last-of-type) {
+    margin-bottom: 54px;
+  }
+
   .form__label {
     padding-right: 18px;
     padding-left: -1px;
@@ -660,7 +663,6 @@
   }
 
   .form__input {
-    // margin-bottom: 54px;
     padding-right: 10px;
   }
 
@@ -725,9 +727,9 @@
 
   .form__achievement {
     width: 100%;
-    margin-bottom: 19px;
-    padding-left: 58px;
-    padding-right: 8px;
+    padding: 0;
+    margin-bottom: 17px;
+    padding-right: 0;
     padding-top: 54px;
   }
 
@@ -742,20 +744,20 @@
   }
 
   .form__achievement-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 270px 250px 260px;
+    column-gap: 45px;
     width: auto;
-    padding-top: 1px;
-    padding-bottom: 6px;
     margin-top: 0;
+    margin-bottom: 8px;
   }
 
   .form__achievement-list-item {
     margin: 0;
     padding: 0;
     width: 260px;
-    padding-bottom: 53px;
+    padding-left: 56px;
+    padding-bottom: 52px;
   }
 
   .form__achievement-list-item:nth-child(1) {
@@ -767,12 +769,10 @@
   }
 
   .form__achievement-list-item:nth-child(3) {
-    margin-left: 18px;
     order: 2;
   }
 
   .form__achievement-list-item:nth-child(4) {
-    margin-left: 18px;
     order: 5;
   }
 
@@ -812,7 +812,7 @@
   }
 
   .form__feedback-textarea {
-    padding-top: 10px;
+    padding-top: 13px;
     padding-left: 19px;
     height: 125px;
   }
@@ -826,7 +826,7 @@
   }
 
   .form__button-wrap {
-    margin-top: 64px;
+    margin-top: 67px;
     padding: 0;
   }
 }

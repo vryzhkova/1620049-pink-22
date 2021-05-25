@@ -104,15 +104,10 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .main-nav__item {
-//     padding-top: 1px;
-//   }
-// }
-
 @media (min-width: $desktop-width) {
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     border-top: 0;
     background-color: transparent;

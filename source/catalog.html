@@ -5,6 +5,12 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="/fonts/opensans.woff" as="font" />
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" />
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font" />
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font" />
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font" />
     <link rel="icon" href="favicon.ico" type="image/svg" />
   </head>
   <body class="page__body">
@@ -86,8 +92,28 @@
           <div class="panorama">
             <p class="panorama__of-day">Панорама дня</p>
             <a class="panorama__link" href="#"
-              ><picture
-                ><source
+              ><picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/catalog/panorama-desktop@1x.webp,
+                    img/catalog/panorama-desktop@2x.webp 2x
+                  " />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/catalog/panorama-tablet@1x.webp,
+                    img/catalog/panorama-tablet@2x.webp 2x
+                  " />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/catalog/panorama-mobile@1x.webp,
+                    img/catalog/panorama-mobile@2x.webp 2x
+                  " />
+                <source
                   media="(min-width: 960px)"
                   srcset="
                     img/catalog/panorama-desktop@1x.jpg,
@@ -139,8 +165,28 @@
           <ul class="gallery__list container">
             <li class="gallery__list-item">
               <a class="gallery__link" href="#"
-                ><picture
-                  ><source
+                ><picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/catalog/photo-car-desktop@1x.webp,
+                      img/catalog/photo-car-desktop@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/photo-car-tablet@1x.webp,
+                      img/catalog/photo-car-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog/photo-car-mobile@1x.webp,
+                      img/catalog/photo-car-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-car-desktop@1x.jpg,
@@ -183,8 +229,28 @@
             </li>
             <li class="gallery__list-item">
               <a class="gallery__link" href="#"
-                ><picture
-                  ><source
+                ><picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/catalog/photo-dramset-desktop@1x.webp,
+                      img/catalog/photo-dramset-desktop@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/photo-dramset-tablet@1x.webp,
+                      img/catalog/photo-dramset-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog/photo-dramset-mobile@1x.webp,
+                      img/catalog/photo-dramset-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-dramset-desktop@1x.jpg,
@@ -225,8 +291,28 @@
             </li>
             <li class="gallery__list-item">
               <a class="gallery__link" href="#"
-                ><picture
-                  ><source
+                ><picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/catalog/photo-roof-desktop@1x.webp,
+                      img/catalog/photo-roof-desktop@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/photo-roof-tablet@1x.webp,
+                      img/catalog/photo-roof-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog/photo-roof-mobile@1x.webp,
+                      img/catalog/photo-roof-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-roof-desktop@1x.jpg,
@@ -269,8 +355,28 @@
             </li>
             <li class="gallery__list-item">
               <a class="gallery__link" href="#"
-                ><picture
-                  ><source
+                ><picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/catalog/photo-market-desktop@1x.webp,
+                      img/catalog/photo-market-desktop@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/photo-market-tablet@1x.webp,
+                      img/catalog/photo-market-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog/photo-market-mobile@1x.webp,
+                      img/catalog/photo-market-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-market-desktop@1x.jpg,
@@ -310,8 +416,28 @@
             </li>
             <li class="gallery__list-item">
               <a class="gallery__link" href="#"
-                ><picture
-                  ><source
+                ><picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/catalog/photo-legs-desktop@1x.webp,
+                      img/catalog/photo-legs-desktop@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/photo-legs-tablet@1x.webp,
+                      img/catalog/photo-legs-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog/photo-legs-mobile@1x.webp,
+                      img/catalog/photo-legs-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-legs-desktop@1x.jpg,
@@ -352,8 +478,28 @@
             </li>
             <li class="gallery__list-item">
               <a class="gallery__link" href="#"
-                ><picture
-                  ><source
+                ><picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/catalog/photo-plain-desktop@1x.webp,
+                      img/catalog/photo-plain-desktop@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/photo-plain-tablet@1x.webp,
+                      img/catalog/photo-plain-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog/photo-plain-mobile@1x.webp,
+                      img/catalog/photo-plain-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 960px)"
                     srcset="
                       img/catalog/photo-plain-desktop@1x.jpg,

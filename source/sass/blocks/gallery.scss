@@ -218,11 +218,15 @@
 @media (min-width: $desktop-width) {
   .gallery__list {
     margin-top: 47px;
+    justify-content: unset;
+    width: 980px;
   }
 
   .gallery__list-item {
     height: 555px;
     margin-bottom: 54px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .gallery__title {

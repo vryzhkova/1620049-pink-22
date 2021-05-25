@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="/fonts/opensans.woff" as="font" />
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" />
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font" />
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font" />
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font" />
     <link rel="icon" href="favicon.ico" type="image/svg" />
     <link rel="apple-touch-icon" href="favicon/152.png" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -453,8 +459,28 @@
           allowfullscreen
           title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         ></iframe>
-        <picture
-          ><source
+        <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1200px)"
+            srcset="
+              img/footer/map-desktop@1x.webp,
+              img/footer/map-desktop@2x.webp 2x
+            " />
+          <source
+            type="image/webp"
+            media="(min-width: 660px)"
+            srcset="
+              img/footer/map-tablet@1x.webp,
+              img/footer/map-tablet@2x.webp 2x
+            " />
+          <source
+            type="image/webp"
+            srcset="
+              img/footer/map-mobile@1x.webp,
+              img/footer/map-mobile@2x.webp 2x
+            " />
+          <source
             media="(min-width: 1200px)"
             srcset="
               img/footer/map-desktop@1x.jpg,
